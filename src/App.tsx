@@ -1,11 +1,10 @@
 import './App.css';
-import { Domashka } from './StyledComponentsStudies';
-
+import { Header } from './layout/header/Header';
 
 function App() {
     return (
         <div className="App">
-           <Domashka />
+            <Header/>
         </div>
     );
 }
