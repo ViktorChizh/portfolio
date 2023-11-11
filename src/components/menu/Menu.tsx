@@ -3,11 +3,12 @@ import styled from 'styled-components'
 
 type MenuPropsType = {
     items: string[]
+    color?: string
 }
 
 export const Menu = (props: MenuPropsType) => {
     return (
-        <StyledMenu>
+        <StyledMenu color={props.color}>
             <ul>
                 {props.items.map((item: string, index: number) => {
                     return(
@@ -21,7 +22,11 @@ export const Menu = (props: MenuPropsType) => {
     )
 }
 
-const StyledMenu = styled.nav`
+type StyledMenuPropsType = {
+    color?: string
+}
+
+const StyledMenu = styled.nav<StyledMenuPropsType>`
     width: 80%;
     ul {
         display: flex;
@@ -32,5 +37,8 @@ const StyledMenu = styled.nav`
         padding: 0;
         flex-wrap: wrap;
         align-content: center;
+        li a {
+            color: ${props => props.color}
+        }
     }
 `

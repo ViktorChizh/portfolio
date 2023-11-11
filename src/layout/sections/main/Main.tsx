@@ -21,7 +21,7 @@ export const Main = () => {
 const StyledMain = styled.section`
     box-sizing: border-box;
     width: 80%;
-    margin: 0 auto;
+    margin: 70px auto 0;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
