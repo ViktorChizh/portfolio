@@ -16,6 +16,7 @@ export const Header = () => {
 }
 
 const StyledHeader = styled.header`
+    position: fixed;
     width: 80%;
     margin: 0 auto;
     display: flex;
