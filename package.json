@@ -67,8 +67,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "predeploy": "yarn run build"
+    "build": "node scripts/build.js"
   },
   "eslintConfig": {
     "extends": [

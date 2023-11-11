@@ -4,11 +4,12 @@ import { BurgerMenu } from '../../components/burgerMenu/BurgerMenu'
 import { Menu } from '../../components/menu/Menu'
 import styled from 'styled-components'
 
+
 export const Header = () => {
     return (
         <StyledHeader>
             <Logo />
-            <Menu />
+            <Menu items={['Home', 'Skills', 'Works', 'Contact']} />
             <BurgerMenu />
         </StyledHeader>
     )
@@ -21,5 +22,5 @@ const StyledHeader = styled.header`
     justify-content: space-around;
     align-items: center;
     background-color: rgba(0,0,0, 0.25);
-    height: 70px;
+    min-height: 70px;
 `
