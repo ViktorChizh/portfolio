@@ -27,4 +27,8 @@ const StyledHeader = styled.header`
     align-items: center;
     background-color: rgb(0,0,0);
     min-height: 70px;
+    @media (width<=360px) {
+    left: 0;
+    width: 100%;
+    }
 `

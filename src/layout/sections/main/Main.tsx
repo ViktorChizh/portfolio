@@ -27,4 +27,7 @@ const StyledMain = styled.section`
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: rgba(159, 205, 245, 0.522);
+    @media (width<=360px) {
+    width: 100%;
+    }
 `
