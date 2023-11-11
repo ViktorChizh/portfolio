@@ -56,12 +56,10 @@ const InfoContainer = styled.div`
     }
     p{
         margin-top: 55px;
+        text-align: center;
         color: #ff5500;
         font-weight: 700;
         font-size: 14px;
         z-index: 5;
-    }
-    &:last-child{
-        font-size: 10px;
     }
 `

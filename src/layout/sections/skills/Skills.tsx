@@ -12,7 +12,7 @@ const skills = [
     {iconId: 'react', progress: 70,title: 'React'},
     {iconId: 'redux', progress: 65,title: 'Redux'},
     {iconId: 'sass', progress: 85,title: 'SASS'},
-    {iconId: 'StyledComponents', progress: 85, title: 'StyledComponents'},
+    {iconId: 'StyledComponents', progress: 85, title: 'Styled Components'},
     {iconId: 'bootstrap', progress: 55,title: 'Bootstrap'},
     {iconId: 'git', progress: 75,title: 'GIT'},
     {iconId: 'github', progress: 75,title: 'Github'},
