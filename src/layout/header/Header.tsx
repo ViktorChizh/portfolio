@@ -17,11 +17,12 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     position: fixed;
+    left: 10%;
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(0,0,0, 0.25);
+    background-color: rgba(0,0,0, 0.5);
     min-height: 70px;
 `
