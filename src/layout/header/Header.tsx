@@ -20,7 +20,7 @@ const StyledHeader = styled.header`
     left: 10%;
     top: 0;
     width: 80%;
-    z-index: 100;
+    z-index: 9;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
