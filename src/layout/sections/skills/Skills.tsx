@@ -36,7 +36,7 @@ min-height: 15vh;
 padding: 10px;
 box-sizing: border-box;
 background-color: rgba(135, 186, 240, 0.729);
-@media (width<=360px) {
+@media (width<=430px) {
 width: 100%;
 }
 `
