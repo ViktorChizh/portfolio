@@ -11,13 +11,17 @@ const skills = [
     {iconId: 'ts1', progress: 75,title: 'TypeScript'},
     {iconId: 'react', progress: 70,title: 'React'},
     {iconId: 'redux', progress: 65,title: 'Redux'},
+    {iconId: 'next', progress: 65,title: 'NextJS'},  
+    {iconId: 'mobx', progress: 65,title: 'MobX'},        
     {iconId: 'sass', progress: 85,title: 'SASS'},
     {iconId: 'StyledComponents', progress: 85, title: 'Styled Components'},
     {iconId: 'bootstrap', progress: 55,title: 'Bootstrap'},
     {iconId: 'git', progress: 75,title: 'GIT'},
     {iconId: 'github', progress: 75,title: 'Github'},
     {iconId: 'vscode', progress: 95,title: 'VScode'},
-    
+    {iconId: 'python', progress: 25,title: 'Python'},
+    {iconId: 'django', progress: 25,title: 'Django'},
+    {iconId: 'sql', progress: 50,title: 'SQL'},
 ]
 
 export const Skills = () => {
