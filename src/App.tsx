@@ -6,7 +6,7 @@ import { Skills } from './layout/sections/skills/Skills';
 import { Works } from './layout/sections/works/Works';
 import { Contact } from './layout/sections/contact/Contact';
 import { Footer } from './layout/footer/Footer';
-import { Quotes } from './layout/sections/puotes/Quotes';
+import { Quotes } from './layout/sections/quotes/Quotes';
 
 function App() {
     return (
