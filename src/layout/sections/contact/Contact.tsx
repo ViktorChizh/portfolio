@@ -27,12 +27,13 @@ const StyledContact = styled.section`
     padding: 2%;
     min-height: 15vh;
     box-sizing: border-box;
-    background-color: rgb(156, 197, 240);
+    background-color: rgba(159, 205, 245, 0.522);
     p {
         margin: 0;
     }
     @media (width<=430px) {
     width: 100%;
+    }
 `
 
 const ContactForm = styled.form`

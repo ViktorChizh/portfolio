@@ -45,7 +45,7 @@ const ProgressContainer = styled.div`
   }
   span{
     position: absolute;
-    color: #ff5500;
+    color: #7572D5;
     z-index: 2;
     font-size: 10px;
     font-weight: bold;
