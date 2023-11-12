@@ -29,5 +29,9 @@ const StyledMain = styled.section`
     background-color: rgba(159, 205, 245, 0.522);
     @media (width<=430px) {
     width: 100%;
+    img {
+        width: 45%;
+        height: 35%;
+    }
     }
 `
