@@ -29,7 +29,7 @@ export const Quotes = () => {
 const StyledQuotes = styled.section`
     width: 80%;
     margin: 0 auto;
-    padding: 10px 2% 2% 2%;
+    padding: 20px 2% 2% 2%;
     min-height: 15vh;
     box-sizing: border-box;
     background-color: rgb(156, 197, 240);

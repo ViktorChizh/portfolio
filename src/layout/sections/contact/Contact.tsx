@@ -26,7 +26,7 @@ export const Contact = () => {
 const StyledContact = styled.section`
     width: 80%;
     margin: 0 auto;
-    padding: 10px 2% 2% 2%;
+    padding: 20px 2% 2% 2%;
     min-height: 15vh;
     box-sizing: border-box;
     background-color: rgba(159, 205, 245, 0.522);
