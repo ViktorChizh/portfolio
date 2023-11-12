@@ -1,5 +1,6 @@
 import React from 'react'
-import logo from '../../assets/logo.svg'
+import foto from '../../assets/littleFoto.png'
+import styled from 'styled-components'
 
 type logoPropsType = {
     width?: string
@@ -8,12 +9,29 @@ type logoPropsType = {
 
 export const Logo = (props: logoPropsType) => {
     return (
-        <a href='/'>
-            <img src={logo} 
+        <StyledLogo href='https://viktorchizh.github.io/portfolio/'>
+            <img src={foto} 
                 alt='logo' 
-                width={`${props.width}` || '50px'}
-                height={`${props.height}` || '50px'}
+                width={`${props.width}` || '50'}
+                height={`${props.height}` || '50'}
             />
-        </a>
+        </StyledLogo>
     )
 }
+
+const StyledLogo = styled.a`
+    position: fixed;
+    z-index: 9;
+    left: 10%;
+    top: 0;
+    img {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    @media (width<=430px) {
+        left: 0;
+    }
+`

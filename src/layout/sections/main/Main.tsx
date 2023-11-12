@@ -2,12 +2,12 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 import bigFoto from '../../../assets/bigFoto.png'
-import map from '../../../assets/Screenshot_1.png'
+import map from '../../../assets/Map.png'
 
 export const Main = () => {
     return(
         <StyledMain>
-            <FlexWrapper direction={'column'} justify={'center'}>
+            <FlexWrapper direction={'column'} justify={'center'} align={'center'}>
                 <span>Hi There</span>
                 <h2>I am Viktor Chizh</h2>
                 <h1>A Front-end Developer</h1>

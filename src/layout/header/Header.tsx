@@ -1,5 +1,4 @@
 import React from 'react'
-import { Logo } from '../../components/logo/Logo'
 import { BurgerMenu } from '../../components/burgerMenu/BurgerMenu'
 import { Menu } from '../../components/menu/Menu'
 import styled from 'styled-components'
@@ -8,9 +7,8 @@ import styled from 'styled-components'
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo/>
             <Menu items={['Home', 'Skills', 'Works', 'Contact']}  color={'white'}/>
-            <BurgerMenu />
+            <BurgerMenu title={'BurgerMenu'}/>
         </StyledHeader>
     )
 }
@@ -20,7 +18,7 @@ const StyledHeader = styled.header`
     left: 10%;
     top: 0;
     width: 80%;
-    z-index: 9;
+    z-index: 8;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;

@@ -8,6 +8,7 @@ type iconPropsType = {
     viewport?: string 
     fill?: string
     stroke?: string
+    title?: string
 }
 
 export const Icon = (props: iconPropsType) => {
