@@ -12,26 +12,29 @@ export const Logo = (props: logoPropsType) => {
         <StyledLogo href='https://viktorchizh.github.io/portfolio/'>
             <img src={foto} 
                 alt='logo' 
-                width={`${props.width}` || '50'}
-                height={`${props.height}` || '50'}
+                width={`${props.width}` || '100%'}
+                height={`${props.height}` || '100%'}
             />
         </StyledLogo>
     )
 }
 
 const StyledLogo = styled.a`
-    position: fixed;
+
+    /* width: 100vw;
+    height: 100vw; */
+    /* position: fixed;
     z-index: 9;
     left: 10%;
-    top: 0;
+    top: 0; */
     img {
-        border-radius: 50%;
+        border-radius: 0 50% 50% 50%;
         object-fit: cover;
     }
     &:hover {
         cursor: pointer;
     }
     @media (width<=430px) {
-        left: 0;
+        /* left: 0; */
     }
 `
