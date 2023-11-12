@@ -19,9 +19,9 @@ const skills = [
     {iconId: 'git', progress: 85, title: 'GIT'},
     {iconId: 'github', progress: 95, title: 'Github'},
     {iconId: 'vscode', progress: 95, title: 'VScode'},
+    {iconId: 'sql', progress: 50, title: 'SQL'},
     {iconId: 'python', progress: 50, title: 'Python'},
     {iconId: 'django', progress: 50, title: 'Django'},
-    {iconId: 'sql', progress: 50, title: 'SQL'},
 ]
 
 export const Skills = () => {

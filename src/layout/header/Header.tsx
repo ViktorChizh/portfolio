@@ -21,16 +21,13 @@ const StyledHeader = styled.header`
     left: 10%;
     top: 0;
     width: 80%;
+    height: 70px;
     z-index: 8;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /* img {
-        margin-left: -17%;
-    } */
-    background-color: rgb(0,0,0);
-    height: 70px;
+    background-color: rgba(0,0,0,0.75);
     @media (width<=430px) {
     left: 0;
     width: 100%;

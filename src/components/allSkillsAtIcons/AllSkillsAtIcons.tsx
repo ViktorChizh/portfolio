@@ -38,6 +38,7 @@ const SkillContainer = styled.ul`
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        gap: 1%;
         list-style: none;
         padding: 0;
         flex-wrap: wrap;

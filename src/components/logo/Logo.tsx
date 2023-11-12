@@ -20,21 +20,11 @@ export const Logo = (props: logoPropsType) => {
 }
 
 const StyledLogo = styled.a`
-
-    /* width: 100vw;
-    height: 100vw; */
-    /* position: fixed;
-    z-index: 9;
-    left: 10%;
-    top: 0; */
     img {
-        border-radius: 0 50% 50% 50%;
+        border-radius: 0 45% 50% 45%;
         object-fit: cover;
     }
     &:hover {
         cursor: pointer;
-    }
-    @media (width<=430px) {
-        /* left: 0; */
     }
 `
