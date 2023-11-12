@@ -56,19 +56,28 @@ const StyledWorks = styled.section`
     background-color: rgba(159, 205, 245, 0.522);
     @media (width<=430px) {
     width: 100%;
-
+    padding: 2% 1%;
     }
 `
 
 const Work = styled.div`
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     padding-top: 2%;
     max-width: 45%;
     min-width: 400px;
+    img{
+        align-self: center;
+    }
     p {
         padding-bottom: 2%;
     }
-
-    @media (width<=430px) {
-
+    @media (width<=540px) {
+        img, p, h3{
+            width: 80%;
+            align-self: flex-start;           
+        }
     }
 `
