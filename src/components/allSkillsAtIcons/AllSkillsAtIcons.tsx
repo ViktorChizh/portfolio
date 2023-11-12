@@ -24,6 +24,7 @@ export const AllSkillsAtIcons = (props: AllSkillsAtIconsPropsType) => {
                                     height='50'
                                     viewport='0 0 112 112' />
                                 <p>{skill.title}</p>
+
                             </InfoContainer>
                         </SkillCircle>
                     </li>
@@ -38,11 +39,11 @@ const SkillContainer = styled.ul`
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        gap: 1%;
+        gap: 4%;
         list-style: none;
         padding: 0;
         flex-wrap: wrap;
-        align-content: center;
+        align-content: space-between;
 `
 
 const InfoContainer = styled.div`
@@ -56,7 +57,7 @@ const InfoContainer = styled.div`
         margin-top: -25px;
     }
     p{
-        margin-top: 55px;
+        margin-top: 55px !important;
         text-align: center;
         color: #ff5500;
         font-weight: 700;

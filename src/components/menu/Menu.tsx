@@ -27,7 +27,7 @@ type StyledMenuPropsType = {
 }
 
 const StyledMenu = styled.nav<StyledMenuPropsType>`
-    width: 80%;
+    width: 100%;
     flex-grow: 1;
     ul {
         display: flex;

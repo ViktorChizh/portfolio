@@ -20,7 +20,7 @@ export const SkillCircle = (props: SkillCirclePropsType) => {
           cx={ radius }
           cy={ radius }
           fill="transparent"
-          stroke="#2fff00"
+          stroke="#42e863f5"
           strokeWidth="5"
           strokeDasharray={ circumference }
           strokeDashoffset={ strokeDashoffset }
@@ -28,6 +28,7 @@ export const SkillCircle = (props: SkillCirclePropsType) => {
 
         />
       </svg>
+      <span>{props.percent}%</span>
         {props.children}
     </ProgressContainer>
   )
@@ -35,11 +36,20 @@ export const SkillCircle = (props: SkillCirclePropsType) => {
 
 const ProgressContainer = styled.div`
   display: flex;
-  /* flex-direction: column; */
+  position: relative;
   width: 110px;
   height: 110px;
   svg {
     position: absolute;
     z-index: 1;
+  }
+  span{
+    position: absolute;
+    color: #ff5500;
+    z-index: 2;
+    font-size: 10px;
+    font-weight: bold;
+    top: 40px;
+    right: 0;
   }
 `

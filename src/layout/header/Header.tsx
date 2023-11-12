@@ -27,7 +27,7 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.85);
     @media (width<=430px) {
     left: 0;
     width: 100%;
