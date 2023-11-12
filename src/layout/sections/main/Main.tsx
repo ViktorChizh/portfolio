@@ -6,23 +6,25 @@ import map from '../../../assets/Map.png'
 
 export const Main = () => {
     return(
-        <StyledMain>
-            <FlexWrapper direction={'column'} justify={'center'} align={'center'}>
-                <span>Hi There</span>
-                <h2>I am Viktor Chizh</h2>
-                <h1>A Front-end Developer</h1>
-            </FlexWrapper>
-            <img src={bigFoto} alt='' width={250} height={250}/>
-            <img src={map} alt='' width={300} height={250}/>
-        </StyledMain>
+        <div id='Home'>
+            <StyledMain>
+                    <FlexWrapper direction={'column'} justify={'center'} align={'center'}>
+                    <span>Hi There</span>
+                    <h2>I am Viktor Chizh</h2>
+                    <h1>A Front-end Developer</h1>
+                </FlexWrapper>
+                <img src={bigFoto} alt='' width={250} height={250}/>
+                <img src={map} alt='' width={300} height={250}/>
+            </StyledMain>
+        </div>
     )
 }
 
 const StyledMain = styled.section`
     box-sizing: border-box;
     width: 80%;
-    margin: 70px auto 0;
-    padding: 10px;
+    margin: 0px auto;
+    padding: 36px 10px 10px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

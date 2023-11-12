@@ -13,7 +13,7 @@ export const Menu = (props: MenuPropsType) => {
                 {props.items.map((item: string, index: number) => {
                     return(
                         <li key={index}>
-                            <a href={item}>{item}</a>
+                            <a href={`#${item}`}>{item}</a>
                         </li>
                     )}
                 )}
@@ -29,12 +29,14 @@ type StyledMenuPropsType = {
 const StyledMenu = styled.nav<StyledMenuPropsType>`
     width: 100%;
     flex-grow: 1;
-    ul {
+        ul {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         list-style: none;
         padding: 0;
+        margin: 0;
+        gap: 2%;
         flex-wrap: wrap;
         align-content: center;
         li a {

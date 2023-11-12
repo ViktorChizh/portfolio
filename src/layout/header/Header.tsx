@@ -9,7 +9,7 @@ export const Header = () => {
     return (
         <StyledHeader>
             <Logo height='85%' width='85%' />
-            <Menu items={['Home', 'Skills', 'Works', 'Contact']}  color={'white'}/>
+            <Menu items={['Home', 'Skills', 'Works', 'Quotes', 'Contact']}  color={'white'}/>
             <BurgerMenu title={'BurgerMenu'}/>
         </StyledHeader>
     )
@@ -21,7 +21,7 @@ const StyledHeader = styled.header`
     left: 10%;
     top: 0;
     width: 80%;
-    height: 70px;
+    height: 42px;
     z-index: 8;
     margin: 0 auto;
     display: flex;

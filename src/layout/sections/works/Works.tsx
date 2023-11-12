@@ -9,42 +9,43 @@ import { Button } from '../../../components/Button';
 
 export const Works = () => {
     return (
-        <StyledWorks>
-            <StyledTitle>My Works</StyledTitle>
-            <Menu items={['All', 'landing page', 'React', 'spa']} />
-            <FlexWrapper direction={'row'}  justify={'space-between'} wrap={'wrap'} gap={'1%'} alighContent={'center'}>
-                <Work>
-                    <img src={work1} alt='' width={400} height={250} />
-                    <h3>Social Network</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                    <FlexWrapper width={'30%'} justify={'space-evenly'}>
-                        <Button>Demo</Button>
-                        <Button>Code</Button>
-                    </FlexWrapper>
-                </Work>
-                <Work>
-                    <img src={work2} alt='' width={400} height={250} />
-                    <h3>Timer</h3>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim
-                    </p>
-                    <FlexWrapper width={'30%'} justify={'space-evenly'}>
-                        <Button>Demo</Button>
-                        <Button>Code</Button>
-                    </FlexWrapper>
-                </Work>
-            </FlexWrapper>
-
-        </StyledWorks>
+        <div id='Works'>
+            <StyledWorks>
+                <StyledTitle>My Works</StyledTitle>
+                <Menu items={['All', 'landing page', 'React', 'spa']} />
+                <FlexWrapper direction={'row'}  justify={'space-between'} wrap={'wrap'} gap={'1%'} alighContent={'center'}>
+                    <Work>
+                        <img src={work1} alt='' width={400} height={250} />
+                        <h3>Social Network</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                        <FlexWrapper width={'30%'} justify={'space-evenly'}>
+                            <Button>Demo</Button>
+                            <Button>Code</Button>
+                        </FlexWrapper>
+                    </Work>
+                    <Work>
+                        <img src={work2} alt='' width={400} height={250} />
+                        <h3>Timer</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim
+                        </p>
+                        <FlexWrapper width={'30%'} justify={'space-evenly'}>
+                            <Button>Demo</Button>
+                            <Button>Code</Button>
+                        </FlexWrapper>
+                    </Work>
+                </FlexWrapper>
+            </StyledWorks>
+        </div>
     )
 }
 
 const StyledWorks = styled.section`
     width: 80%;
     margin: 0 auto;
-    padding: 2%;
+    padding: 35px 2% 2% 2%;
     p {
     margin: 0px;
     }
@@ -56,7 +57,11 @@ const StyledWorks = styled.section`
     background-color: rgba(159, 205, 245, 0.522);
     @media (width<=430px) {
     width: 100%;
-    padding: 2% 1%;
+    padding: 35px 1% 2% 1%;
+    nav{
+        margin-left: 50px;
+        width: 80%;
+    }
     }
 `
 
@@ -84,4 +89,6 @@ const Work = styled.div`
         img, p, h3{
             width: 90%;
             margin-left:1%;
+        }
+    }
 `

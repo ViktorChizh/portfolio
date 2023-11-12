@@ -26,17 +26,19 @@ const skills = [
 
 export const Skills = () => {
     return(
-        <StyledSkills>
-            <StyledTitle>My Skills With Progress</StyledTitle>
-            <AllSkillsAtIcons skills={skills}/>
-        </StyledSkills>
+        <div id='Skills'>
+            <StyledSkills>
+                <StyledTitle>My Skills With Progress</StyledTitle>
+                <AllSkillsAtIcons skills={skills}/>
+            </StyledSkills>
+        </div>
     )
 }
 
 const StyledSkills = styled.section`
     width: 80%;
-    padding: 2% 2% 0 2%;
-    margin: 0 auto;
+    padding: 35px 2% 0 2%;
+    margin: 0px auto;
     min-height: 15vh;
     p {
         margin: 0px;

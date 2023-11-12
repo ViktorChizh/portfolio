@@ -6,31 +6,30 @@ import { Icon } from '../../../components/icon/Icon';
 
 export const Quotes = () => {
     return (
-        <StyledQuotes>
-            <FlexWrapper direction={'column'} align={'center'}>
-                <StyledTitle>Life Principles In Quotes</StyledTitle>
-                <Icon iconId='quotes' />
-                <Slider>
-                    <cite>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </cite>
-                    <strong>@ivan ivanow</strong>
-                </Slider>
-                <Paginator>
-                    {"сюды PAGINATOR туды"}
-                </Paginator>
-            </FlexWrapper>
-            
-
-        </StyledQuotes>
-
+        <div id='Quotes'>
+            <StyledQuotes>
+                <FlexWrapper direction={'column'} align={'center'}>
+                    <StyledTitle>Life Principles In Quotes</StyledTitle>
+                    <Icon iconId='quotes' />
+                    <Slider>
+                        <cite>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </cite>
+                        <strong>@ivan ivanow</strong>
+                    </Slider>
+                    <Paginator>
+                        {"сюды PAGINATOR туды"}
+                    </Paginator>
+                </FlexWrapper>
+            </StyledQuotes>
+        </div>
     )
 }
 
 const StyledQuotes = styled.section`
     width: 80%;
     margin: 0 auto;
-    padding: 2%;
+    padding: 10px 2% 2% 2%;
     min-height: 15vh;
     box-sizing: border-box;
     background-color: rgb(156, 197, 240);

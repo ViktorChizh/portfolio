@@ -7,24 +7,26 @@ import { StyledTitle } from '../../../components/StyledTitle';
 
 export const Contact = () => {
     return (
-        <StyledContact>
-            <StyledTitle>Contact</StyledTitle>
-            <ContactForm>
-                <FlexWrapper direction={'column'}  wrap={'wrap'} align={'center'}>
-                    <ContactField placeholder='Name'></ContactField>
-                    <ContactField placeholder='Email' type='email'></ContactField>
-                    <ContactField as={'textarea'} placeholder='Text message'> </ContactField>
-                    <Button>SEND MESSAGE</Button>
-                </FlexWrapper>
-            </ContactForm>
-        </StyledContact>
+        <div id='Contact'>
+            <StyledContact>
+                <StyledTitle>Contact</StyledTitle>
+                <ContactForm>
+                    <FlexWrapper direction={'column'}  wrap={'wrap'} align={'center'}>
+                        <ContactField placeholder='Name'></ContactField>
+                        <ContactField placeholder='Email' type='email'></ContactField>
+                        <ContactField as={'textarea'} placeholder='Text message'> </ContactField>
+                        <Button>SEND MESSAGE</Button>
+                    </FlexWrapper>
+                </ContactForm>
+            </StyledContact>
+        </div>
     )
 }
 
 const StyledContact = styled.section`
     width: 80%;
     margin: 0 auto;
-    padding: 2%;
+    padding: 10px 2% 2% 2%;
     min-height: 15vh;
     box-sizing: border-box;
     background-color: rgba(159, 205, 245, 0.522);
