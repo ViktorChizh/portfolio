@@ -46,4 +46,6 @@ const StyledFooter = styled.footer`
     small {
         margin-top: -20px;
     }
+    @media (width<=430px) {
+    width: 100%;
 `

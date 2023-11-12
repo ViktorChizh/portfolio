@@ -4,6 +4,7 @@ import { StyledTitle } from '../../../components/StyledTitle';
 import { Menu } from '../../../components/menu/Menu';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import work1 from '../../../assets/Work1.png'
+import work2 from '../../../assets/Work2.png'
 import { Button } from '../../../components/Button';
 
 export const Works = () => {
@@ -13,7 +14,7 @@ export const Works = () => {
             <Menu items={['All', 'landing page', 'React', 'spa']} />
             <FlexWrapper direction={'row'}  justify={'space-between'} wrap={'wrap'} gap={'1%'} alighContent={'center'}>
                 <Work>
-                    <img src={work1} alt='' width={410} height={250} />
+                    <img src={work1} alt='' width={400} height={250} />
                     <h3>Social Network</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -24,7 +25,7 @@ export const Works = () => {
                     </FlexWrapper>
                 </Work>
                 <Work>
-                    <img src={work1} alt='' width={410} height={250} />
+                    <img src={work2} alt='' width={400} height={250} />
                     <h3>Timer</h3>
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim
@@ -62,7 +63,7 @@ const StyledWorks = styled.section`
 const Work = styled.div`
     padding-top: 2%;
     max-width: 45%;
-    min-width: 430px;
+    min-width: 400px;
     p {
         padding-bottom: 2%;
     }
