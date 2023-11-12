@@ -80,4 +80,8 @@ const Work = styled.div`
             align-self: flex-start;           
         }
     }
+    @media (width<=430px) {
+        img, p, h3{
+            width: 90%;
+            margin-left:1%;
 `
