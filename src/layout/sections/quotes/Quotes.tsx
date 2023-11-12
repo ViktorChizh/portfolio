@@ -9,7 +9,7 @@ export const Quotes = () => {
         <div id='Quotes'>
             <StyledQuotes>
                 <FlexWrapper direction={'column'} align={'center'}>
-                    <StyledTitle>Life Principles In Quotes</StyledTitle>
+                    <StyledTitle>My Life Principles In Quotes</StyledTitle>
                     <Icon iconId='quotes' />
                     <Slider>
                         <cite>

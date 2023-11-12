@@ -24,7 +24,7 @@ const StyledMain = styled.section`
     box-sizing: border-box;
     width: 80%;
     margin: 0px auto;
-    padding: 36px 10px 10px 10px;
+    padding: 40px 10px 10px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
