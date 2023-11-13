@@ -43,9 +43,9 @@ export const Works = () => {
 }
 
 const StyledWorks = styled.section`
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 35px 2% 2% 2%;
+    padding: 20px 2% 2% 2%;
     p {
     margin: 0px;
     }
@@ -57,17 +57,16 @@ const StyledWorks = styled.section`
     background-color: rgb(150, 200, 250);
     @media (width<=430px) {
     width: 100%;
-    padding: 35px 1% 2% 1%;
-    nav{
+    padding: 20px 1% 2% 1%;
+    /* nav{
         display: flex;
         ul {
             width: 100%;
-            gap: 5%;
+            gap: 4%;
             justify-content: flex-end;
-            margin-right: 5%;
-            z-index: 10;
+            margin-right: 3%;
         }
-    }
+    } */
     }
 `
 

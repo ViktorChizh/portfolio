@@ -8,7 +8,7 @@ import { Logo } from '../../components/logo/Logo'
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo />
+            <Logo width='50px' height='50px'/>
             <Menu items={['Home', 'Skills', 'Works', 'Quotes', 'Contact']}  color={'white'}/>
             <BurgerMenu title={'BurgerMenu'}/>
         </StyledHeader>
@@ -18,18 +18,22 @@ export const Header = () => {
 const StyledHeader = styled.header`
     position: fixed;
     box-sizing: content-box;
-    left: 10%;
+    left: 0;
     top: 0;
-    width: 80%;
-    height: 42px;
+    width: 100%;
+    height: 50px;
     z-index: 8;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    img {
+        margin-top: 7%;
+        margin-left: 1%;
+    }
     background-color: rgba(0,0,0,0.85);
-    @media (width<=430px) {
+    /* @media (width<=430px) {
     left: 0;
     width: 100%;
-    }
+    } */
 `

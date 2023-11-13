@@ -36,8 +36,8 @@ export const Skills = () => {
 }
 
 const StyledSkills = styled.section`
-    width: 80%;
-    padding: 40px 2% 0 2%;
+    width: 100%;
+    padding: 45px 2% 0 2%;
     margin: 0px auto;
     min-height: 15vh;
     p {
@@ -52,12 +52,11 @@ const StyledSkills = styled.section`
     }
     box-sizing: border-box;
     background-color: rgb(200, 225, 250);
-    @media (width<=430px) {
+    /* @media (width<=430px) {
     width: 100%;
         >p{
             text-align: end;
             margin-right: 1%;
-            z-index: 10;
         }
-}
+} */
 `

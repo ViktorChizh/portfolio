@@ -25,7 +25,7 @@ const StyledFooter = styled.footer`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 2%;
     box-sizing: border-box;
@@ -48,4 +48,5 @@ const StyledFooter = styled.footer`
     }
     @media (width<=430px) {
     width: 100%;
+    }
 `

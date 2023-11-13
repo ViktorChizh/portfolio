@@ -27,9 +27,9 @@ export const Quotes = () => {
 }
 
 const StyledQuotes = styled.section`
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px 2% 2% 2%;
+    padding: 2%;
     min-height: 15vh;
     box-sizing: border-box;
     background-color: rgb(200, 225, 250);
@@ -37,14 +37,12 @@ const StyledQuotes = styled.section`
         margin-left: 50px;
         margin-bottom: -70px;
     }
-    @media (width<=430px) {
+    /* @media (width<=430px) {
     width: 100%;
         p{
-            align-self: flex-end;
-            margin-right: 1%;
             z-index: 10;
         }
-    }    
+    }     */
 `
 
 const Slider = styled.div`

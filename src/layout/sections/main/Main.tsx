@@ -22,9 +22,9 @@ export const Main = () => {
 
 const StyledMain = styled.section`
     box-sizing: border-box;
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
-    padding: 43px 10px 10px 10px;
+    padding: 45px 10px 10px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -37,7 +37,6 @@ const StyledMain = styled.section`
         }
         h1,h2,span {
             align-self: flex-end;
-            z-index: 10;
         }
     }
 `

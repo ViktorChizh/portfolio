@@ -36,9 +36,11 @@ const StyledMenu = styled.nav<StyledMenuPropsType>`
         list-style: none;
         padding: 0;
         margin: 0;
-        gap: 2%;
+        gap: 3%;
         flex-wrap: wrap;
-        align-content: center;
+        li {
+            flex: 0 0 auto;
+        }
         li a {
             color: ${props => props.color}
         }

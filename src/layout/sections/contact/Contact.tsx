@@ -24,18 +24,18 @@ export const Contact = () => {
 }
 
 const StyledContact = styled.section`
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px 2% 2% 2%;
+    padding: 2%;
     min-height: 15vh;
     box-sizing: border-box;
     background-color: rgb(150, 200, 250);
     p {
         margin: 0;
     }
-    @media (width<=430px) {
+    /* @media (width<=430px) {
     width: 100%;
-    }
+    } */
 `
 
 const ContactForm = styled.form`
