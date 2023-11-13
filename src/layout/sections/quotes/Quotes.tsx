@@ -4,6 +4,40 @@ import { StyledTitle } from '../../../components/StyledTitle';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Icon } from '../../../components/icon/Icon';
 
+const cites = [
+    [
+        'Генри Форд', 'Неудача – это просто возможность начать снова, но уже более мудро.'
+    ],
+    [
+        'Бенджамин Франклин', 'Я не провалил тест. Я просто нашел сто способов написать его неправильно.'
+    ],
+    [
+        'Ричард Брэнсон', 'Я уверен: нельзя позволять, чтобы тебя остановило убогое словцо «нельзя».'
+    ],
+    [
+        'Генри Форд', 'Неудача – это просто возможность начать снова, но уже более мудро.'
+    ],
+    [
+        'Стивен Кови', 'Быстрее всего учишься в трех случаях — до 7 лет, на тренингах, и когда жизнь загнала тебя в угол.'
+    ],
+    [
+        'Шарль де Голль', 'Всегда выбирайте самый трудный путь - на нем вы не встретите конкурентов.'
+    ],
+    [
+        'Теодор Рузвельт', 'Делай все, что можешь, там, где ты находишься, используя все, что имеешь.'
+    ],
+    [
+        'Чарльз Дарвин', 'Выживает не самый сильный, а самый восприимчивый к переменам.'
+    ],
+    [
+        'Айн Рэнд', 'Вопрос не в том, кто мне разрешит, а в том, кто сможет мне запретить.'
+    ],
+    [
+        'Стив Джобс', 'Единственный способ сделать что-то очень хорошо – любить то, что ты делаешь.'
+    ]
+]
+
+let i = Math.floor(10*Math.random())
 export const Quotes = () => {
     return (
         <div id='Quotes'>
@@ -13,9 +47,9 @@ export const Quotes = () => {
                     <Icon iconId='quotes' />
                     <Slider>
                         <cite>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            {cites[i][1]}
                         </cite>
-                        <strong>@ivan ivanow</strong>
+                        <strong>{cites[i][0]}</strong>
                     </Slider>
                     <Paginator>
                         {"сюды PAGINATOR туды"}
@@ -37,12 +71,6 @@ const StyledQuotes = styled.section`
         margin-left: 50px;
         margin-bottom: -70px;
     }
-    /* @media (width<=430px) {
-    width: 100%;
-        p{
-            z-index: 10;
-        }
-    }     */
 `
 
 const Slider = styled.div`
