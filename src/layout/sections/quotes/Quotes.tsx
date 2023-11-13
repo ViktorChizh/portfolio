@@ -39,10 +39,6 @@ const StyledQuotes = styled.section`
     }
     @media (width<=430px) {
     width: 100%;
-        p{
-            align-self: end;
-            margin-right: 7%;
-        }
     }    
 `
 

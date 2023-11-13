@@ -59,8 +59,13 @@ const StyledWorks = styled.section`
     width: 100%;
     padding: 35px 1% 2% 1%;
     nav{
-        margin-left: 50px;
-        width: 80%;
+        display: flex;
+        ul {
+            width: 100%;
+            gap: 5%;
+            justify-content: flex-end;
+            margin-right: 15%;
+        }
     }
     }
 `

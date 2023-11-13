@@ -37,7 +37,7 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
     width: 80%;
-    padding: 35px 2% 0 2%;
+    padding: 40px 2% 0 2%;
     margin: 0px auto;
     min-height: 15vh;
     p {
@@ -54,9 +54,9 @@ const StyledSkills = styled.section`
     background-color: rgb(200, 225, 250);
     @media (width<=430px) {
     width: 100%;
-        p{
+        >p{
             text-align: end;
-            margin-right: 5%;
+            margin-right: 10%;
         }
 }
 `
