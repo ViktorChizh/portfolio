@@ -35,7 +35,6 @@ const StyledFooter = styled.footer`
         margin-left: 30px;
     }
     svg {
-
         width: 50px;
         height: 50px;
     }
@@ -45,8 +44,5 @@ const StyledFooter = styled.footer`
     }
     small {
         margin-top: -20px;
-    }
-    @media (width<=430px) {
-    width: 100%;
     }
 `

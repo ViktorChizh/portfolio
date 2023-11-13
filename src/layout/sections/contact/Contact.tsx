@@ -33,9 +33,6 @@ const StyledContact = styled.section`
     p {
         margin: 0;
     }
-    /* @media (width<=430px) {
-    width: 100%;
-    } */
 `
 
 const ContactForm = styled.form`
@@ -45,5 +42,4 @@ const ContactForm = styled.form`
 const ContactField = styled.input`
     width: 50%;
     margin: 1%;
-    
 `

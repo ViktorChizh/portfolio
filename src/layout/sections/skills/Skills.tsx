@@ -52,11 +52,4 @@ const StyledSkills = styled.section`
     }
     box-sizing: border-box;
     background-color: rgb(200, 225, 250);
-    /* @media (width<=430px) {
-    width: 100%;
-        >p{
-            text-align: end;
-            margin-right: 1%;
-        }
-} */
 `

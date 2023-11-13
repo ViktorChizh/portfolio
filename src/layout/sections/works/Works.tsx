@@ -55,19 +55,6 @@ const StyledWorks = styled.section`
     min-height: 15vh;
     box-sizing: border-box;
     background-color: rgb(150, 200, 250);
-    @media (width<=430px) {
-    width: 100%;
-    padding: 20px 1% 2% 1%;
-    /* nav{
-        display: flex;
-        ul {
-            width: 100%;
-            gap: 4%;
-            justify-content: flex-end;
-            margin-right: 3%;
-        }
-    } */
-    }
 `
 
 const Work = styled.div`

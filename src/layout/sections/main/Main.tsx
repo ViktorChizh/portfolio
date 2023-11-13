@@ -30,13 +30,9 @@ const StyledMain = styled.section`
     justify-content: space-evenly;
     background-color: rgb(150, 200, 250);
     @media (width<=430px) {
-        width: 100%;
         img {
             width: 45%;
             height: 35%;
-        }
-        h1,h2,span {
-            align-self: flex-end;
         }
     }
 `
