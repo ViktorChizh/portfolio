@@ -35,9 +35,8 @@ const StyledMain = styled.section`
             width: 45%;
             height: 35%;
         }
-        h1, h2, span {
-            justify-self: flex-end;
-            margin-right: 10px;
+        h1,h2,span {
+            align-self: flex-end;
         }
     }
 `

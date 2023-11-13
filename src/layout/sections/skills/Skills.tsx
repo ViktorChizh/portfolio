@@ -54,5 +54,9 @@ const StyledSkills = styled.section`
     background-color: rgb(200, 225, 250);
     @media (width<=430px) {
     width: 100%;
+        p{
+            text-align: end;
+            margin-right: 5%;
+        }
 }
 `
