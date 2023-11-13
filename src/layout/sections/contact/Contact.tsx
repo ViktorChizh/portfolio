@@ -29,7 +29,7 @@ const StyledContact = styled.section`
     padding: 20px 2% 2% 2%;
     min-height: 15vh;
     box-sizing: border-box;
-    background-color: rgba(159, 205, 245, 0.522);
+    background-color: rgb(150, 200, 250);
     p {
         margin: 0;
     }

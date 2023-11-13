@@ -2,7 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 import bigFoto from '../../../assets/bigFoto.png'
-import map from '../../../assets/Map.png'
+import map from '../../../assets/map-by.png'
 
 export const Main = () => {
     return(
@@ -24,11 +24,11 @@ const StyledMain = styled.section`
     box-sizing: border-box;
     width: 80%;
     margin: 0px auto;
-    padding: 40px 10px 10px 10px;
+    padding: 43px 10px 10px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: rgba(159, 205, 245, 0.522);
+    background-color: rgb(150, 200, 250);
     @media (width<=430px) {
     width: 100%;
     img {

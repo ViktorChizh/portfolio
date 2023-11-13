@@ -54,7 +54,7 @@ const StyledWorks = styled.section`
     }
     min-height: 15vh;
     box-sizing: border-box;
-    background-color: rgba(159, 205, 245, 0.522);
+    background-color: rgb(150, 200, 250);
     @media (width<=430px) {
     width: 100%;
     padding: 35px 1% 2% 1%;

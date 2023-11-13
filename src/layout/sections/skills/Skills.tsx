@@ -51,11 +51,11 @@ const StyledSkills = styled.section`
         }
     }
     box-sizing: border-box;
-    background-color: rgb(156, 197, 240);
+    background-color: rgb(200, 225, 250);
     @media (width<=430px) {
     width: 100%;
     p {
-        margin: 0px 0 0 20px;
+        margin: 0 0 0 30px;
         }
 }
 `

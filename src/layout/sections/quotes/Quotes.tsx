@@ -32,7 +32,7 @@ const StyledQuotes = styled.section`
     padding: 20px 2% 2% 2%;
     min-height: 15vh;
     box-sizing: border-box;
-    background-color: rgb(156, 197, 240);
+    background-color: rgb(200, 225, 250);
     p {
         margin: 0 0 10px 0;
     }
@@ -42,6 +42,10 @@ const StyledQuotes = styled.section`
     }
     @media (width<=430px) {
     width: 100%;
+    p {
+        margin: 0 15px 0 0px;
+        align-self: flex-end;
+        }
     }    
 `
 

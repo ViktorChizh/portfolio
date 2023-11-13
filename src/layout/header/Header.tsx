@@ -8,7 +8,7 @@ import { Logo } from '../../components/logo/Logo'
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo height='85%' width='85%' />
+            <Logo />
             <Menu items={['Home', 'Skills', 'Works', 'Quotes', 'Contact']}  color={'white'}/>
             <BurgerMenu title={'BurgerMenu'}/>
         </StyledHeader>

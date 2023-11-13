@@ -16,7 +16,7 @@ export const BurgerMenu = (props:BurgerMenuPropsType) => {
 }
 
 const StyledBurgerMenu = styled.div`
-    width: 100px;
+    width: 42px;
     height: 42px;
     display: flex;
     margin: 0;
