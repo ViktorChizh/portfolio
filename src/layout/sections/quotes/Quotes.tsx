@@ -33,19 +33,12 @@ const StyledQuotes = styled.section`
     min-height: 15vh;
     box-sizing: border-box;
     background-color: rgb(200, 225, 250);
-    p {
-        margin: 0 0 10px 0;
-    }
     svg {
         margin-left: 50px;
         margin-bottom: -70px;
     }
     @media (width<=430px) {
     width: 100%;
-    p {
-        margin: 0 15px 0 0px;
-        align-self: flex-end;
-        }
     }    
 `
 

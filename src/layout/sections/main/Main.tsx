@@ -8,7 +8,7 @@ export const Main = () => {
     return(
         <div id='Home'>
             <StyledMain>
-                    <FlexWrapper direction={'column'} justify={'center'} align={'center'}>
+                <FlexWrapper direction={'column'} justify={'center'} align={'center'}>
                     <span>Hi There</span>
                     <h2>I am Viktor Chizh</h2>
                     <h1>A Front-end Developer</h1>
@@ -30,10 +30,14 @@ const StyledMain = styled.section`
     justify-content: space-evenly;
     background-color: rgb(150, 200, 250);
     @media (width<=430px) {
-    width: 100%;
-    img {
-        width: 45%;
-        height: 35%;
-    }
+        width: 100%;
+        img {
+            width: 45%;
+            height: 35%;
+        }
+        h1, h2, span {
+            justify-self: flex-end;
+            margin-right: 10px;
+        }
     }
 `
