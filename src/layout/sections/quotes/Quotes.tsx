@@ -39,6 +39,11 @@ const StyledQuotes = styled.section`
     }
     @media (width<=430px) {
     width: 100%;
+        p{
+            align-self: flex-end;
+            margin-right: 1%;
+            z-index: 10;
+        }
     }    
 `
 

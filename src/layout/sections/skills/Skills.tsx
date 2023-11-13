@@ -56,7 +56,8 @@ const StyledSkills = styled.section`
     width: 100%;
         >p{
             text-align: end;
-            margin-right: 10%;
+            margin-right: 1%;
+            z-index: 10;
         }
 }
 `

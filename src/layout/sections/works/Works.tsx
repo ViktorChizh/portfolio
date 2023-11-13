@@ -64,7 +64,8 @@ const StyledWorks = styled.section`
             width: 100%;
             gap: 5%;
             justify-content: flex-end;
-            margin-right: 15%;
+            margin-right: 5%;
+            z-index: 10;
         }
     }
     }

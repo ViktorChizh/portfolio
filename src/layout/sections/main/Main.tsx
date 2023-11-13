@@ -37,6 +37,7 @@ const StyledMain = styled.section`
         }
         h1,h2,span {
             align-self: flex-end;
+            z-index: 10;
         }
     }
 `
