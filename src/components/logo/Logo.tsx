@@ -21,7 +21,7 @@ export const Logo = (props: logoPropsType) => {
 
 const StyledLogo = styled.a`
         position: fixed;
-        z-index: 7;
+        z-index: 9;
         top:0;    
         left:0;
     img {

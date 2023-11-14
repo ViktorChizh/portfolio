@@ -35,7 +35,6 @@ const StyledMain = styled.section`
             height: 35%;
         }
         h1, h2, span {
-            align-self: flex-end;
             font-size: 1.25em;
             font-weight:700;
             z-index: 8;
