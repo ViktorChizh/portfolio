@@ -71,6 +71,12 @@ const StyledQuotes = styled.section`
         margin-left: 50px;
         margin-bottom: -70px;
     }
+    @media (width<=430px) {
+        >div>p{
+            width: calc(100% - 75px);
+            margin-left:75px;
+        }
+    }
 `
 
 const Slider = styled.div`

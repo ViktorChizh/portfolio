@@ -49,6 +49,10 @@ const StyledWorks = styled.section`
     p {
     margin: 0px;
     }
+    nav {
+        margin-left: 75px;
+        width: calc(90% - 75px);
+    }
     ul {
         margin: 0;
     }

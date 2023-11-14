@@ -39,6 +39,7 @@ const StyledMenu = styled.nav<StyledMenuPropsType>`
         gap: 3%;
         flex-wrap: wrap;
         li {
+            display: flex;
             flex: 0 0 auto;
         }
         li a {

@@ -52,4 +52,10 @@ const StyledSkills = styled.section`
     }
     box-sizing: border-box;
     background-color: rgb(200, 225, 250);
+    @media (width<=430px) {
+        >p{
+            width: calc(100% - 75px);
+            margin-left:75px;
+        }
+    }
 `

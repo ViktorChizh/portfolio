@@ -7,10 +7,12 @@ import { Works } from './layout/sections/works/Works';
 import { Contact } from './layout/sections/contact/Contact';
 import { Footer } from './layout/footer/Footer';
 import { Quotes } from './layout/sections/quotes/Quotes';
+import { Logo } from './components/logo/Logo';
 
 function App() {
     return (
         <StyledApp>
+            <Logo/>
             <Header/>
             <Main/>
             <Skills/>
