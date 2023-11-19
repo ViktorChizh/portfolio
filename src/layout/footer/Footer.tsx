@@ -40,9 +40,9 @@ const StyledFooter = styled.footer`
     }
     p {
         color: rgb(200, 225, 250);
-        margin: -1% 0 1% 0;
+        margin: -0.5% 0 1.5% 0;
     }
     small {
-        margin: -10px 0 -10px 1%;
+        margin: -0.5% 0 -0.5% 1%;
     }
 `
