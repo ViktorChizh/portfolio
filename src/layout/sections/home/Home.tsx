@@ -29,6 +29,10 @@ const StyledMain = styled.section`
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: rgb(150, 200, 250);
+    span {
+        font-size: 1em;
+        font-weight:700;
+    }
     @media (width<=430px) {
         img {
             width: 45%;
@@ -37,8 +41,6 @@ const StyledMain = styled.section`
         h1, h2, span {
             font-size: 1.25em;
             font-weight:700;
-            z-index: 8;
         }
-
     }
 `

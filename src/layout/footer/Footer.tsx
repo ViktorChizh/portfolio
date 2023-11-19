@@ -30,7 +30,7 @@ const StyledFooter = styled.footer`
     padding: 2%;
     box-sizing: border-box;
     background-color: rgba(0,0,0,0.85);
-    color: aliceblue;
+    color: rgb(200, 225, 250);
     div {
         margin-left: 30px;
     }
@@ -39,7 +39,7 @@ const StyledFooter = styled.footer`
         height: 50px;
     }
     p {
-        color: aliceblue;
+        color: rgb(200, 225, 250);
         margin: 0 0 2% 0;
     }
     small {
