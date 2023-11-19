@@ -20,12 +20,8 @@ export const Logo = (props: logoPropsType) => {
 }
 
 const StyledLogo = styled.a`
-        position: fixed;
-        z-index: 9;
-        top:0;    
-        left:0;
     img {
-        border-radius: 0 0 50% 50%;
+        border-radius: 0 0 25% 25%;
         object-fit: cover;
     }
     &:hover {

@@ -4,7 +4,7 @@ import { FlexWrapper } from '../../../components/FlexWrapper'
 import bigFoto from '../../../assets/bigFoto.png'
 import map from '../../../assets/map-by.png'
 
-export const Main = () => {
+export const Home = () => {
     return(
         <div id='Home'>
             <StyledMain>
@@ -24,7 +24,7 @@ const StyledMain = styled.section`
     box-sizing: border-box;
     width: 100%;
     margin: 0px auto;
-    padding: 45px 10px 10px 10px;
+    padding: 55px 10px 10px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

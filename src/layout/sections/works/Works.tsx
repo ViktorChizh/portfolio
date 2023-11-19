@@ -15,8 +15,8 @@ export const Works = () => {
                 <Menu items={['All', 'landing page', 'React', 'spa']} />
                 <FlexWrapper direction={'row'}  justify={'space-between'} wrap={'wrap'} gap={'1%'} alighContent={'center'}>
                     <Work>
-                        <img src={work1} alt='' width={400} height={250} />
-                        <h3>Social Network</h3>
+                        <img src={work1} alt='' />
+                        <h2>Social Network</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </p>
@@ -27,7 +27,7 @@ export const Works = () => {
                     </Work>
                     <Work>
                         <img src={work2} alt='' width={400} height={250} />
-                        <h3>Timer</h3>
+                        <h2>Timer</h2>
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim
                         </p>
@@ -43,15 +43,18 @@ export const Works = () => {
 }
 
 const StyledWorks = styled.section`
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
     width: 100%;
     margin: 0 auto;
-    padding: 20px 2% 2% 2%;
+    padding: 50px 2% 2% 2%;
     p {
     margin: 0px;
     }
     nav {
-        margin-left: 75px;
         width: calc(90% - 75px);
+        justify-content: flex-end;
     }
     ul {
         margin: 0;
@@ -68,23 +71,25 @@ const Work = styled.div`
     justify-content: flex-start;
     padding-top: 2%;
     max-width: 45%;
-    min-width: 400px;
+    min-width: 320px;
     img{
         align-self: center;
+        width: 90%;
+        height: 250px;
     }
     p {
         padding-bottom: 2%;
     }
-    @media (width<=540px) {
-        img, p, h3{
-            width: 80%;
-            align-self: flex-start;           
+    @media (width<=675px) {
+            max-width: 96%;
+            min-width: 340px;
+            margin: 0 auto;
+            img {
+                height: 175px;
+            }
+            p, h2, img, div {
+                width: 70%;
+                margin: 0 auto;
+            }
         }
-    }
-    @media (width<=430px) {
-        img, p, h3{
-            width: 90%;
-            margin-left:1%;
-        }
-    }
 `

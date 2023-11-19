@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Icon } from '../icon/Icon';
 import styled from 'styled-components';
-// import styled from 'styled-components';
 
 type BurgerMenuPropsType = {
     title?: string

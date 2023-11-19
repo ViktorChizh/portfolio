@@ -71,20 +71,17 @@ const StyledQuotes = styled.section`
         margin-left: 50px;
         margin-bottom: -70px;
     }
-    /* @media (width<=430px) {
-        >div>p{
-            width: calc(100% - 75px);
-            margin-left:75px;
-        }
-    } */
 `
 
 const Slider = styled.div`
     display: flex;
+    width: 98%;
     flex-direction: column;
     align-items: center;
     cite {
         text-align: center;
+        width: 90%;
+
     }
     strong {
         margin: 10px 0;
