@@ -9,12 +9,12 @@ export const Footer = () => {
     return (
         <StyledFooter>
             <StyledTitle>Viktor Chizh</StyledTitle>
-            <FlexWrapper justify={'center'} align={'center'}>
-                <Icon iconId={'githubSocial'} />
-                <Icon iconId={'telegram'} />
-                <Icon iconId={'linkedIn'} />
-                <Icon iconId={'gMail'} />
-                <Icon iconId={'mail'} />
+            <FlexWrapper justify='center' align='center'>
+                <Icon iconId='githubSocial' width='224' height='224' viewport='0 0 66 66' />
+                <Icon iconId='telegram' width='224' height='224' viewport='0 0 66 66' />
+                <Icon iconId='linkedIn' width='224' height='224' viewport='0 0 66 66' />
+                <Icon iconId='gMail' width='224' height='224' viewport='0 0 66 66' />
+                <Icon iconId='mail' width='224' height='224' viewport='0 0 66 66' />
             </FlexWrapper>
             <small>© 2023 Viktor Chizh, All Rights Reserved.</small>
         </StyledFooter>
@@ -40,9 +40,9 @@ const StyledFooter = styled.footer`
     }
     p {
         color: rgb(200, 225, 250);
-        margin: 0 0 2% 0;
+        margin: -1% 0 1% 0;
     }
     small {
-        margin-top: -20px;
+        margin: -10px 0 -10px 1%;
     }
 `
