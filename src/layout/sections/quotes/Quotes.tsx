@@ -80,7 +80,7 @@ const Slider = styled.div`
     align-items: center;
     cite {
         text-align: center;
-        width: 90%;
+        width: 98%;
 
     }
     strong {

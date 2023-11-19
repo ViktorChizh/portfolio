@@ -88,8 +88,8 @@ const Work = styled.div`
                 height: 175px;
             }
             p, h2, img, div {
-                width: 70%;
-                margin: 0 auto;
+                width: 100%;
+                margin: 0 auto 3%;
             }
         }
 `
