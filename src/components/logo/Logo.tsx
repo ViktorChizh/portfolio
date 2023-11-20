@@ -26,5 +26,7 @@ const StyledLogo = styled.a`
     }
     &:hover {
         cursor: pointer;
+        transform: scale(1.9) translateY(-20px);
+        transition: 0.25s;
     }
 `

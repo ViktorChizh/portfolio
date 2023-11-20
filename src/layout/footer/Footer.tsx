@@ -10,11 +10,21 @@ export const Footer = () => {
         <StyledFooter>
             <StyledTitle>Viktor Chizh</StyledTitle>
             <FlexWrapper justify='center' align='center'>
-                <Icon iconId='githubSocial' width='224' height='224' viewport='0 0 66 66' />
-                <Icon iconId='telegram' width='224' height='224' viewport='0 0 66 66' />
-                <Icon iconId='linkedIn' width='224' height='224' viewport='0 0 66 66' />
-                <Icon iconId='gMail' width='224' height='224' viewport='0 0 66 66' />
-                <Icon iconId='mail' width='224' height='224' viewport='0 0 66 66' />
+                <a href='https://github.com/ViktorChizh'>
+                    <Icon iconId='githubSocial' width='336' height='336' viewport='0 0 40 40' />
+                </a>
+                <a href='https://t.me/ViktorChizh'>
+                    <Icon iconId='telegram' width='336' height='336' viewport='0 0 40 40' />
+                </a>
+                <a href='https://www.linkedin.com/in/%D0%B2%D0%B8%D0%BA%D1%82%D0%BE%D1%80-%D1%87%D0%B8%D0%B6-9873a625a/'>
+                    <Icon iconId='linkedIn' width='336' height='336' viewport='0 0 40 40' />
+                </a>
+                <a href='https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKhpnfkgXpqwjSjsLwlwVGvCJPFcjhTmbGMqtxmQKKrdbkZfBxHRVkGvqfxxKcqRZCCvZTh'>
+                    <Icon iconId='gMail' width='336' height='336' viewport='0 0 40 40' />
+                </a>
+                <a href="mailto:victor.chizh@mail.ru?&subject=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9">						
+                    <Icon iconId='mail' width='336' height='336' viewport='0 0 45 45' />
+                </a>
             </FlexWrapper>
             <small>© 2023 Viktor Chizh, All Rights Reserved.</small>
         </StyledFooter>
@@ -27,12 +37,10 @@ const StyledFooter = styled.footer`
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    padding: 2%;
-    box-sizing: border-box;
     background-color: rgba(0,0,0,0.85);
-    color: rgb(200, 225, 250);
     div {
-        margin-left: 30px;
+        width: 80%;
+        justify-content: space-around;
     }
     svg {
         width: 50px;
@@ -40,9 +48,10 @@ const StyledFooter = styled.footer`
     }
     p {
         color: rgb(200, 225, 250);
-        margin: -0.5% 0 1.5% 0;
+        margin: 1.5% 0;
     }
     small {
-        margin: -0.5% 0 0.5% 1%;
+        margin: 0 0 1%;
+        color: rgb(200, 225, 250);
     }
 `

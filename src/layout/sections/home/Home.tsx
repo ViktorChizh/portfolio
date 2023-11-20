@@ -13,8 +13,8 @@ export const Home = () => {
                     <h2>I am Viktor Chizh</h2>
                     <h1>A Front-end Developer</h1>
                 </FlexWrapper>
-                <img src={bigFoto} alt='' width={250} height={250}/>
-                <img src={map} alt='' width={300} height={250}/>
+                <img src={bigFoto} alt='' width={275} height={275}/>
+                <img src={map} alt='' width={315} height={275}/>
             </StyledMain>
         </div>
     )
@@ -29,6 +29,10 @@ const StyledMain = styled.section`
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: rgb(150, 200, 250);
+    img {
+        object-fit: cover;
+        padding: 0.1%;
+        }
     span {
         font-size: 1em;
         font-weight:700;

@@ -6,6 +6,7 @@
   "dependencies": {
     "@babel/core": "7.16.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.5.3",
+    "@react-email/render": "^0.0.9",
     "@svgr/webpack": "5.5.0",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "13.0.0",
@@ -38,6 +39,7 @@
     "jest-resolve": "27.4.2",
     "jest-watch-typeahead": "1.0.0",
     "mini-css-extract-plugin": "2.4.5",
+    "nodemailer": "^6.9.7",
     "postcss": "8.4.4",
     "postcss-flexbugs-fixes": "5.0.2",
     "postcss-loader": "6.2.1",

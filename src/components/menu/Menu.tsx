@@ -40,7 +40,10 @@ const StyledMenu = styled.nav<StyledMenuPropsType>`
         gap: 3%;
         flex-wrap: wrap;
         li a {
-            color: ${props => props.color}
+            color: ${props => props.color};
+        }
+        li:hover{
+            transform: scale(1.5);
         }
     }
 `

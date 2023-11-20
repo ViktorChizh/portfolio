@@ -76,6 +76,7 @@ const Work = styled.div`
         align-self: center;
         width: 90%;
         height: 250px;
+        object-fit: cover;
     }
     p {
         padding-bottom: 2%;

@@ -15,7 +15,7 @@
 *::-webkit-scrollbar-thumb{
   background-color: rgb(200, 225, 250);
   border: 2px solid rgb(150, 200, 250);
-  border-radius: 50%;
+  border-radius: 5%;
 }
 body {
   margin: 0;
@@ -24,6 +24,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 360px;
   }
 
 code {
