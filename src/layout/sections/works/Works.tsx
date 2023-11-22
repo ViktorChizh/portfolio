@@ -13,7 +13,7 @@ export const Works = () => {
         <div id='Works'>
             <StyledWorks>
                 <StyledTitle>My Works</StyledTitle>
-                <Menu items={['All', 'landingPage', 'React', 'spa']}  color={`${Theme.colors.textSkill}`} />
+                <Menu items={['All', 'LandingPage', 'React', 'SPA']}  color={`${Theme.colors.textSkill}`} />
                 <FlexWrapper direction={'row'}  justify={'space-between'} wrap={'wrap'} gap={'1%'} alighContent={'center'}>
                     <Work>
                         <img src={work1} alt='' />

@@ -8,7 +8,7 @@ import { Contact } from './layout/sections/contact/Contact';
 import { Footer } from './layout/footer/Footer';
 import { Quotes } from './layout/sections/quotes/Quotes';
 import { Theme } from './stylesAndThemes/Theme'
-import { GlobalStyles } from './stylesAndThemes/Globalstyled';
+import { GlobalStyles } from './stylesAndThemes/Globalstyles';
 
 function App() {
     return (
