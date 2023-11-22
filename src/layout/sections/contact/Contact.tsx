@@ -15,7 +15,7 @@ export const Contact = () => {
                     <FlexWrapper direction={'column'}  wrap={'wrap'} align={'center'}>
                         <ContactField placeholder='Name'></ContactField>
                         <ContactField placeholder='Email' type='email'></ContactField>
-                        <ContactField placeholder='Text message' as={'textarea'}> </ContactField>
+                        <ContactField placeholder='Text message' as={'textarea'} rows={3}></ContactField>
                         <Button>SEND MESSAGE</Button>
                     </FlexWrapper>
                 </ContactForm>
@@ -45,5 +45,6 @@ const ContactField = styled.input`
     margin: 1%;
     &::placeholder{
         color: ${Theme.colors.textSkill};
+        font-size: 0.6em;
     }
 `
