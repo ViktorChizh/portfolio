@@ -6,13 +6,14 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
 import work1 from '../../../assets/Work1.png'
 import work2 from '../../../assets/Work2.png'
 import { Button } from '../../../components/Button';
+import { Theme } from '../../../stylesAndThemes/Theme';
 
 export const Works = () => {
     return (
         <div id='Works'>
             <StyledWorks>
                 <StyledTitle>My Works</StyledTitle>
-                <Menu items={['All', 'landing page', 'React', 'spa']} />
+                <Menu items={['All', 'landingPage', 'React', 'spa']}  color={`${Theme.colors.textSkill}`} />
                 <FlexWrapper direction={'row'}  justify={'space-between'} wrap={'wrap'} gap={'1%'} alighContent={'center'}>
                     <Work>
                         <img src={work1} alt='' />
@@ -49,6 +50,7 @@ const StyledWorks = styled.section`
     width: 100%;
     margin: 0 auto;
     padding: 50px 2% 2% 2%;
+    color: ${Theme.colors.iconPrimary};
     p {
     margin: 0px;
     }
@@ -61,7 +63,13 @@ const StyledWorks = styled.section`
     }
     min-height: 15vh;
     box-sizing: border-box;
-    background-color: rgb(150, 200, 250);
+    background-color: ${Theme.colors.bgPrimary};
+    @media (width<=675px) {
+        nav {
+        width: 85%;
+        justify-content: flex-end;
+    }
+    }
 `
 
 const Work = styled.div`

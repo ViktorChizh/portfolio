@@ -35,7 +35,7 @@ const StyledMenu = styled.nav<StyledMenuPropsType>`
         justify-content: space-evenly;
         align-items: center;
         list-style: none;
-        padding: 0;
+        padding: 0 5%;
         margin: 0;
         gap: 3%;
         flex-wrap: wrap;
@@ -43,7 +43,7 @@ const StyledMenu = styled.nav<StyledMenuPropsType>`
             color: ${props => props.color};
         }
         li:hover{
-            transform: scale(1.5);
+            transform: scale(1.25);
         }
     }
 `

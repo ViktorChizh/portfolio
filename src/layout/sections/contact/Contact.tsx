@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Button } from '../../../components/Button';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { StyledTitle } from '../../../components/StyledTitle';
+import { Theme } from '../../../stylesAndThemes/Theme';
 
 
 export const Contact = () => {
@@ -29,7 +30,7 @@ const StyledContact = styled.section`
     padding: 2%;
     min-height: 15vh;
     box-sizing: border-box;
-    background-color: rgb(150, 200, 250);
+    background-color: ${Theme.colors.bgPrimary};
     p {
         margin: 0;
     }

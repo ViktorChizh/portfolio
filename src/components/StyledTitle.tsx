@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { Theme } from "../stylesAndThemes/Theme";
 
 
 export const StyledTitle = styled.p`
     text-align: center;
-    color: #7f0923;
+    color: ${Theme.colors.textTitle};
     font-size: 20px;
     font-weight: 700;
 `

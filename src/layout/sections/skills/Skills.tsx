@@ -2,6 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { StyledTitle } from '../../../components/StyledTitle';
 import { AllSkillsAtIcons } from '../../../components/allSkillsAtIcons/AllSkillsAtIcons';
+import { Theme } from '../../../stylesAndThemes/Theme';
 
 
 const skills = [
@@ -51,7 +52,7 @@ const StyledSkills = styled.section`
         }
     }
     box-sizing: border-box;
-    background-color: rgb(200, 225, 250);
+    background-color: ${Theme.colors.bgSecondary};
     @media (width<=430px) {
         >p{
             width: calc(100% - 75px);

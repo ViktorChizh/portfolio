@@ -3,6 +3,7 @@ import { BurgerMenu } from '../../components/burgerMenu/BurgerMenu'
 import { Menu } from '../../components/menu/Menu'
 import styled from 'styled-components'
 import { Logo } from '../../components/logo/Logo'
+import { Theme } from '../../stylesAndThemes/Theme'
 
 export const Header = () => {
     return (
@@ -31,5 +32,5 @@ const StyledHeader = styled.header`
         top:0;    
         left:0;
     }
-    background-color: rgba(0,0,0,0.85);
+    background-color: ${Theme.colors.bgDarck};
 `

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Icon } from '../icon/Icon';
 import { SkillCircle } from '../skillCircle/SkillCircle';
 import styled from 'styled-components';
+import { Theme } from '../../stylesAndThemes/Theme';
 
 type AllSkillsAtIconsPropsType = {
     skills: {
@@ -55,12 +56,11 @@ const InfoContainer = styled.div`
     align-items: center;
     svg{
         margin-top: -15px;
-        /* margin-left: -5px; */
     }
     p{
         margin-top: 30px !important;
         text-align: center;
-        color: #ff5500;
+        color: ${Theme.colors.textSkill};
         font-weight: 700;
         font-size: 10px;
         z-index: 5;

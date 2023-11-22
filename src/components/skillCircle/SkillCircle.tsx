@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
+import { Theme } from '../../stylesAndThemes/Theme';
 
 
 type SkillCirclePropsType = {
@@ -20,7 +21,7 @@ export const SkillCircle = (props: SkillCirclePropsType) => {
           cx={ radius }
           cy={ radius }
           fill="transparent"
-          stroke="#42e863f5"
+          stroke={`${Theme.colors.circleSkill}`}
           strokeWidth="5"
           strokeDasharray={ circumference }
           strokeDashoffset={ strokeDashoffset }
@@ -45,7 +46,7 @@ const ProgressContainer = styled.div`
   }
   span{
     position: absolute;
-    color: #7572D5;
+    color: ${Theme.colors.iconPrimary};
     z-index: 2;
     font-size: 10px;
     font-weight: bold;

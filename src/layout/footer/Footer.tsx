@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { StyledTitle } from '../../components/StyledTitle';
 import { FlexWrapper } from '../../components/FlexWrapper';
 import { Icon } from '../../components/icon/Icon';
+import { Theme } from '../../stylesAndThemes/Theme';
 
 
 export const Footer = () => {
@@ -37,7 +38,7 @@ const StyledFooter = styled.footer`
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    background-color: rgba(0,0,0,0.85);
+    background-color: ${Theme.colors.bgDarck};
     div {
         width: 80%;
         justify-content: space-around;
@@ -47,11 +48,11 @@ const StyledFooter = styled.footer`
         height: 50px;
     }
     p {
-        color: rgb(200, 225, 250);
+        color: ${Theme.colors.testPrimary};
         margin: 1.5% 0;
     }
     small {
         margin: 0 0 1%;
-        color: rgb(200, 225, 250);
+        color: ${Theme.colors.testPrimary};
     }
 `

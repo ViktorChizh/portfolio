@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { StyledTitle } from '../../../components/StyledTitle';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Icon } from '../../../components/icon/Icon';
+import { Theme } from '../../../stylesAndThemes/Theme';
 
 const cites = [
     [
@@ -66,7 +67,7 @@ const StyledQuotes = styled.section`
     padding: 2%;
     min-height: 15vh;
     box-sizing: border-box;
-    background-color: rgb(200, 225, 250);
+    background-color: ${Theme.colors.bgSecondary};
     svg {
         margin-left: 50px;
         margin-bottom: -70px;
@@ -79,12 +80,14 @@ const Slider = styled.div`
     flex-direction: column;
     align-items: center;
     cite {
+        color: ${Theme.colors.textSkill};
         text-align: center;
         width: 98%;
 
     }
     strong {
         margin: 10px 0;
+        color: ${Theme.colors.iconPrimary};
     }
 `
 

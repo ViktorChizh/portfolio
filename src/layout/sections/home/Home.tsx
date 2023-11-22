@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 import bigFoto from '../../../assets/bigFoto.png'
 import map from '../../../assets/map-by.png'
+import { Theme } from '../../../stylesAndThemes/Theme'
 
 export const Home = () => {
     return(
@@ -28,7 +29,8 @@ const StyledMain = styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: rgb(150, 200, 250);
+    color: ${Theme.colors.textTitle};
+    background-color: ${Theme.colors.bgPrimary};
     img {
         object-fit: cover;
         padding: 0.1%;

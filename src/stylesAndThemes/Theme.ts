@@ -1,11 +1,14 @@
 export const Theme = {
     colors: {
-        iconFill: "#7572D5",
-        iconStroke: "#e08d8d",
-        gray: {
-            dark: "#252525",
-            light: "lightgray"
-        }
+        iconPrimary: "#7572D5",
+        iconSecoddary: "rgb(200, 225, 250)",
+        bgPrimary: "rgb(150, 200, 250)",
+        bgSecondary: "rgb(200, 225, 250)",
+        bgDarck: "rgba(0,0,0,0.85)",
+        textTitle: "#7f0923",
+        testPrimary: "rgb(200, 225, 250)",
+        textSkill: "#ff5500",
+        circleSkill: "#42e863f5",
     },
     media: {
         tablet: "screen and (max-width: 768px)",
