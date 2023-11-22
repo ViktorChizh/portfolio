@@ -7,8 +7,8 @@ import { AllSkillsAtIcons } from '../../../components/allSkillsAtIcons/AllSkills
 const skills = [
     {iconId: 'html', progress: 90, title: 'HTML'},
     {iconId: 'css', progress: 90, title: 'CSS'},
-    {iconId: 'js1', progress: 90, title: 'JavaScript'},
-    {iconId: 'ts1', progress: 85, title: 'TypeScript'},
+    {iconId: 'js', progress: 90, title: 'JavaScript'},
+    {iconId: 'ts', progress: 85, title: 'TypeScript'},
     {iconId: 'react', progress: 75, title: 'React'},
     {iconId: 'redux', progress: 75, title: 'Redux'},
     {iconId: 'next', progress: 65, title: 'NextJS'},  

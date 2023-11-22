@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import './App.css';
 import { Header } from './layout/header/Header';
 import { Home } from './layout/sections/home/Home';
@@ -7,18 +7,24 @@ import { Works } from './layout/sections/works/Works';
 import { Contact } from './layout/sections/contact/Contact';
 import { Footer } from './layout/footer/Footer';
 import { Quotes } from './layout/sections/quotes/Quotes';
+import { Theme } from './stylesAndThemes/Theme'
+import { GlobalStyles } from './stylesAndThemes/Globalstyled';
 
 function App() {
     return (
-        <StyledApp>
-            <Header/>
-            <Home/>
-            <Skills/>
-            <Works/>
-            <Quotes/>
-            <Contact/>
-            <Footer/>
-        </StyledApp>
+        <ThemeProvider theme={Theme}>
+            <StyledApp>
+                <Header/>
+                <Home/>
+                <Skills/>
+                <Works/>
+                <Quotes/>
+                <Contact/>
+                <Footer/>
+            </StyledApp>
+            <GlobalStyles/>
+        </ThemeProvider>
+
     );
 }
 
