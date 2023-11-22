@@ -45,6 +45,6 @@ const ContactField = styled.input`
     margin: 1%;
     &::placeholder{
         color: ${Theme.colors.textSkill};
-        font-size: 0.6em;
+        font-size: 0.75em;
     }
 `

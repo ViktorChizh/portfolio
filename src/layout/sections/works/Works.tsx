@@ -63,10 +63,10 @@ const StyledWorks = styled.section`
     }
     min-height: 15vh;
     box-sizing: border-box;
-    background-color: ${Theme.colors.bgPrimary};
+    background-color: ${Theme.colors.bgSecondary};
     @media (width<=675px) {
         nav {
-        width: 85%;
+        width: 90%;
         justify-content: flex-end;
     }
     }

@@ -67,7 +67,7 @@ const StyledQuotes = styled.section`
     padding: 2%;
     min-height: 15vh;
     box-sizing: border-box;
-    background-color: ${Theme.colors.bgSecondary};
+    background-color: ${Theme.colors.bgPrimary};
     svg {
         margin-left: 50px;
         margin-bottom: -70px;

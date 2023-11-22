@@ -17,8 +17,8 @@ function App() {
                 <Header/>
                 <Home/>
                 <Skills/>
-                <Works/>
                 <Quotes/>
+                <Works/>
                 <Contact/>
                 <Footer/>
             </StyledApp>
