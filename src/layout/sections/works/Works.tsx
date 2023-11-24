@@ -59,9 +59,9 @@ const StyledWorks = styled.section`
     margin: 0px;
     }
     nav {
-        width: calc(90% - 75px);
+        width: calc(100% - 75px);
         justify-content: flex-end;
-        font-weight: 700;
+        font-weight: 600;
     }
     ul {
         margin: 0;
@@ -69,12 +69,6 @@ const StyledWorks = styled.section`
     min-height: 15vh;
     box-sizing: border-box;
     background-color: ${Theme.colors.bgSecondary};
-    @media (width<=675px) {
-        nav {
-        width: 90%;
-        justify-content: flex-end;
-    }
-    }
 `
 
 const Work = styled.div`

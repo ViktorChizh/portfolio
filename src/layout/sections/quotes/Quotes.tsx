@@ -80,10 +80,10 @@ const Slider = styled.div`
     flex-direction: column;
     align-items: center;
     cite {
-        color: ${Theme.colors.textSkill};
-        font-family: 'Permanent Marker', cursive;
-        letter-spacing: 0.1em;
-        font-weight: 700;
+        color: ${Theme.colors.textTitle};
+        font-family: 'Comforter Brush', cursive;
+        letter-spacing: 0.25em;
+        font-weight: 900;
         text-align: center;
         width: 98%;
 
