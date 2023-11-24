@@ -82,6 +82,7 @@ const Slider = styled.div`
     cite {
         color: ${Theme.colors.textTitle};
         font-family: 'Comforter Brush', cursive;
+        font-size: larger;
         letter-spacing: 0.25em;
         font-weight: 900;
         text-align: center;
