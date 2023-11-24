@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { StyledTitle } from '../../../components/StyledTitle';
 import { Menu } from '../../../components/menu/Menu';
 import { FlexWrapper } from '../../../components/FlexWrapper';
-import work1 from '../../../assets/Work1.png'
-import work2 from '../../../assets/Work2.png'
+import work1 from '../../../assets/Work1.svg'
+import work2 from '../../../assets/Work2.svg'
 import { Button } from '../../../components/Button';
 import { Theme } from '../../../stylesAndThemes/Theme';
 
@@ -13,10 +13,12 @@ export const Works = () => {
         <div id='Works'>
             <StyledWorks>
                 <StyledTitle>My Works</StyledTitle>
-                <Menu items={['All', 'LandingPage', 'React', 'SPA']}  color={`${Theme.colors.textSkill}`} />
+                <Menu items={['All', 'LandingPage', 'React', 'SPA']}  color={`${Theme.colors.textSecondary}`} />
                 <FlexWrapper direction={'row'}  justify={'space-between'} wrap={'wrap'} gap={'1%'} alighContent={'center'}>
                     <Work>
-                        <img src={work1} alt='' />
+                        <ImgWrapper info={'In developing'}>
+                            <img src={work1} alt=''/>
+                        </ImgWrapper>
                         <h2>Social Network</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -27,7 +29,9 @@ export const Works = () => {
                         </FlexWrapper>
                     </Work>
                     <Work>
-                        <img src={work2} alt='' width={400} height={250} />
+                        <ImgWrapper info={"I`m thinking about that"}>
+                            <img src={work2} alt=''/>
+                        </ImgWrapper>
                         <h2>Timer</h2>
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim
@@ -57,6 +61,7 @@ const StyledWorks = styled.section`
     nav {
         width: calc(90% - 75px);
         justify-content: flex-end;
+        font-weight: 700;
     }
     ul {
         margin: 0;
@@ -81,10 +86,8 @@ const Work = styled.div`
     max-width: 45%;
     min-width: 320px;
     img{
-        align-self: center;
-        width: 90%;
-        height: 250px;
-        object-fit: cover;
+        width: 100%;
+        height: 100%;;
     }
     p {
         padding-bottom: 2%;
@@ -93,12 +96,35 @@ const Work = styled.div`
             max-width: 96%;
             min-width: 340px;
             margin: 0 auto;
-            img {
-                height: 175px;
-            }
+
             p, h2, img, div {
                 width: 100%;
                 margin: 0 auto 3%;
             }
         }
+`
+
+type ImgWrapperProps = {
+    info?: string
+}
+
+const ImgWrapper = styled.div<ImgWrapperProps>`
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: '${props => props.info}';
+        position: absolute;
+
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        color: ${Theme.colors.textTitle};
+        font-family: 'Permanent Marker', cursive;
+        font-size: calc((100vw-430px)/(1200-430)*(16-10)+10px);
+        letter-spacing: 0.1em;
+        font-weight: 600;
+        text-align: center
+    }
 `

@@ -64,7 +64,7 @@ export const Quotes = () => {
 const StyledQuotes = styled.section`
     width: 100%;
     margin: 0 auto;
-    padding: 2%;
+    padding: 50px 2% 2% 2%;
     min-height: 15vh;
     box-sizing: border-box;
     background-color: ${Theme.colors.bgPrimary};
@@ -81,6 +81,9 @@ const Slider = styled.div`
     align-items: center;
     cite {
         color: ${Theme.colors.textSkill};
+        font-family: 'Permanent Marker', cursive;
+        letter-spacing: 0.1em;
+        font-weight: 700;
         text-align: center;
         width: 98%;
 

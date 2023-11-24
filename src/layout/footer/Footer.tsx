@@ -48,11 +48,11 @@ const StyledFooter = styled.footer`
         height: 50px;
     }
     p {
-        color: ${Theme.colors.testPrimary};
+        color: ${Theme.colors.textPrimary};
         margin: 1.5% 0;
     }
     small {
         margin: 0 0 1%;
-        color: ${Theme.colors.testPrimary};
+        color: ${Theme.colors.textPrimary};
     }
 `
