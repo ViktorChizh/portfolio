@@ -13,7 +13,7 @@ export const Works = () => {
         <div id='Works'>
             <StyledWorks>
                 <StyledTitle>My Works</StyledTitle>
-                <Menu items={['All', 'LandingPage', 'React', 'SPA']}  color={`${Theme.colors.textSecondary}`} />
+                {/* <Menu items={['All', 'LandingPage', 'React', 'SPA']}  color={`${Theme.colors.textSecondary}`} /> */}
                 <FlexWrapper direction={'row'}  justify={'space-between'} wrap={'wrap'} gap={'1%'} alighContent={'center'}>
                     <Work>
                         <ImgWrapper info={'In developing'}>
@@ -24,21 +24,21 @@ export const Works = () => {
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </p>
                         <FlexWrapper width={'30%'} justify={'space-evenly'}>
-                            <Button>Demo</Button>
-                            <Button>Code</Button>
+                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}>Demo</Button>
+                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}>Code</Button>
                         </FlexWrapper>
                     </Work>
                     <Work>
                         <ImgWrapper info={"I`m thinking about that"}>
                             <img src={work2} alt=''/>
                         </ImgWrapper>
-                        <h2>Timer</h2>
+                        <h2>ToDoList</h2>
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim
                         </p>
                         <FlexWrapper width={'30%'} justify={'space-evenly'}>
-                            <Button>Demo</Button>
-                            <Button>Code</Button>
+                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}>Demo</Button>
+                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}>Code</Button>
                         </FlexWrapper>
                     </Work>
                 </FlexWrapper>
@@ -81,7 +81,6 @@ const Work = styled.div`
     min-width: 320px;
     img{
         width: 100%;
-        height: 100%;
     }
     p {
         padding-bottom: 2%;

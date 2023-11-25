@@ -60,7 +60,7 @@ const InfoContainer = styled.div`
     p{
         margin-top: 30px !important;
         text-align: center;
-        color: ${Theme.colors.textSkill};
+        color: ${Theme.colors.textTitle};
         font-weight: 700;
         font-size: 10px;
         z-index: 5;

@@ -9,7 +9,7 @@ export const Header = () => {
     return (
         <StyledHeader>
             <Logo/>
-            <Menu items={['Home', 'Skills', 'Works', 'Quotes', 'Contact']}  color={'rgb(200, 225, 250)'}/>
+            <Menu items={['Home', 'Skills', 'Quotes', 'Works', 'Contact']}  color={'rgb(200, 225, 250)'}/>
             <BurgerMenu title={'BurgerMenu'}/>
         </StyledHeader>
     )

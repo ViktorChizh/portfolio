@@ -4,6 +4,7 @@ import { StyledTitle } from '../../../components/StyledTitle';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Icon } from '../../../components/icon/Icon';
 import { Theme } from '../../../stylesAndThemes/Theme';
+import { Button } from '../../../components/Button';
 
 const cites = [
     [
@@ -53,7 +54,11 @@ export const Quotes = () => {
                         <strong>{cites[i][0]}</strong>
                     </Slider>
                     <Paginator>
-                        {"сюды PAGINATOR туды"}
+                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"0 10px"} borderRadius={'10px'} fontSize='25px'>&#8678;</Button>
+                        <p>PAGINATOR</p>
+                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"0 10px"} borderRadius={'10px'} fontSize='25px'>
+                    &#8680;
+                    </Button>
                     </Paginator>
                 </FlexWrapper>
             </StyledQuotes>
@@ -96,5 +101,13 @@ const Slider = styled.div`
 `
 
 const Paginator = styled.div`
-    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & p {
+        padding: 0 16px;
+        color: ${Theme.colors.textTitle};
+        font-weight: 900;
+    }
 `

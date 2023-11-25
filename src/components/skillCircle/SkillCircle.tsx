@@ -21,7 +21,7 @@ export const SkillCircle = (props: SkillCirclePropsType) => {
           cx={ radius }
           cy={ radius }
           fill="transparent"
-          stroke={`${Theme.colors.circleSkill}`}
+          stroke={`${Theme.colors.bgPrimary}`}
           strokeWidth="5"
           strokeDasharray={ circumference }
           strokeDashoffset={ strokeDashoffset }

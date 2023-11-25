@@ -17,7 +17,7 @@ export const Footer = () => {
                 <a href='https://t.me/ViktorChizh'>
                     <Icon iconId='telegram' width='336' height='336' viewport='0 0 40 40' />
                 </a>
-                <a href='https://www.linkedin.com/in/%D0%B2%D0%B8%D0%BA%D1%82%D0%BE%D1%80-%D1%87%D0%B8%D0%B6-9873a625a/'>
+                <a href='https://www.linkedin.com/in/ViktorChizh/'>
                     <Icon iconId='linkedIn' width='336' height='336' viewport='0 0 40 40' />
                 </a>
                 <a href='https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKhpnfkgXpqwjSjsLwlwVGvCJPFcjhTmbGMqtxmQKKrdbkZfBxHRVkGvqfxxKcqRZCCvZTh'>

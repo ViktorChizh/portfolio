@@ -12,11 +12,11 @@ export const Contact = () => {
             <StyledContact>
                 <StyledTitle>Contact</StyledTitle>
                 <ContactForm>
-                    <FlexWrapper direction={'column'}  wrap={'wrap'} align={'center'}>
+                    <FlexWrapper direction={'column'}  wrap={'wrap'} align={'center'} gap={'16px'}>
                         <ContactField placeholder='Name'></ContactField>
                         <ContactField placeholder='Email' type='email'></ContactField>
-                        <ContactField placeholder='Text message' as={'textarea'} rows={3}></ContactField>
-                        <Button>SEND MESSAGE</Button>
+                        <ContactField placeholder='Text message' as={'textarea'}></ContactField>
+                        <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}>SEND MESSAGE</Button>
                     </FlexWrapper>
                 </ContactForm>
             </StyledContact>
@@ -27,8 +27,7 @@ export const Contact = () => {
 const StyledContact = styled.section`
     width: 100%;
     margin: 0 auto;
-    padding: 2%;
-    min-height: 15vh;
+    padding: 50px 2% 2% 2%;
     box-sizing: border-box;
     background-color: ${Theme.colors.bgPrimary};
     p {
@@ -37,14 +36,25 @@ const StyledContact = styled.section`
 `
 
 const ContactForm = styled.form`
-    
+    textarea {
+        resize: none;
+        height: 155px;
+        font-family: -apple-, sans-serif;
+    }
 `
 
 const ContactField = styled.input`
     width: 50%;
-    margin: 1%;
+    gap: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 16px;
+    padding: 5px;
+    font-family: -apple-, sans-serif;
+    &:focus-visible {
+        outline: 2px solid ${Theme.colors.iconPrimary};
+    }
     &::placeholder{
-        color: ${Theme.colors.textSkill};
-        font-size: 0.75em;
+        color: ${Theme.colors.iconPrimary};
     }
 `
