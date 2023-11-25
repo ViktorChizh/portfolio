@@ -81,7 +81,7 @@ const Work = styled.div`
     min-width: 320px;
     img{
         width: 100%;
-        height: 100%;;
+        height: 100%;
     }
     p {
         padding-bottom: 2%;
@@ -117,6 +117,7 @@ const ImgWrapper = styled.div<ImgWrapperProps>`
         color: ${Theme.colors.textTitle};
         font-family: 'Permanent Marker', cursive;
         font-size: calc((100vw-430px)/(1200-430)*(16-10)+10px);
+        line-height: 1;
         letter-spacing: 0.1em;
         font-weight: 600;
         text-align: center
