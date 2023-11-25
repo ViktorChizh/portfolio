@@ -1,36 +1,45 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import { FlexWrapper } from '../../../components/FlexWrapper'
-import bigFoto from '../../../assets/bigFoto.png'
+import bigFoto from '../../../assets/фотка2.jpg'
 import map from '../../../assets/map-by.png'
 import { Theme } from '../../../stylesAndThemes/Theme'
+import { Container } from '../../../components/Container'
 
 export const Home = () => {
     return(
         <div id='Home'>
             <StyledMain>
-                <FlexWrapper direction={'column'} justify={'center'} align={'center'}>
-                    <span>Hi There</span>
-                    <h2>I am Viktor Chizh</h2>
-                    <h1>A Front-end Developer</h1>
-                </FlexWrapper>
-                <img src={bigFoto} alt='' width={275} height={275}/>
-                <img src={map} alt='' width={315} height={275}/>
+                <Container>
+                    <FlexWrapper direction={'column'} justify={'space-evenly'} align={'center'}>
+                        <span>Hi There</span>
+                        <h2>I am Viktor Chizh</h2>
+                        <h1>A Front-end Developer</h1>
+                    </FlexWrapper>
+                    <img src={bigFoto} alt='' width={275} height={275} className='foto'/>
+                    <img src={map} alt='' width={315} height={275}/>
+                </Container>
             </StyledMain>
         </div>
     )
 }
 
 const StyledMain = styled.section`
-    box-sizing: border-box;
     width: 100%;
-    margin: 0px auto;
-    padding: 55px 10px 10px 10px;
+    padding: 50px 0 1%;
+    background-color: ${Theme.colors.bgPrimary};
+    & div{
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items:  space-evenly;
     color: ${Theme.colors.textTitle};
-    background-color: ${Theme.colors.bgPrimary};
+
+
+    .foto {
+        border-radius: 50%;
+    }
     img {
         object-fit: cover;
         padding: 0.1%;
@@ -39,14 +48,22 @@ const StyledMain = styled.section`
         font-size: 1em;
         font-weight:700;
     }
-    @media (width<=430px) {
+    }
+    @media (width<=590px) {
+        flex-wrap: wrap-reverse;
+
         img {
-            width: 45%;
-            height: 35%;
+            width: 45vw;
+            height: 40vw;
+        }
+        .foto {
+            width: 40vw;
+            height: 40vw;
         }
         h1, h2, span {
-            font-size: 1.25em;
+            font-size: 1.5em;
             font-weight:700;
+            letter-spacing: 0.15em;
         }
     }
 `

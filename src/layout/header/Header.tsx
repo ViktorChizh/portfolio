@@ -2,13 +2,12 @@ import React from 'react'
 import { BurgerMenu } from '../../components/burgerMenu/BurgerMenu'
 import { Menu } from '../../components/menu/Menu'
 import styled from 'styled-components'
-import { Logo } from '../../components/logo/Logo'
 import { Theme } from '../../stylesAndThemes/Theme'
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo/>
+            <BurgerMenu title={'BurgerMenu'}/>
             <Menu items={['Home', 'Skills', 'Quotes', 'Works', 'Contact']}  color={'rgb(200, 225, 250)'}/>
             <BurgerMenu title={'BurgerMenu'}/>
         </StyledHeader>

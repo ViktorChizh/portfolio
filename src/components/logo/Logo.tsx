@@ -21,12 +21,12 @@ export const Logo = (props: logoPropsType) => {
 
 const StyledLogo = styled.a`
     img {
-        border-radius: 0 0 25% 25%;
+        border-radius: 50%;
         object-fit: cover;
     }
     &:hover {
         cursor: pointer;
-        transform: scale(1.9) translateY(-20px);
+        transform: scale(1.1);
         transition: 0.25s;
     }
 `

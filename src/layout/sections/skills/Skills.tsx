@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { StyledTitle } from '../../../components/StyledTitle';
 import { AllSkillsAtIcons } from '../../../components/allSkillsAtIcons/AllSkillsAtIcons';
 import { Theme } from '../../../stylesAndThemes/Theme';
+import { Container } from '../../../components/Container';
 
 
 const skills = [
@@ -29,8 +30,10 @@ export const Skills = () => {
     return(
         <div id='Skills'>
             <StyledSkills>
-                <StyledTitle>My Skills With Progress</StyledTitle>
-                <AllSkillsAtIcons skills={skills}/>
+                <Container>
+                    <StyledTitle>My Skills With Progress</StyledTitle>
+                    <AllSkillsAtIcons skills={skills}/>
+                </Container>
             </StyledSkills>
         </div>
     )
@@ -38,9 +41,8 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
     width: 100%;
-    padding: 45px 2% 0 2%;
+    padding: 50px 0 1%;
     margin: 0px auto;
-    min-height: 15vh;
     p {
         margin: 0px;
         }
@@ -53,10 +55,4 @@ const StyledSkills = styled.section`
     }
     box-sizing: border-box;
     background-color: ${Theme.colors.bgSecondary};
-    @media (width<=430px) {
-        >p{
-            width: calc(100% - 75px);
-            margin-left:75px;
-        }
-    }
 `

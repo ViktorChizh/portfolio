@@ -5,6 +5,7 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Icon } from '../../../components/icon/Icon';
 import { Theme } from '../../../stylesAndThemes/Theme';
 import { Button } from '../../../components/Button';
+import { Container } from '../../../components/Container';
 
 const cites = [
     [
@@ -44,23 +45,25 @@ export const Quotes = () => {
     return (
         <div id='Quotes'>
             <StyledQuotes>
-                <FlexWrapper direction={'column'} align={'center'}>
-                    <StyledTitle>My Life Principles In Quotes</StyledTitle>
-                    <Icon iconId='quotes' />
-                    <Slider>
-                        <cite>
-                            {cites[i][1]}
-                        </cite>
-                        <strong>{cites[i][0]}</strong>
-                    </Slider>
-                    <Paginator>
-                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"0 10px"} borderRadius={'10px'} fontSize='25px'>&#8678;</Button>
-                        <p>PAGINATOR</p>
-                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"0 10px"} borderRadius={'10px'} fontSize='25px'>
-                    &#8680;
-                    </Button>
-                    </Paginator>
-                </FlexWrapper>
+                <Container>
+                    <FlexWrapper direction={'column'} align={'center'}>
+                        <StyledTitle>My Life Principles In Quotes</StyledTitle>
+                        <Icon iconId='quotes' />
+                        <Slider>
+                            <cite>
+                                {cites[i][1]}
+                            </cite>
+                            <strong>{cites[i][0]}</strong>
+                        </Slider>
+                        <Paginator>
+                        <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"0 10px"} borderRadius={'10px'} fontSize='25px'>&#8678;</Button>
+                            <p>PAGINATOR</p>
+                        <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"0 10px"} borderRadius={'10px'} fontSize='25px'>
+                        &#8680;
+                        </Button>
+                        </Paginator>
+                    </FlexWrapper>
+                </Container>
             </StyledQuotes>
         </div>
     )
@@ -69,8 +72,7 @@ export const Quotes = () => {
 const StyledQuotes = styled.section`
     width: 100%;
     margin: 0 auto;
-    padding: 50px 2% 2% 2%;
-    min-height: 15vh;
+    padding: 50px 0 1%;
     box-sizing: border-box;
     background-color: ${Theme.colors.bgPrimary};
     svg {

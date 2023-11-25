@@ -19,7 +19,7 @@ const StyledBurgerMenu = styled.div`
     max-height: 42px;
     display: flex;
     margin: 0;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding-right: 2%;
+    padding: 0 2%;
 `

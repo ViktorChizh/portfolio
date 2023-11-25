@@ -9,6 +9,7 @@ import { Footer } from './layout/footer/Footer';
 import { Quotes } from './layout/sections/quotes/Quotes';
 import { Theme } from './stylesAndThemes/Theme'
 import { GlobalStyles } from './stylesAndThemes/Globalstyles';
+import { Logo } from './components/logo/Logo';
 
 function App() {
     return (
