@@ -9,17 +9,17 @@ type BurgerMenuPropsType = {
 export const BurgerMenu = (props:BurgerMenuPropsType) => {
     return (
         <StyledBurgerMenu>
-            <Icon iconId='code' width='50' height='50' viewport='0 0 50 50' fill='white' title={props.title}/>
+            <Icon iconId='code' width='50' height='50' viewport='0 0 50 50' title={props.title}/>
         </StyledBurgerMenu>
     )
 }
 
 const StyledBurgerMenu = styled.div`
-    width: 10%;
-    max-height: 42px;
     display: flex;
     margin: 0;
     justify-content: center;
     align-items: center;
-    padding: 0 2%;
+    :hover {
+            cursor: pointer;
+        }
 `

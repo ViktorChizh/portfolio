@@ -51,6 +51,7 @@ export const Works = () => {
 }
 
 const StyledWorks = styled.section`
+    ${Container}{
     display: flex;
     flex-direction: column;
     gap: 1%;
@@ -72,6 +73,7 @@ const StyledWorks = styled.section`
     min-height: 15vh;
     box-sizing: border-box;
     background-color: ${Theme.colors.bgSecondary};
+}
 `
 
 const Work = styled.div`

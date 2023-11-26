@@ -40,8 +40,9 @@ export const Skills = () => {
 }
 
 const StyledSkills = styled.section`
+    ${Container} {
     width: 100%;
-    padding: 50px 0 1%;
+    padding: 50px 1% 1% 1%;
     margin: 0px auto;
     p {
         margin: 0px;
@@ -55,4 +56,5 @@ const StyledSkills = styled.section`
     }
     box-sizing: border-box;
     background-color: ${Theme.colors.bgSecondary};
+}
 `

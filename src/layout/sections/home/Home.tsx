@@ -25,11 +25,10 @@ export const Home = () => {
 }
 
 const StyledMain = styled.section`
+    ${Container} {
     width: 100%;
-    padding: 50px 0 1%;
+    padding: 50px 1% 1% 1%;
     background-color: ${Theme.colors.bgPrimary};
-    & div{
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -48,7 +47,7 @@ const StyledMain = styled.section`
         font-size: 1em;
         font-weight:700;
     }
-    }
+}
     @media (width<=590px) {
         flex-wrap: wrap-reverse;
 
@@ -66,4 +65,5 @@ const StyledMain = styled.section`
             letter-spacing: 0.15em;
         }
     }
+
 `

@@ -70,6 +70,7 @@ export const Quotes = () => {
 }
 
 const StyledQuotes = styled.section`
+    ${Container} {
     width: 100%;
     margin: 0 auto;
     padding: 50px 0 1%;
@@ -79,6 +80,7 @@ const StyledQuotes = styled.section`
         margin-left: 50px;
         margin-bottom: -70px;
     }
+}
 `
 
 const Slider = styled.div`

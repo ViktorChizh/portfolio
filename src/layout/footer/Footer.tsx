@@ -39,12 +39,12 @@ const StyledFooter = styled.footer`
 width: 100%;
 margin: 0 auto;
 background-color: ${Theme.colors.bgDarck};
-    div {
+    ${Container} {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        div {
+        ${FlexWrapper} {
             width: 80%;
             flex-direction: row;
             justify-content: space-around;
@@ -54,7 +54,7 @@ background-color: ${Theme.colors.bgDarck};
             width: 50px;
             height: 50px;
         }
-        p {
+        ${StyledTitle} {
             color: ${Theme.colors.textPrimary};
             margin: 1.5% 0;
         }

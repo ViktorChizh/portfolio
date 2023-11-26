@@ -28,14 +28,16 @@ export const Contact = () => {
 }
 
 const StyledContact = styled.section`
+    ${Container} {
     width: 100%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 50px 1% 1% 1%;
     box-sizing: border-box;
     background-color: ${Theme.colors.bgPrimary};
     p {
         margin: 0;
     }
+}
 `
 
 const ContactForm = styled.form`

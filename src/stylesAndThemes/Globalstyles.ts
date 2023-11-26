@@ -35,7 +35,7 @@ export const GlobalStyles = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    min-width: 430px;
+    min-width: 360px;
     }
   
   a {
