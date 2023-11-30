@@ -9,12 +9,13 @@ import { Footer } from './layout/footer/Footer';
 import { Quotes } from './layout/sections/quotes/Quotes';
 import { Theme } from './stylesAndThemes/Theme'
 import { GlobalStyles } from './stylesAndThemes/Globalstyles';
-import { Logo } from './components/logo/Logo';
+import { Particle } from './components/particle/Particle';
 
 function App() {
     return (
         <ThemeProvider theme={Theme}>
             <StyledApp>
+                <Particle />
                 <Header/>
                 <Home/>
                 <Skills/>
@@ -33,6 +34,6 @@ export default App;
 
 const StyledApp = styled.main`
     box-sizing: border-box;
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 `

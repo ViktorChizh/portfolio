@@ -24,18 +24,18 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     position: fixed;
-    box-sizing: border-box;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    max-width: 1200px;
     height: 50px;
     z-index: 8;
-    margin: 0 auto;
     background-color: ${Theme.colors.bgDarck};
     ${Container} {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 15px;
         ${Button} {
             :hover {
             cursor: pointer;

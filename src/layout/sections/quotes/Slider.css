@@ -1,0 +1,52 @@
+.alice-carousel__prev-btn {
+    position: absolute;
+    top: 26%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(150, 200, 250);
+    background-color: #7572D5;
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alice-carousel__next-btn {
+    position: absolute;
+    top: 26%;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #7572D5;
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alice-carousel__prev-btn-item, 
+.alice-carousel__prev-btn-item:hover {
+    padding: 0 1px 5px 0;
+    font-weight: 900;
+    color: rgb(150, 200, 250);
+}
+
+.alice-carousel__next-btn-item,
+.alice-carousel__next-btn-item:hover{
+    padding: 0 0 5px 3px;
+    font-weight: 900;
+    color: rgb(150, 200, 250);
+}
+
+.alice-carousel__dots {
+    margin: 5px;
+}
+

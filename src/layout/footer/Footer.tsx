@@ -12,7 +12,7 @@ export const Footer = () => {
         <StyledFooter>
             <Container>
                 <StyledTitle>Viktor Chizh</StyledTitle>
-                <FlexWrapper justify='center' align='center'>
+                <FlexWrapper justify='space-around' align='center' width='90%'>
                     <a href='https://github.com/ViktorChizh'>
                         <Icon iconId='githubSocial' width='336' height='336' viewport='0 0 40 40' />
                     </a>
@@ -36,30 +36,23 @@ export const Footer = () => {
 }
 
 const StyledFooter = styled.footer`
-width: 100%;
-margin: 0 auto;
+position: relative;
+z-index: 1;
+color: ${Theme.colors.textPrimary};
 background-color: ${Theme.colors.bgDarck};
     ${Container} {
-        width: 100%;
+        padding: 15px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         ${FlexWrapper} {
-            width: 80%;
-            flex-direction: row;
-            justify-content: space-around;
-        
+            padding-bottom: 15px;
         }
         svg {
             width: 50px;
             height: 50px;
         }
         ${StyledTitle} {
-            color: ${Theme.colors.textPrimary};
-            margin: 1.5% 0;
-        }
-        small {
-            margin: 0 0 1%;
             color: ${Theme.colors.textPrimary};
         }
     }

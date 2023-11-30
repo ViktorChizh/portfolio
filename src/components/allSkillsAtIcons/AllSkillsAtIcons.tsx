@@ -21,11 +21,11 @@ export const AllSkillsAtIcons = (props: AllSkillsAtIconsPropsType) => {
                         <SkillCircle percent={skill.progress}>
                             <InfoContainer>
                                 <Icon iconId={skill.iconId} 
-                                    width='30'
-                                    height='30'
-                                    viewport='0 0 112 112' />
+                                    width='50'
+                                    height='50'
+                                    viewport='0 0 112 112' 
+                                />
                                 <p>{skill.title}</p>
-
                             </InfoContainer>
                         </SkillCircle>
                     </li>
@@ -48,21 +48,21 @@ const SkillContainer = styled.ul`
 `
 
 const InfoContainer = styled.div`
-    width: 66px;
-    height: 66px;
+    width: 100%;
+    height: 110px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     svg{
-        margin-top: -15px;
+        margin-top: -36px;
     }
     p{
-        margin-top: 30px !important;
+        margin-top: 36px;
         text-align: center;
         color: ${Theme.colors.textTitle};
         font-weight: 700;
-        font-size: 10px;
+        font-size: 14px;
         z-index: 5;
     }
 `

@@ -28,16 +28,7 @@ export const Contact = () => {
 }
 
 const StyledContact = styled.section`
-    ${Container} {
-    width: 100%;
-    margin: 0 auto;
-    padding: 50px 1% 1% 1%;
-    box-sizing: border-box;
     background-color: ${Theme.colors.bgPrimary};
-    p {
-        margin: 0;
-    }
-}
 `
 
 const ContactForm = styled.form`
@@ -49,8 +40,7 @@ const ContactForm = styled.form`
 `
 
 const ContactField = styled.input`
-    width: 50%;
-    gap: 16px;
+    width: 80%;
     border: none;
     border-radius: 5px;
     margin-top: 16px;

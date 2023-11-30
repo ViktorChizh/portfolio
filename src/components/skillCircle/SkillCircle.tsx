@@ -9,7 +9,7 @@ type SkillCirclePropsType = {
 }
 
 export const SkillCircle = (props: SkillCirclePropsType) => {
-  const radius = 30; // Радиус окружности
+  const radius = 50; // Радиус окружности
   const circumference = 2 * Math.PI * radius; // Длина окружности
   const strokeDashoffset = circumference - ((props.percent / 100) * circumference); // Смещение пунктирной линии, чтобы отрисовать заданный процент
 
@@ -25,11 +25,9 @@ export const SkillCircle = (props: SkillCirclePropsType) => {
           strokeWidth="5"
           strokeDasharray={ circumference }
           strokeDashoffset={ strokeDashoffset }
-          transform='translate(3,3)'
-
+          transform='translate(5,5)'
         />
       </svg>
-      <span>{props.percent}%</span>
         {props.children}
     </ProgressContainer>
   )
@@ -38,19 +36,10 @@ export const SkillCircle = (props: SkillCirclePropsType) => {
 const ProgressContainer = styled.div`
   display: flex;
   position: relative;
-  width: 66px;
-  height: 66px;
+  width: 110px;
+  height: 110px;
   svg {
     position: absolute;
     z-index: 1;
-  }
-  span{
-    position: absolute;
-    color: ${Theme.colors.iconPrimary};
-    z-index: 2;
-    font-size: 10px;
-    font-weight: bold;
-    top: 20px;
-    right: -10px;
   }
 `
