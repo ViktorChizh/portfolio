@@ -3,6 +3,7 @@ import { Icon } from '../icon/Icon';
 import { SkillCircle } from '../skillCircle/SkillCircle';
 import styled from 'styled-components';
 import { Theme } from '../../stylesAndThemes/Theme';
+import { Roll } from "react-awesome-reveal";
 
 type AllSkillsAtIconsPropsType = {
     skills: {
@@ -17,18 +18,20 @@ export const AllSkillsAtIcons = (props: AllSkillsAtIconsPropsType) => {
         <SkillContainer>
             {props.skills.map((skill, index: number) => {
                 return (
-                    <li key={index}>
-                        <SkillCircle percent={skill.progress}>
-                            <InfoContainer>
-                                <Icon iconId={skill.iconId} 
-                                    width='50'
-                                    height='50'
-                                    viewport='0 0 112 112' 
-                                />
-                                <p>{skill.title}</p>
-                            </InfoContainer>
-                        </SkillCircle>
-                    </li>
+                    <Roll cascade={true} delay={250} duration={2000}>
+                        <li key={index}>
+                            <SkillCircle percent={skill.progress}>
+                                <InfoContainer>
+                                    <Icon iconId={skill.iconId} 
+                                        width='50'
+                                        height='50'
+                                        viewport='0 0 112 112' 
+                                    />
+                                    <p>{skill.title}</p>
+                                </InfoContainer>
+                            </SkillCircle>
+                        </li>
+                    </Roll>
                 )
             })}
         </SkillContainer>

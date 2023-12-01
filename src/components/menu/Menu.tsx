@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-scroll';
 import styled from 'styled-components'
 
 type MenuPropsType = {
@@ -8,12 +9,12 @@ type MenuPropsType = {
 
 export const Menu = (props: MenuPropsType) => {
     return (
-        <StyledMenu color={props.color}>
+        <StyledMenu>
             <ul>
                 {props.items.map((item: string, index: number) => {
                     return(
                         <li key={index}>
-                            <a href={`#${item}`}>{item}</a>
+                            <NavLink to={item} smooth={true} spy={true} activeClass='active' color={props.color}>{item}</NavLink>
                         </li>
                     )}
                 )}
@@ -26,7 +27,7 @@ type StyledMenuPropsType = {
     color?: string
 }
 
-const StyledMenu = styled.nav<StyledMenuPropsType>`
+const StyledMenu = styled.nav`
     width: 80%;
     flex: 1 2;
         ul {
@@ -38,11 +39,16 @@ const StyledMenu = styled.nav<StyledMenuPropsType>`
         margin: 0;
         gap: 3%;
         flex-wrap: wrap;
-        li a {
-            color: ${props => props.color};
-        }
-        li:hover{
-            transform: scale(1.25);
-        }
     }
+`
+const NavLink = styled(Link)<StyledMenuPropsType>`
+    color: ${props => props.color};
+    &:hover {
+        cursor: pointer;
+    } 
+    /* &.active{
+        border: 1px solid ${props => props.color};
+        border-radius: 5px;
+        padding: 1px;
+    } */
 `

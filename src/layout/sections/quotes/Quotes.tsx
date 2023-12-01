@@ -11,7 +11,7 @@ import './Slider.css'
 
 export const Quotes = () => {
     return (
-        <StyledQuotes id='Quotes'>
+        <StyledQuotes id={'Quotes'}>
             <Container>
                 <FlexWrapper direction={'column'} align={'center'}>
                     <StyledTitle>My Life Principles In Quotes</StyledTitle>
@@ -63,13 +63,13 @@ const Slider = styled.div`
 `
 
 const items = [
+    <Slider><cite>Делай все, что можешь, там, где ты находишься, используя все, что имеешь.</cite><strong>Теодор Рузвельт</strong></Slider>,
     <Slider><cite>Единственный способ сделать что-то очень хорошо – любить то, что ты делаешь.</cite><strong>Стив Джобс</strong></Slider>,
-    <Slider><cite>Неудача – это просто возможность начать снова, но уже более мудро.</cite><strong>Генри Форд</strong></Slider>,
     <Slider><cite>Я не провалил тест. Я просто нашел сто способов написать его неправильно.</cite><strong>Бенджамин Франклин</strong></Slider>,
+    <Slider><cite>Выживает не самый сильный, а самый восприимчивый к переменам.</cite><strong>Чарльз Дарвин</strong></Slider>,
+    <Slider><cite>Вопрос не в том, кто мне разрешит, а в том, кто сможет мне запретить.</cite><strong>Айн Рэнд</strong></Slider>,
+    <Slider><cite>Неудача – это просто возможность начать снова, но уже более мудро.</cite><strong>Генри Форд</strong></Slider>,
     <Slider><cite>Я уверен: нельзя позволять, чтобы тебя остановило убогое словцо «нельзя».</cite><strong>Ричард Брэнсон</strong></Slider>,
     <Slider><cite>Быстрее всего учишься в трех случаях — до 7 лет, на тренингах, и когда жизнь загнала тебя в угол.</cite><strong>Стивен Кови</strong></Slider>,
-    <Slider><cite>Всегда выбирайте самый трудный путь - на нем вы не встретите конкурентов.</cite><strong>Шарль де Голль</strong></Slider>,
-    <Slider><cite>Делай все, что можешь, там, где ты находишься, используя все, что имеешь.</cite><strong>Теодор Рузвельт</strong></Slider>,
-    <Slider><cite>Выживает не самый сильный, а самый восприимчивый к переменам.</cite><strong>Чарльз Дарвин</strong></Slider>,
-    <Slider><cite>Вопрос не в том, кто мне разрешит, а в том, кто сможет мне запретить.</cite><strong>Айн Рэнд</strong></Slider>
+    <Slider><cite>Всегда выбирайте самый трудный путь - на нем вы не встретите конкурентов.</cite><strong>Шарль де Голль</strong></Slider>
 ]

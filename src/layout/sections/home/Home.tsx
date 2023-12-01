@@ -8,7 +8,7 @@ import { Container } from '../../../components/Container'
 
 export const Home = () => {
     return(
-        <StyledMain id='Home'>
+        <StyledMain id={'Home'}>
             <Container>
                 <FlexWrapper direction={'column'} justify={'space-evenly'} align={'center'}>
                     <span>Hi There</span>

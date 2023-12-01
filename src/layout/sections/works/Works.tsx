@@ -11,7 +11,7 @@ import { Container } from '../../../components/Container';
 
 export const Works = () => {
     return (
-        <StyledWorks id='Works'>
+        <StyledWorks id={'Works'}>
             <Container>
                 <StyledTitle>My Works</StyledTitle>
                 {/* <Menu items={['All', 'LandingPage', 'React', 'SPA']}  color={`${Theme.colors.textSecondary}`} /> */}

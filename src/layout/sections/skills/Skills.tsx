@@ -29,14 +29,12 @@ const skills = [
 
 export const Skills = () => {
     return(
-        <div id='Skills'>
-            <StyledSkills>
-                <Container>
-                    <StyledTitle>My Skills With Progress</StyledTitle>
-                    <AllSkillsAtIcons skills={skills}/>
-                </Container>
-            </StyledSkills>
-        </div>
+        <StyledSkills id={'Skills'}>
+            <Container>
+                <StyledTitle>My Skills With Progress</StyledTitle>
+                <AllSkillsAtIcons skills={skills}/>
+            </Container>
+        </StyledSkills>
     )
 }
 
