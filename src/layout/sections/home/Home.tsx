@@ -10,17 +10,39 @@ export const Home = () => {
     return(
         <StyledMain id={'Home'}>
             <Container>
-                <FlexWrapper direction={'column'} justify={'space-evenly'} align={'center'}>
+                <FlexWrapper direction={'column'} justify={'space-evenly'} align={'flex-start'}>
                     <span>Hi There</span>
                     <h2>I am Viktor Chizh</h2>
                     <h1>A Front-end Developer</h1>
                 </FlexWrapper>
-                <img src={bigFoto} alt='' width={275} height={275} className='foto'/>
-                <img src={map} alt='' width={315} height={275}/>
+                <Wrapper>
+                    <img  className='foto' src={bigFoto} alt='my-foto' width={255} height={255}/>
+                </Wrapper>
+                <img  className='map' src={map} alt='' width={290} height={255}/>
             </Container>
         </StyledMain>
     )
 }
+const Wrapper = styled.div`
+    position: relative;
+    z-index: 0;
+    @media (width<=992px) {
+        margin: 5% 5% 0 15%;
+        ::after {
+            content: '';
+            position: absolute;
+            right: -15%;
+            bottom: -20%;
+            z-index: -1;
+            background-image: url(${map});
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 375px;
+            height: 350px;
+        }
+    }
+`
 
 const StyledMain = styled.section`
     background-color: ${Theme.colors.bgPrimary};
@@ -30,37 +52,28 @@ const StyledMain = styled.section`
         justify-content: space-evenly;
         align-items:  space-evenly;
         color: ${Theme.colors.textTitle};
-
         .foto {
-            border-radius: 50%;
+            border-radius:5%;
             filter: grayscale(65%) hue-rotate(200deg) contrast(85%);
         }
         img {
             object-fit: cover;
-            padding: 0.1%;
-
             }
         span {
             font-size: 1em;
             font-weight:700;
         }
     }
-    @media (width<=590px) {
-        flex-wrap: wrap-reverse;
-
-        img {
-            width: 45vw;
-            height: 40vw;
-        }
-        .foto {
-            width: 40vw;
-            height: 40vw;
+    @media (width<=992px) {
+        .map{
+            display: none;
         }
         h1, h2, span {
-            font-size: 1.5em;
-            font-weight:700;
-            letter-spacing: 0.15em;
-        }
+        font-size: 1.5em;
+        font-weight:700;
+        letter-spacing: 0.15em;
     }
+    }
+` 
 
-`
+
