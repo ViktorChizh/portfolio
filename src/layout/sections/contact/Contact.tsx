@@ -7,22 +7,23 @@ import { Theme } from '../../../stylesAndThemes/Theme';
 import { Container } from '../../../components/Container';
 import emailjs from '@emailjs/browser';
 import { ElementRef, useRef } from 'react';
+import imgMail from '../../../assets/Mail.svg'
 
 
 export const Contact = () => {
     const form = useRef<ElementRef<'form'>>(null);
 
     const sendEmail = (e: any) => {
-      e.preventDefault();
+        e.preventDefault();
 
-      if (!form.current) return
-  
-      emailjs.sendForm('service_27684p9', 'template_kqvtytz', form.current, 'eA-6YF_G8xqeGBSE4')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+        if (!form.current) return
+
+        emailjs.sendForm('service_27684p9', 'template_kqvtytz', form.current, 'eA-6YF_G8xqeGBSE4')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
 
         e.target.reset()
     };
@@ -30,14 +31,17 @@ export const Contact = () => {
         <StyledContact id={'Contact'}>
             <Container>
                 <StyledTitle>Contact</StyledTitle>
-                <ContactForm ref={form} onSubmit={sendEmail}>
-                    <FlexWrapper direction={'column'}  wrap={'wrap'} align={'center'} gap={'16px'}>
-                        <ContactField required placeholder='Name' name={'user_name'}></ContactField>
-                        <ContactField required placeholder='Email' type='email' name={'subject'}></ContactField>
-                        <ContactField required placeholder='Text message' as={'textarea'} name={'message'}></ContactField>
-                        <Button type='submit' bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}>SEND MESSAGE to my email: victor.chizh@mail.ru</Button>
-                    </FlexWrapper>
-                </ContactForm>
+                <FlexWrapper direction={'row'} align={'center'} gap={'16px'}>
+                    <img src={imgMail} alt='' />
+                    <ContactForm ref={form} onSubmit={sendEmail}>
+                        <FlexWrapper direction={'column'} wrap={'wrap'} align={'center'} gap={'16px'}>
+                            <ContactField required placeholder='Name' name={'user_name'}></ContactField>
+                            <ContactField required placeholder='Email' type='email' name={'subject'}></ContactField>
+                            <ContactField required placeholder='Text message' as={'textarea'} name={'message'}></ContactField>
+                            <Button type='submit' bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px 8px"} borderRadius={'10px'}>SEND MESSAGE to my email: victor.chizh@mail.ru</Button>
+                        </FlexWrapper>
+                    </ContactForm>
+                </FlexWrapper>
             </Container>
         </StyledContact>
     )
@@ -45,14 +49,36 @@ export const Contact = () => {
 
 const StyledContact = styled.section`
     background-color: ${Theme.colors.bgPrimary};
+    ${FlexWrapper} {
+        width: 100%;
+        padding-left: 5%;
+        & img {
+            width: 30%;
+            max-width: 380px;
+        }
+        @media screen and (width<=992px) {
+            padding-left: 0;
+            img {
+                display: none;
+            }
+        }
+    }
 `
 
 const ContactForm = styled.form`
+    width: 65%;
     textarea {
         resize: none;
         height: 155px;
         font-family: -apple-, sans-serif;
     }
+    ${FlexWrapper} {
+        width: 100%;
+        margin: 0 auto;
+    }
+    @media screen and (width<=992px) {
+        width: 100%;
+        }
 `
 
 const ContactField = styled.input`
