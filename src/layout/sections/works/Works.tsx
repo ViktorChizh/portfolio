@@ -69,7 +69,7 @@ export const Works = () => {
                         </p>
                         <FlexWrapper width={'30%'} justify={'space-evenly'}>
                             <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href='http://134.17.16.177/' target="_blank" rel="noreferrer" >Demo</a></Button>
-                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'} onClick={() => alert("It's owner's intellectual property \nЭто интеллектуальная собственность владельца")}>Code</Button>
+                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'} onClick={() => alert("It's owner's intellectual property \n\nЭто интеллектуальная собственность владельца")}>Code</Button>
                         </FlexWrapper>
                     </Work>
                     <Work>
@@ -84,7 +84,7 @@ export const Works = () => {
                             Сертификаты с пройденных курсов или полученных в интернете при самообучении, характеристики и прочее. 
                         </p>
                         <FlexWrapper width={'30%'} justify={'space-evenly'}>
-                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}onClick={() => alert("I decide how it will be implemented. At the moment, you can see everything on my LinkedIn page (link in footer). \nРешаю, как это будет реализовано. В данный момент, все можно посмотреть на моей страничке в LinkedIn (ссылка в футере).")}>Demo</Button>
+                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}onClick={() => alert("I decide how it will be implemented. At the moment, you can see everything on my LinkedIn page (link in footer). \n\nРешаю, как это будет реализовано. В данный момент, все можно посмотреть на моей страничке в LinkedIn (ссылка в футере).")}>Demo</Button>
                             <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href='https://github.com/ViktorChizh' target="_blank" rel="noreferrer" >Code</a></Button>
                         </FlexWrapper>
                     </Work>
