@@ -41,6 +41,7 @@ export const Contact = () => {
                             <Button type='submit' bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px 8px"} borderRadius={'10px'}>SEND MESSAGE to my email: victor.chizh@mail.ru</Button>
                         </FlexWrapper>
                     </ContactForm>
+                    <img src={imgMail} alt='' />
                 </FlexWrapper>
             </Container>
         </StyledContact>
@@ -51,13 +52,13 @@ const StyledContact = styled.section`
     background-color: ${Theme.colors.bgPrimary};
     ${FlexWrapper} {
         width: 100%;
-        padding-left: 5%;
+        padding: 0 5%;
         & img {
             width: 30%;
             max-width: 380px;
         }
         @media screen and (width<=992px) {
-            padding-left: 0;
+            padding: 0;
             img {
                 display: none;
             }
