@@ -60,12 +60,12 @@ export const Works = () => {
                         <p>
                             I interned for half a year on a real commercial project.<br/>
                             And, although I got there as an Assistant Project Manager (my duties included supervising the front and back end), at the same time I repeated all the code after the interns, studied the accompanying documentation, and in the middle of the project I joined the coding, when one of the interns left.<br/>
-                            The entire layout of the site (necessary code refactoring and bug fixes) at the time of leaving the project was done by me.
+                            The entire layout of the site (necessary code refactoring and bug fixes), made according to the designers’ layouts in Figma, was done by me at the time of leaving the project.
                         </p>
                         <p>
                             Пол года стажировался на реальном коммерческом проекте.<br/>
                             И, хоть и я попал туда на должность Помошник руководителя проекта (в обязанности входило курированик фронт и бэк энд), параллельно повторял весь код за стажерами, изучал сопутствующую документацию, а в середине проекта присоединился к кодированию.<br/>
-                            Вся верстка сайта (необходимый рефакторинг кода и фикс багов) на момент ухода из проекта сделана мной. 
+                            Вся верстка сайта (необходимый рефакторинг кода и фикс багов), произведенная по макетам дизайнеров в Figma, на момент ухода из проекта сделана мной. 
                         </p>
                         <FlexWrapper width={'30%'} justify={'space-evenly'}>
                             <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href='http://134.17.16.177/' target="_blank" rel="noreferrer" >Demo</a></Button>
@@ -125,6 +125,7 @@ const Work = styled.div`
     }
     p {
         padding-bottom: 2%;
+        text-align: justify;
     }
     button{
         margin-left: 25%;
