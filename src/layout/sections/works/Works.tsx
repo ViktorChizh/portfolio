@@ -64,12 +64,12 @@ export const Works = () => {
                         </p>
                         <p>
                             Пол года стажировался на реальном коммерческом проекте.<br/>
-                            И, хоть и я попал туда на должность Помошник руководителя проекта (в обязанности входило курированик фронт и бэк энд), параллельно повторял весь код за стажерами, изучал сопутствующую документацию, а в середине проекта присоединился к кодированию.<br/>
+                            И, хоть я попал туда на должность Помошник руководителя проекта (в обязанности входило курированик фронт и бэк энд), параллельно повторял весь код за стажерами, изучал сопутствующую документацию, а в середине проекта присоединился к кодированию.<br/>
                             Вся верстка сайта (необходимый рефакторинг кода и фикс багов), произведенная по макетам дизайнеров в Figma, на момент ухода из проекта сделана мной. 
                         </p>
                         <FlexWrapper width={'30%'} justify={'space-evenly'}>
                             <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href='http://134.17.16.177/' target="_blank" rel="noreferrer" >Demo</a></Button>
-                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'} onClick={() => alert("It's owner's intellectual property \n\nЭто интеллектуальная собственность владельца")}>Code</Button>
+                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'} onClick={() => alert("\nIt's owner's intellectual property \n\nЭто интеллектуальная собственность владельца")}>Code</Button>
                         </FlexWrapper>
                     </Work>
                     <Work>
@@ -84,7 +84,7 @@ export const Works = () => {
                             Сертификаты с пройденных курсов или полученных в интернете при самообучении, характеристики и прочее. 
                         </p>
                         <FlexWrapper width={'30%'} justify={'space-evenly'}>
-                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}onClick={() => alert("I decide how it will be implemented. At the moment, you can see everything on my LinkedIn page (link in footer). \n\nРешаю, как это будет реализовано. В данный момент, все можно посмотреть на моей страничке в LinkedIn (ссылка в футере).")}>Demo</Button>
+                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}onClick={() => alert("\nI decide how it will be implemented. At the moment, you can see everything on my LinkedIn page (link in footer). \n\nРешаю, как это будет реализовано. В данный момент, все можно посмотреть на моей страничке в LinkedIn (ссылка в футере).")}>Demo</Button>
                             <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href='https://github.com/ViktorChizh' target="_blank" rel="noreferrer" >Code</a></Button>
                         </FlexWrapper>
                     </Work>
