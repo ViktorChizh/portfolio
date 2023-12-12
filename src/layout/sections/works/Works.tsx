@@ -62,7 +62,7 @@ const base = [
         title: 'My achivements',
         pEng:<p>Certificates from completed courses or received on the Internet during self-study, characteristics, etc.</p>,
         pRus: <p>Сертификаты с пройденных курсов или полученных в интернете при самообучении, характеристики и прочее.</p>,
-        hrefDemo:'https://www.linkedin.com/in/viktorchizh/details/featured/',
+        hrefDemo:'https://www.linkedin.com/in/viktorchizh/',
         onClickDemo: () => alert("\nI decide how it will be implemented. At the moment, you can see everything on my LinkedIn page. \n\nРешаю, как это будет реализовано. В данный момент, все можно посмотреть на моей страничке в LinkedIn."),
         targetDemo: '_blank',
         hrefCode: 'https://github.com/ViktorChizh',
@@ -157,7 +157,6 @@ const Work = styled.div`
             max-width: 96%;
             min-width: 340px;
             margin: 0 auto;
-
             p, h2, img, div {
                 width: 100%;
                 margin: 0 auto 3%;
