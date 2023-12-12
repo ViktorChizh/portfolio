@@ -1,4 +1,4 @@
-import * as React from 'react';
+import  React, { useState }  from 'react';
 import styled from 'styled-components';
 import { StyledTitle } from '../../../components/StyledTitle';
 import { FlexWrapper } from '../../../components/FlexWrapper';
@@ -9,85 +9,107 @@ import watch from '../../../assets/Watch.svg'
 import { Button } from '../../../components/Button';
 import { Theme } from '../../../stylesAndThemes/Theme';
 import { Container } from '../../../components/Container';
+import { Menu } from '../../../components/menu/Menu';
+
+
+const base = [
+    {
+        name: 'StudiesProjects',
+        imgInfo: 'In developing',
+        imgSrc: work0,
+        title: 'ToDoList',
+        pEng:<p>This is the main cross-cutting project in the IT-INCUBATOR courses, where I consolidate my knowledge and fill existing gaps in it.<br />Links to the code and sample work correspond to the current state of the project.</p>,
+        pRus: <p>Это основной сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br /> Ссылки на код и на образец работы соответствуют текущему состоянию проекта.</p>,
+        hrefDemo:'#',
+        onClickDemo: ()=>{},
+        targetDemo: '',
+        hrefCode: 'https://github.com/ViktorChizh/1-todolist',
+        onClickCode:  ()=>{},
+        targetCode: "_blank"
+    },
+    {
+        name: 'StudiesProjects',
+        imgInfo: 'I`m thinking about that',
+        imgSrc: work1,
+        title: 'Social Network',
+        pEng:<p>This is an additional (for independent work on given materials) start-to-end project on courses in the IT-INCUBATOR, where I consolidate my knowledge and fill existing gaps in it.<br /> Links to the code and sample work correspond to the current state of the project.</p>,
+        pRus: <p>Это дополнительный (для самостоятельной работы по выданным материалам) сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br />  Ссылки на код и на образец работы соответствуют текущему состоянию проекта.</p>,
+        hrefDemo:'#',
+        onClickDemo:  ()=>{},
+        targetDemo: '',
+        hrefCode: 'https://github.com/ViktorChizh/2-samurai-way-main',
+        onClickCode: ()=>{},
+        targetCode: "_blank"
+    },
+    {
+        name: 'CommercialProjects',
+        imgInfo: 'I`m resting from that',
+        imgSrc: work2,
+        title: 'First commercial project, where I`m been',
+        pEng:<p>I interned for half a year on a real commercial project.<br /> And, although I got there as an Assistant Project Manager (my duties included supervising the front and back end), at the same time I repeated all the code after the interns, studied the accompanying documentation, and in the middle of the project I joined the coding, when one of the interns left.<br /> The entire layout of the site (necessary code refactoring and bug fixes), made according to the designers’ layouts in Figma, was done by me at the time of leaving the project.</p>,
+        pRus: <p>Пол года стажировался на реальном коммерческом проекте.<br /> И, хоть я попал туда на должность Помошник руководителя проекта (в обязанности входило курирование фронт и бэк энд), параллельно повторял весь код за стажерами, изучал сопутствующую документацию, а в середине проекта присоединился к кодированию.<br /> Вся верстка сайта (необходимый рефакторинг кода и фикс багов), произведенная по макетам дизайнеров в Figma, на момент ухода из проекта сделана мной.</p>,
+        hrefDemo:'https://www.youtube.com/watch?v=XlGi7xTGJ3I',
+        targetDemo: "_blank",
+        onClickDemo:  ()=>{},
+        hrefCode: '#',
+        onClickCode: () => alert("\nIt's owner's intellectual property \n\nЭто интеллектуальная собственность владельца"),
+        targetCode: ''
+    },
+    {
+        name: 'Achivements',
+        imgInfo: 'I`m achive that',
+        imgSrc: watch,
+        title: 'My achivements',
+        pEng:<p>Certificates from completed courses or received on the Internet during self-study, characteristics, etc.</p>,
+        pRus: <p>Сертификаты с пройденных курсов или полученных в интернете при самообучении, характеристики и прочее.</p>,
+        hrefDemo:'#',
+        onClickDemo: () => alert("\nI decide how it will be implemented. At the moment, you can see everything on my LinkedIn page (link in footer). \n\nРешаю, как это будет реализовано. В данный момент, все можно посмотреть на моей страничке в LinkedIn (ссылка в футере)."),
+        targetDemo: '',
+        hrefCode: 'https://github.com/ViktorChizh',
+        onClickCode:  ()=>{},
+        targetCode: '_blank'
+    }
+]
+
+const MenuItems = ['All'].concat(base.map(item => item.name).filter((a, i) => a !== base.map(item => item.name)[i - 1]))
 
 export const Works = () => {
+    const [filterValue, setFilterValue] = useState('All')
+
+    let filtredBase = base
+
+    if (filterValue === 'StudiesProjects') {
+        filtredBase = base.filter(work => work.name === 'StudiesProjects')
+    }
+    if (filterValue === 'CommercialProjects') {
+        filtredBase = base.filter(work => work.name === 'CommercialProjects')
+    }
+    if (filterValue === 'Achivements') {
+        filtredBase = base.filter(work => work.name === 'Achivements')
+    }
+
     return (
         <StyledWorks id={'Works'}>
             <Container>
                 <StyledTitle>My Works</StyledTitle>
+                <Menu items={MenuItems} changeFilterValue={setFilterValue} color={`${Theme.colors.textTitle}`}/>
                 <FlexWrapper direction={'row'} justify={'space-between'} wrap={'wrap'} gap={'1%'} alighContent={'center'}>
-                    <Work>
-                        <ImgWrapper info={'In developing'}>
-                            <img src={work0} alt='' />
-                        </ImgWrapper>
-                        <h2>ToDoList</h2>
-                        <p>
-                            This is the main cross-cutting project in the IT-INCUBATOR courses, where I consolidate my knowledge and fill existing gaps in it.<br/>
-                            Links to the code and sample work correspond to the current state of the project.
-                        </p>
-                        <p>
-                            Это основной сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br/>
-                            Ссылки на код и на образец работы соответствуют текущему состоянию проекта.
-                        </p>
-                        <FlexWrapper width={'30%'} justify={'space-evenly'}>
-                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href='/'>Demo</a></Button>
-                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href='https://github.com/ViktorChizh/1-todolist' target="_blank" rel="noreferrer" >Code</a></Button>
-                        </FlexWrapper>
-                    </Work>
-                    <Work>
-                        <ImgWrapper info={"I`m thinking about that"}>
-                            <img src={work1} alt='' />
-                        </ImgWrapper>
-                        <h2>Social Network</h2>
-                        <p>
-                            This is an additional (for independent work on given materials) start-to-end project on courses in the IT-INCUBATOR, where I consolidate my knowledge and fill existing gaps in it.<br/>
-                            Links to the code and sample work correspond to the current state of the project.
-                        </p>
-                        <p>
-                            Это дополнительный (для самостоятельной работы по выданным материалам) сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br/>
-                            Ссылки на код и на образец работы соответствуют текущему состоянию проекта.
-                        </p>
-                        <FlexWrapper width={'30%'} justify={'space-evenly'}>
-                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href='/'>Demo</a></Button>
-                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href='https://github.com/ViktorChizh/2-samurai-way-main' target="_blank" rel="noreferrer" >Code</a></Button>
-                        </FlexWrapper>
-                    </Work>
-                    <Work>
-                        <ImgWrapper info={"I`m resting from that"}>
-                            <img src={work2} alt='' />
-                        </ImgWrapper>
-                        <h2>First commercial project, where I`m been</h2>
-                        <p>
-                            I interned for half a year on a real commercial project.<br/>
-                            And, although I got there as an Assistant Project Manager (my duties included supervising the front and back end), at the same time I repeated all the code after the interns, studied the accompanying documentation, and in the middle of the project I joined the coding, when one of the interns left.<br/>
-                            The entire layout of the site (necessary code refactoring and bug fixes), made according to the designers’ layouts in Figma, was done by me at the time of leaving the project.
-                        </p>
-                        <p>
-                            Пол года стажировался на реальном коммерческом проекте.<br/>
-                            И, хоть я попал туда на должность Помошник руководителя проекта (в обязанности входило курированик фронт и бэк энд), параллельно повторял весь код за стажерами, изучал сопутствующую документацию, а в середине проекта присоединился к кодированию.<br/>
-                            Вся верстка сайта (необходимый рефакторинг кода и фикс багов), произведенная по макетам дизайнеров в Figma, на момент ухода из проекта сделана мной. 
-                        </p>
-                        <FlexWrapper width={'30%'} justify={'space-evenly'}>
-                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href='http://134.17.16.177/' target="_blank" rel="noreferrer" >Demo</a></Button>
-                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'} onClick={() => alert("\nIt's owner's intellectual property \n\nЭто интеллектуальная собственность владельца")}>Code</Button>
-                        </FlexWrapper>
-                    </Work>
-                    <Work>
-                        <ImgWrapper info={"I`m achive that"}>
-                            <img src={watch} alt='' />
-                        </ImgWrapper>
-                        <h2>My achivements</h2>
-                        <p>
-                            Certificates from completed courses or received on the Internet during self-study, characteristics, etc.
-                        </p>
-                        <p>
-                            Сертификаты с пройденных курсов или полученных в интернете при самообучении, характеристики и прочее. 
-                        </p>
-                        <FlexWrapper width={'30%'} justify={'space-evenly'}>
-                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}onClick={() => alert("\nI decide how it will be implemented. At the moment, you can see everything on my LinkedIn page (link in footer). \n\nРешаю, как это будет реализовано. В данный момент, все можно посмотреть на моей страничке в LinkedIn (ссылка в футере).")}>Demo</Button>
-                            <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href='https://github.com/ViktorChizh' target="_blank" rel="noreferrer" >Code</a></Button>
-                        </FlexWrapper>
-                    </Work>
+                    {filtredBase.map(w => {
+                        return (
+                            <Work>
+                                <ImgWrapper info={w.imgInfo}>
+                                    <img src={w.imgSrc} alt='' />
+                                </ImgWrapper>
+                                <h2>{w.title}</h2>
+                                {w.pEng}
+                                {w.pRus}<p></p>
+                                <FlexWrapper width={'30%'} justify={'space-evenly'}>
+                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href={w.hrefDemo} onClick={w.onClickDemo} target={w.targetDemo}>Demo</a></Button>
+                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href={w.hrefCode} onClick={w.onClickCode} target={w.targetCode} >Code</a></Button>
+                                </FlexWrapper>
+                            </Work>
+                        )
+                    })}
                 </FlexWrapper>
             </Container>
         </StyledWorks>
@@ -98,10 +120,14 @@ const StyledWorks = styled.section`
     color: ${Theme.colors.iconPrimary};
     background-color: ${Theme.colors.bgSecondary};
     ${Container}{
-    display: flex;
-    flex-direction: column;
-    gap: 1%;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        nav {
+            margin: 0 auto;
+            font-weight: bolder;
+        }
+    }
 `
 
 const Work = styled.div`
@@ -157,14 +183,15 @@ const ImgWrapper = styled.div<ImgWrapperProps>`
         content: '${props => props.info}';
         position: absolute;
 
-        bottom: 10%;
+        bottom: 7%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
         color: ${Theme.colors.textTitle};
         font-family: 'Permanent Marker', cursive;
-        font-size: calc((100vw-430px)/(1200-430)*(16-10)+10px);
-        line-height: 1;
+        font-size: clamp(12px, calc((100vw - 430px) / (1200 - 430) * (18 - 12) + 12px), 18px);
+        width: 100%;
+        line-height: 1.2;
         letter-spacing: 0.1em;
         font-weight: 600;
         text-align: center
