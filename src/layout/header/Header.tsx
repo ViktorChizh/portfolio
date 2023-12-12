@@ -30,18 +30,22 @@ const StyledHeader = styled.header`
     left: 0;
     right: 0;
     width: 100%;
-    height: 50px;
     z-index: 8;
     background-color: ${Theme.colors.bgDarck};
+
+    
     ${Container} {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 15px;
+        padding: 3px 15px;
         ${Button} {
             :hover {
             cursor: pointer;
+            }   
         }
+        li {
+            margin-bottom: 1vh;
         }
     }
 `

@@ -50,7 +50,6 @@ const StyledMenu = styled.nav`
         gap: 5%;
         flex-wrap: wrap;
         li {
-            /* line-height: 1.2; */
             margin-bottom: 3vh;
         }
     }

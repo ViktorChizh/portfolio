@@ -40,15 +40,4 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
     background-color: ${Theme.colors.bgSecondary};
-    ${Container} {
-        /* p {
-            margin: 0px;
-            } */
-        /* ul {
-            padding-top: 2%;
-            li {
-                padding-bottom: 2%;
-            }
-        } */
-    }
 `

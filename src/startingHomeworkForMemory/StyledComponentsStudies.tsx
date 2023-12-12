@@ -71,7 +71,6 @@ const myTheme = {
     }
 }
 
-
 const GlobalStyles = createGlobalStyle`
     *,
     *::before,
@@ -80,7 +79,6 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
-
     body {
         background-color: ${myTheme.colors.gray.dark};
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
