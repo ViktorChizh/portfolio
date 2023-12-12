@@ -99,9 +99,9 @@ export const Works = () => {
                                 <h2>{w.title}</h2>
                                 {w.pEng}
                                 {w.pRus}<p></p>
-                                <FlexWrapper width={'30%'} justify={'space-evenly'}>
-                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href={w.hrefDemo} onClick={w.onClickDemo} target={w.targetDemo}>Demo</a></Button>
-                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px"} borderRadius={'10px'}><a href={w.hrefCode} onClick={w.onClickCode} target={w.targetCode} >Code</a></Button>
+                                <FlexWrapper width={'50%'} justify={'space-evenly'}>
+                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'}><a href={w.hrefDemo} onClick={w.onClickDemo} target={w.targetDemo}>Demo</a></Button>
+                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'}><a href={w.hrefCode} onClick={w.onClickCode} target={w.targetCode} >Code</a></Button>
                                 </FlexWrapper>
                             </Work>
                         )
@@ -153,7 +153,7 @@ const Work = styled.div`
             color: ${Theme.colors.textPrimary};
         }
     }
-    @media (width<=675px) {
+    @media (width<=678px) {
             max-width: 96%;
             min-width: 340px;
             margin: 0 auto;
@@ -186,5 +186,10 @@ const ImgWrapper = styled.div<ImgWrapperProps>`
         letter-spacing: 0.1em;
         font-weight: 600;
         text-align: center
+    }
+    @media screen and (width<=678px) {
+        &::before {
+            bottom: 12.5%;            
+        }
     }
 `
