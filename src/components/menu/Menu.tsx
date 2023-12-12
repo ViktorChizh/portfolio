@@ -47,8 +47,12 @@ const StyledMenu = styled.nav`
         list-style: none;
         padding: 0 5%;
         margin: 0;
-        gap: 3%;
+        gap: 5%;
         flex-wrap: wrap;
+        li {
+            /* line-height: 1.2; */
+            margin-bottom: 3vh;
+        }
     }
 `
 const NavLink = styled(Link)<StyledMenuPropsType>`
@@ -56,9 +60,4 @@ const NavLink = styled(Link)<StyledMenuPropsType>`
     &:hover {
         cursor: pointer;
     } 
-    /* &.active{
-        border: 1px solid ${props => props.color};
-        border-radius: 5px;
-        padding: 1px;
-    } */
 `
