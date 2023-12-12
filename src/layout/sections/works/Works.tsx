@@ -20,9 +20,9 @@ const base = [
         title: 'ToDoList',
         pEng:<p>This is the main cross-cutting project in the IT-INCUBATOR courses, where I consolidate my knowledge and fill existing gaps in it.<br />Links to the code and sample work correspond to the current state of the project.</p>,
         pRus: <p>Это основной сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br /> Ссылки на код и на образец работы соответствуют текущему состоянию проекта.</p>,
-        hrefDemo:'#',
+        hrefDemo:'https://viktorchizh.github.io/1-todolist/',
         onClickDemo: ()=>{},
-        targetDemo: '',
+        targetDemo: '_blank',
         hrefCode: 'https://github.com/ViktorChizh/1-todolist',
         onClickCode:  ()=>{},
         targetCode: "_blank"
@@ -34,9 +34,9 @@ const base = [
         title: 'Social Network',
         pEng:<p>This is an additional (for independent work on given materials) start-to-end project on courses in the IT-INCUBATOR, where I consolidate my knowledge and fill existing gaps in it.<br /> Links to the code and sample work correspond to the current state of the project.</p>,
         pRus: <p>Это дополнительный (для самостоятельной работы по выданным материалам) сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br />  Ссылки на код и на образец работы соответствуют текущему состоянию проекта.</p>,
-        hrefDemo:'#',
+        hrefDemo:'https://viktorchizh.github.io/2-samurai-way-main/',
         onClickDemo:  ()=>{},
-        targetDemo: '',
+        targetDemo: '_blank',
         hrefCode: 'https://github.com/ViktorChizh/2-samurai-way-main',
         onClickCode: ()=>{},
         targetCode: "_blank"
@@ -62,9 +62,9 @@ const base = [
         title: 'My achivements',
         pEng:<p>Certificates from completed courses or received on the Internet during self-study, characteristics, etc.</p>,
         pRus: <p>Сертификаты с пройденных курсов или полученных в интернете при самообучении, характеристики и прочее.</p>,
-        hrefDemo:'#',
-        onClickDemo: () => alert("\nI decide how it will be implemented. At the moment, you can see everything on my LinkedIn page (link in footer). \n\nРешаю, как это будет реализовано. В данный момент, все можно посмотреть на моей страничке в LinkedIn (ссылка в футере)."),
-        targetDemo: '',
+        hrefDemo:'https://www.linkedin.com/in/viktorchizh/details/featured/',
+        onClickDemo: () => alert("\nI decide how it will be implemented. At the moment, you can see everything on my LinkedIn page. \n\nРешаю, как это будет реализовано. В данный момент, все можно посмотреть на моей страничке в LinkedIn."),
+        targetDemo: '_blank',
         hrefCode: 'https://github.com/ViktorChizh',
         onClickCode:  ()=>{},
         targetCode: '_blank'
@@ -78,14 +78,10 @@ export const Works = () => {
 
     let filtredBase = base
 
-    if (filterValue === 'StudiesProjects') {
-        filtredBase = base.filter(work => work.name === 'StudiesProjects')
-    }
-    if (filterValue === 'CommercialProjects') {
-        filtredBase = base.filter(work => work.name === 'CommercialProjects')
-    }
-    if (filterValue === 'Achivements') {
-        filtredBase = base.filter(work => work.name === 'Achivements')
+    for (let i=1; i<=MenuItems.length; i++) {
+        if (filterValue === MenuItems[i]) {
+            filtredBase = base.filter(work => work.name === MenuItems[i])
+        }
     }
 
     return (
@@ -132,11 +128,9 @@ const StyledWorks = styled.section`
 
 const Work = styled.div`
     margin: 0 auto;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     padding-top: 2%;
     max-width: 45%;
     min-width: 320px;
@@ -178,11 +172,9 @@ type ImgWrapperProps = {
 const ImgWrapper = styled.div<ImgWrapperProps>`
     position: relative;
     z-index: 0;
-
     &::before {
         content: '${props => props.info}';
         position: absolute;
-
         bottom: 7%;
         left: 50%;
         transform: translateX(-50%);
