@@ -12,11 +12,6 @@ import { Container } from '../../../components/Container';
 import { Menu } from '../../../components/menu/Menu';
 import Achivements from '../../../assets/Achivements.jpg'
 
-
-const Achive = () => {
-        window.location.href = Achivements
-    }
-
 const base = [
     {
         name: 'StudiesProjects',
@@ -68,7 +63,7 @@ const base = [
         pEng:<p>Certificates from completed courses or received on the Internet during self-study, characteristics, etc.</p>,
         pRus: <p>Сертификаты с пройденных курсов или полученных в интернете при самообучении, характеристики и прочее.</p>,
         hrefDemo:'https://viktorchizh.github.io/portfolio/',
-        onClickDemo: () => {Achive()},
+        onClickDemo: () => {window.location.href = Achivements},
         targetDemo: '_blank',
         hrefCode: 'https://github.com/ViktorChizh',
         onClickCode:  ()=>{},
@@ -112,7 +107,6 @@ export const Works = () => {
                         )
                     })}
                 </FlexWrapper>
-                <div id="imageContainer"></div>
             </Container>
         </StyledWorks>
     )
