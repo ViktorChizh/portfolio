@@ -83,6 +83,8 @@ const StyledMain = styled.section`
     }
     @media (width<=992px) {
         ${Button} {
+            position: relative;
+            z-index: 2;
             margin: 2% 0 -4%;
         }
         .map{
