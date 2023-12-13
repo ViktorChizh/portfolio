@@ -90,9 +90,9 @@ export const Works = () => {
                 <StyledTitle>My Works</StyledTitle>
                 <Menu items={MenuItems} changeFilterValue={setFilterValue} color={`${Theme.colors.textTitle}`}/>
                 <FlexWrapper direction={'row'} justify={'space-between'} wrap={'wrap'} gap={'1%'} alighContent={'center'}>
-                    {filtredBase.map(w => {
+                    {filtredBase.map((w, index) => {
                         return (
-                            <Work>
+                            <Work key={index}>
                                 <ImgWrapper info={w.imgInfo}>
                                     <img src={w.imgSrc} alt='' />
                                 </ImgWrapper>

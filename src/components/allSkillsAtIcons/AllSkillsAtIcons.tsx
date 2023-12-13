@@ -18,7 +18,7 @@ export const AllSkillsAtIcons = (props: AllSkillsAtIconsPropsType) => {
         <SkillContainer>
             {props.skills.map((skill, index: number) => {
                 return (
-                    <Roll cascade={true} delay={250} duration={2000}>
+                    <Roll key={index} cascade={true} delay={250} duration={2000}>
                         <li key={index}>
                             <SkillCircle percent={skill.progress}>
                                 <InfoContainer>

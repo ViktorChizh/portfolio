@@ -5,8 +5,24 @@ import bigFoto from '../../../assets/фотка2.jpg'
 import map from '../../../assets/map-by.png'
 import { Theme } from '../../../stylesAndThemes/Theme'
 import { Container } from '../../../components/Container'
+import cv from "../../../assets/CV.png"
+import { Button } from '../../../components/Button'
+
 
 export const Home = () => {
+    const download = () => {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // Скачать файл на мобильных устройствах
+            window.location.href = cv;
+          } else {
+        const link = document.createElement("a");
+        link.href = cv
+        link.setAttribute("download", "CV.png")
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link);
+        }
+      }
     return(
         <StyledMain id={'Home'}>
             <Container>
@@ -14,6 +30,7 @@ export const Home = () => {
                     <span>Hi There</span>
                     <h2>I am Viktor Chizh</h2>
                     <h1>A Front-end Developer</h1>
+                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'} onClick={download}>Download CV</Button>
                 </FlexWrapper>
                 <Wrapper>
                     <img  className='foto' src={bigFoto} alt='my-foto' width={255} height={255}/>
@@ -65,6 +82,9 @@ const StyledMain = styled.section`
         }
     }
     @media (width<=992px) {
+        ${Button} {
+            margin: 2% 0 -4%;
+        }
         .map{
             display: none;
         }
