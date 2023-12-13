@@ -5,19 +5,20 @@ import bigFoto from '../../../assets/фотка2.jpg'
 import map from '../../../assets/map-by.png'
 import { Theme } from '../../../stylesAndThemes/Theme'
 import { Container } from '../../../components/Container'
-import cv from "../../../assets/CV.png"
+import cv from "../../../assets/CV.jpg"
 import { Button } from '../../../components/Button'
 
 
 export const Home = () => {
     const download = () => {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            // Скачать файл на мобильных устройствах
+            // Открыть файл на мобильных устройствах
             window.location.href = cv;
         } else {
+            // Скачать файл на компьютерах
         const link = document.createElement("a");
         link.href = cv
-        link.setAttribute("download", "CV.png")
+        link.setAttribute("download", "CV.jpg")
         document.body.appendChild(link)
         link.click()
         document.body.removeChild(link);
