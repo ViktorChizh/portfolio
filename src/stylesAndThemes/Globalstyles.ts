@@ -41,18 +41,4 @@ export const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
   }
-  
-  #imageContainer {
-  width: 100%;
-  height: 100%;
-  overflow: scroll; /* добавляем скролл для содержимого, которое не влезает в контейнер */
-}
-
-#imageContainer img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block; /* убираем лишнее пространство под изображением */
-  margin: auto; /* центрируем изображение в контейнере */
-}
-
 `

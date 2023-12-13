@@ -14,7 +14,7 @@ export const Home = () => {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             // Скачать файл на мобильных устройствах
             window.location.href = cv;
-          } else {
+        } else {
         const link = document.createElement("a");
         link.href = cv
         link.setAttribute("download", "CV.png")
@@ -22,7 +22,7 @@ export const Home = () => {
         link.click()
         document.body.removeChild(link);
         }
-      }
+    }
     return(
         <StyledMain id={'Home'}>
             <Container>
