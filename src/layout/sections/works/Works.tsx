@@ -10,7 +10,12 @@ import { Button } from '../../../components/Button';
 import { Theme } from '../../../stylesAndThemes/Theme';
 import { Container } from '../../../components/Container';
 import { Menu } from '../../../components/menu/Menu';
+import Achivements from '../../../assets/Achivements.jpg'
 
+
+const Achive = () => {
+        window.location.href = Achivements
+    }
 
 const base = [
     {
@@ -62,8 +67,8 @@ const base = [
         title: 'My achivements',
         pEng:<p>Certificates from completed courses or received on the Internet during self-study, characteristics, etc.</p>,
         pRus: <p>Сертификаты с пройденных курсов или полученных в интернете при самообучении, характеристики и прочее.</p>,
-        hrefDemo:'https://www.linkedin.com/in/viktorchizh/',
-        onClickDemo: () => alert("\nI decide how it will be implemented. At the moment, you can see everything on my LinkedIn page. \n\nРешаю, как это будет реализовано. В данный момент, все можно посмотреть на моей страничке в LinkedIn."),
+        hrefDemo:'https://viktorchizh.github.io/portfolio/',
+        onClickDemo: () => {Achive()},
         targetDemo: '_blank',
         hrefCode: 'https://github.com/ViktorChizh',
         onClickCode:  ()=>{},
@@ -107,6 +112,7 @@ export const Works = () => {
                         )
                     })}
                 </FlexWrapper>
+                <div id="imageContainer"></div>
             </Container>
         </StyledWorks>
     )

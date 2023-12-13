@@ -85,7 +85,7 @@ const StyledMain = styled.section`
         ${Button} {
             position: relative;
             z-index: 2;
-            margin: 2% 0 -4%;
+            margin: 2% 0 -3%;
         }
         .map{
             display: none;
