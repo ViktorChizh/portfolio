@@ -1,5 +1,4 @@
 import styled, { ThemeProvider } from 'styled-components';
-import './App.css';
 import { Header } from './layout/header/Header';
 import { Home } from './layout/sections/home/Home';
 import { Skills } from './layout/sections/skills/Skills';

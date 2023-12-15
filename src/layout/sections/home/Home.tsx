@@ -7,6 +7,7 @@ import { Theme } from '../../../stylesAndThemes/Theme'
 import { Container } from '../../../components/Container'
 import cv from "../../../assets/CV.jpg"
 import { Button } from '../../../components/Button'
+import Typewriter from 'typewriter-effect'
 
 
 export const Home = () => {
@@ -16,29 +17,38 @@ export const Home = () => {
             window.location.href = cv;
         } else {
             // Скачать файл на компьютерах
-        const link = document.createElement("a");
-        link.href = cv
-        link.setAttribute("download", "CV.jpg")
-        document.body.appendChild(link)
-        link.click()
-        document.body.removeChild(link);
+            const link = document.createElement("a");
+            link.href = cv
+            link.setAttribute("download", "CV.jpg")
+            document.body.appendChild(link)
+            link.click()
+            document.body.removeChild(link);
         }
     }
-    return(
+    return (
         <StyledMain id={'Home'}>
             <Container>
                 <FlexWrapper direction={'column'} justify={'space-evenly'} align={'flex-start'}>
                     <span>Hi There</span>
                     <h2>I am Viktor Chizh</h2>
                     <h1>A Front-end Developer</h1>
-                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'} onClick={download}>Download CV</Button>
+                    <FlexWrapper align={'center'}>
+                        <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'} onClick={download}>Download CV</Button>
+                        <p className='pointer'>&nbsp;&#9754;</p> &nbsp;
+                        <Typewriter options={{
+                            strings: [' About me'],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                        />
+                    </FlexWrapper>
                 </FlexWrapper>
                 <Wrapper>
-                    <img  className='foto' src={bigFoto} alt='my-foto' width={255} height={255}/>
+                    <img className='foto' src={bigFoto} alt='my-foto' width={255} height={255} />
                 </Wrapper>
-                <img  className='map' src={map} alt='' width={290} height={255}/>
+                <img className='map' src={map} alt='' width={290} height={255} />
             </Container>
-        </StyledMain>
+        </StyledMain >
     )
 }
 const Wrapper = styled.div`
@@ -81,6 +91,14 @@ const StyledMain = styled.section`
             font-size: 1em;
             font-weight:700;
         }
+        .pointer {
+        font-size: 40px;
+        font-weight: bolder;
+        }
+        .Typewriter {
+            font-size: 20px;
+            font-weight:900;
+        }
     }
     @media (width<=992px) {
         ${Button} {
@@ -97,6 +115,6 @@ const StyledMain = styled.section`
         letter-spacing: 0.15em;
     }
     }
-` 
+`
 
 
