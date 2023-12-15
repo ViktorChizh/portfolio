@@ -99,6 +99,11 @@ const StyledMain = styled.section`
             font-size: 20px;
             font-weight:900;
         }
+        @media (width<=992px) {
+            .Typewriter {
+                font-size: 27.5px;
+            }
+        }
     }
     @media (width<=992px) {
         ${Button} {
@@ -110,10 +115,10 @@ const StyledMain = styled.section`
             display: none;
         }
         h1, h2, span {
-        font-size: 1.5em;
-        font-weight:700;
-        letter-spacing: 0.15em;
-    }
+            font-size: 1.5em;
+            font-weight:700;
+            letter-spacing: 0.15em;
+        }
     }
 `
 
