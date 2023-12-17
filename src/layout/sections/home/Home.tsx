@@ -34,7 +34,7 @@ export const Home = () => {
                     <h1>A Front-end Developer</h1>
                     <FlexWrapper align={'center'}>
                         <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'}  border={`5px double ${Theme.colors.bgSecondary}`}  onClick={download}>Download CV</Button>
-                        <p className='pointer'>&nbsp;&#9754;</p> &nbsp;
+                        <p className='pointer'>&nbsp;&#9754;</p>
                         <Typewriter options={{
                             strings: [' About me'],
                             autoStart: true,
