@@ -6,9 +6,10 @@ type MenuPropsType = {
     items: string[]
     color?: string
     changeFilterValue: (value: string) => void
+    selectedItem?:string
 }
 
-export const Menu: React.FC<MenuPropsType> = ({items, color, changeFilterValue}) => {
+export const Menu: React.FC<MenuPropsType> = ({items, color, changeFilterValue, selectedItem}) => {
     return (
         <StyledMenu>
             <ul>
@@ -19,9 +20,10 @@ export const Menu: React.FC<MenuPropsType> = ({items, color, changeFilterValue})
                                 to={item} 
                                 smooth={true} 
                                 spy={true} 
-                                activeClass='active' 
                                 color={color} 
+                                delay={0.5} 
                                 onClick={() => {changeFilterValue(item)}}
+                                className={ selectedItem===item ? 'active' : '' }
                             >
                                 {item}
                             </NavLink>
@@ -59,4 +61,7 @@ const NavLink = styled(Link)<StyledMenuPropsType>`
     &:hover {
         cursor: pointer;
     } 
+    &.active {
+        border-bottom: 3px solid;
+    }
 `

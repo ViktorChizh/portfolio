@@ -6,22 +6,35 @@ import { Icon } from '../../components/icon/Icon';
 import { Theme } from '../../stylesAndThemes/Theme';
 import { Container } from '../../components/Container';
 
+type FooterBaseType = {
+    link: string
+    iconId: string
+    width?: string
+    height?: string
+    viewport?: string
+}
+
+const footerBase: Array<FooterBaseType> = [
+    {link: 'https://github.com/ViktorChizh', iconId: 'githubSocial'},
+    {link: 'https://t.me/ViktorChizh', iconId: 'telegram'},
+    {link: 'https://www.linkedin.com/in/ViktorChizh/', iconId: 'linkedIn'}
+]
 
 export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
                 <StyledTitle>Viktor Chizh</StyledTitle>
-                <FlexWrapper justify='space-around' align='center' width='90%'>
-                    <a href='https://github.com/ViktorChizh'>
-                        <Icon iconId='githubSocial' width='336' height='336' viewport='0 0 40 40' />
-                    </a>
-                    <a href='https://t.me/ViktorChizh'>
-                        <Icon iconId='telegram' width='336' height='336' viewport='0 0 40 40' />
-                    </a>
-                    <a href='https://www.linkedin.com/in/ViktorChizh/'>
-                        <Icon iconId='linkedIn' width='336' height='336' viewport='0 0 40 40' />
-                    </a>
+                <FlexWrapper as='ul' justify='space-around' align='center' width='90%'>
+                    {footerBase.map((icon: FooterBaseType, index: number) => {
+                        return (
+                            <li key={index}>
+                                <a href={icon.link} target='_blanck'>
+                                    <Icon iconId={icon.iconId} width={icon.width || '336'} height={icon.height || '336'} viewport={icon.viewport || '0 0 40 40'} />
+                                </a>
+                            </li>
+                        )                
+                    })}
                 </FlexWrapper>
                 <small>© 2023 Viktor Chizh, All Rights Reserved.</small>
             </Container>
@@ -49,5 +62,8 @@ background-color: ${Theme.colors.bgDarck};
         ${StyledTitle} {
             color: ${Theme.colors.textPrimary};
         }
+    }
+    ul li {
+        list-style: none;
     }
 `

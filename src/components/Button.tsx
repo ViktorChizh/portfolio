@@ -19,5 +19,5 @@ export const Button = styled.button<ButtonPropsType>`
     color: ${props => props.color};
     font-size: ${props => props.fontSize};
     border: ${props => props.border};
-    border-radius: ${props => props.borderRadius}
+    border-radius: ${props => props.borderRadius} 
 `

@@ -1,4 +1,4 @@
-import  React, { useState }  from 'react';
+import  React, { ReactNode, useState }  from 'react';
 import styled from 'styled-components';
 import { StyledTitle } from '../../../components/StyledTitle';
 import { FlexWrapper } from '../../../components/FlexWrapper';
@@ -12,7 +12,22 @@ import { Container } from '../../../components/Container';
 import { Menu } from '../../../components/menu/Menu';
 import Achivements from '../../../assets/Achivements.jpg'
 
-const base = [
+type WorksBaseType = {
+    name: string
+    imgInfo: string
+    imgSrc: string
+    title: string
+    pEng: ReactNode
+    pRus: ReactNode
+    hrefDemo:string
+    onClickDemo: ()=>void
+    targetDemo: string
+    hrefCode: string
+    onClickCode:  ()=>void
+    targetCode: string
+}
+
+const base: Array<WorksBaseType> = [
     {
         name: 'StudiesProjects',
         imgInfo: 'In developing',
@@ -88,7 +103,7 @@ export const Works = () => {
         <StyledWorks id={'Works'}>
             <Container>
                 <StyledTitle>My Works</StyledTitle>
-                <Menu items={MenuItems} changeFilterValue={setFilterValue} color={`${Theme.colors.textTitle}`}/>
+                <Menu items={MenuItems} changeFilterValue={setFilterValue} color={`${Theme.colors.textTitle}`} selectedItem={filterValue} />
                 <FlexWrapper direction={'row'} justify={'space-between'} wrap={'wrap'} gap={'1%'} alighContent={'center'}>
                     {filtredBase.map((w, index) => {
                         return (
@@ -100,8 +115,8 @@ export const Works = () => {
                                 {w.pEng}
                                 {w.pRus}<p></p>
                                 <FlexWrapper width={'50%'} justify={'space-evenly'}>
-                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'}><a href={w.hrefDemo} onClick={w.onClickDemo} target={w.targetDemo}>Demo</a></Button>
-                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'}><a href={w.hrefCode} onClick={w.onClickCode} target={w.targetCode} >Code</a></Button>
+                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'}  border={`5px double ${Theme.colors.bgPrimary}`} ><a href={w.hrefDemo} onClick={w.onClickDemo} target={w.targetDemo}>Demo</a></Button>
+                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'}  border={`5px double ${Theme.colors.bgPrimary}`} ><a href={w.hrefCode} onClick={w.onClickCode} target={w.targetCode} >Code</a></Button>
                                 </FlexWrapper>
                             </Work>
                         )

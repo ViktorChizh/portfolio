@@ -33,7 +33,7 @@ export const Home = () => {
                     <h2>I am Viktor Chizh</h2>
                     <h1>A Front-end Developer</h1>
                     <FlexWrapper align={'center'}>
-                        <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'} onClick={download}>Download CV</Button>
+                        <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'}  border={`5px double ${Theme.colors.bgSecondary}`}  onClick={download}>Download CV</Button>
                         <p className='pointer'>&nbsp;&#9754;</p> &nbsp;
                         <Typewriter options={{
                             strings: [' About me'],
