@@ -37,7 +37,7 @@ export const Contact = () => {
                         <FlexWrapper direction={'column'} wrap={'wrap'} align={'center'} gap={'16px'}>
                             <ContactField required placeholder='Name' name={'user_name'}></ContactField>
                             <ContactField required placeholder='Email' type='email' name={'subject'}></ContactField>
-                            <ContactField required placeholder='Text message' as={'textarea'} name={'message'}></ContactField>
+                            <ContactField required placeholder='Text message' as='textarea' name={'message'}></ContactField>
                             <Button type='submit' bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px 8px"} borderRadius={'10px'}  border={`5px double ${Theme.colors.bgSecondary}`} >SEND MESSAGE to my email: victor.chizh@mail.ru</Button>
                         </FlexWrapper>
                     </ContactForm>
