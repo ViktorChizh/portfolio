@@ -5,8 +5,13 @@ import { AllSkillsAtIcons } from '../../../components/allSkillsAtIcons/AllSkills
 import { Theme } from '../../../stylesAndThemes/Theme';
 import { Container } from '../../../components/Container';
 
+type SkillsType = {
+    iconId: string
+    progress: number
+    title: string
+}
 
-const skills = [
+const skills: SkillsType[] = [
     {iconId: 'html', progress: 90, title: 'HTML'},
     {iconId: 'css', progress: 90, title: 'CSS'},
     {iconId: 'js', progress: 90, title: 'JavaScript'},

@@ -27,7 +27,7 @@ type WorksBaseType = {
     targetCode: string
 }
 
-const base: Array<WorksBaseType> = [
+const base: WorksBaseType[] = [
     {
         name: 'StudiesProjects',
         imgInfo: 'In developing',
