@@ -10,7 +10,7 @@ import { Button } from '../../../components/Button';
 import { Theme } from '../../../stylesAndThemes/Theme';
 import { Container } from '../../../components/Container';
 import { Menu } from '../../../components/menu/Menu';
-import Achivements from '../../../assets/Achivements.jpg'
+import Achievements from '../../../assets/Achievements.jpg'
 
 type WorksBaseType = {
     name: string
@@ -71,14 +71,14 @@ const base: WorksBaseType[] = [
         targetCode: ''
     },
     {
-        name: 'Achivements',
-        imgInfo: 'I`m achive that',
+        name: 'Achievements',
+        imgInfo: 'I`m achieve that',
         imgSrc: watch,
-        title: 'My achivements',
+        title: 'My achievements',
         pEng:<p>Certificates from completed courses or received on the Internet during self-study, characteristics, etc.</p>,
         pRus: <p>Сертификаты с пройденных курсов или полученных в интернете при самообучении, характеристики и прочее.</p>,
         hrefDemo:'https://viktorchizh.github.io/portfolio/',
-        onClickDemo: () => {window.location.href = Achivements},
+        onClickDemo: () => {window.location.href = Achievements},
         targetDemo: '_blank',
         hrefCode: 'https://github.com/ViktorChizh',
         onClickCode:  ()=>{},
@@ -91,11 +91,11 @@ const MenuItems = ['All'].concat(base.map(item => item.name).filter((a, i) => a 
 export const Works = () => {
     const [filterValue, setFilterValue] = useState('All')
 
-    let filtredBase = base
+    let filteredBase = base
 
     for (let i=1; i<=MenuItems.length; i++) {
         if (filterValue === MenuItems[i]) {
-            filtredBase = base.filter(work => work.name === MenuItems[i])
+            filteredBase = base.filter(work => work.name === MenuItems[i])
         }
     }
 
@@ -105,7 +105,7 @@ export const Works = () => {
                 <StyledTitle>My Works</StyledTitle>
                 <Menu items={MenuItems} changeFilterValue={setFilterValue} color={`${Theme.colors.textTitle}`} selectedItem={filterValue} />
                 <FlexWrapper direction={'row'} justify={'space-between'} wrap={'wrap'} gap={'1%'} alighContent={'center'}>
-                    {filtredBase.map((w, index) => {
+                    {filteredBase.map((w, index) => {
                         return (
                             <Work key={index}>
                                 <ImgWrapper info={w.imgInfo}>
