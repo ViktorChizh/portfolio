@@ -5,7 +5,7 @@ import bigFoto from '../../../assets/фотка2.jpg'
 import map from '../../../assets/map-by.png'
 import { Theme } from '../../../stylesAndThemes/Theme'
 import { Container } from '../../../components/Container'
-import cv from "../../../assets/CV.jpg"
+import cv from "../../../assets/CV.png"
 import { Button } from '../../../components/Button'
 import Typewriter from 'typewriter-effect'
 
