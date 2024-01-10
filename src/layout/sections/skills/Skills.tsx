@@ -14,16 +14,16 @@ type SkillsType = {
 const skills: SkillsType[] = [
     {iconId: 'html', progress: 90, title: 'HTML'},
     {iconId: 'css', progress: 90, title: 'CSS'},
-    {iconId: 'js', progress: 90, title: 'JavaScript'},
-    {iconId: 'ts', progress: 85, title: 'TypeScript'},
+    {iconId: 'js', progress: 85, title: 'JavaScript'},
+    {iconId: 'ts', progress: 80, title: 'TypeScript'},
     {iconId: 'react', progress: 75, title: 'React'},
-    {iconId: 'redux', progress: 75, title: 'Redux'},  
+    {iconId: 'next', progress: 65, title: 'NextJS'},
+    {iconId: 'redux', progress: 75, title: 'Redux'},
+    {iconId: 'mobx', progress: 65, title: 'MobX'},
     {iconId: 'sass', progress: 90, title: 'SASS'},
     {iconId: 'StyledComponents', progress: 90, title: 'Styled Com-ponents'},
     {iconId: 'bootstrap', progress: 75, title: 'Bootstrap'},
-    {iconId: 'materialUI', progress: 75, title: 'MaterialUI'},
-    {iconId: 'next', progress: 65, title: 'NextJS'},
-    {iconId: 'mobx', progress: 65, title: 'MobX'},   
+    {iconId: 'materialUI', progress: 85, title: 'MaterialUI'},
     {iconId: 'jest', progress: 75, title: 'Jest'},   
     {iconId: 'storybook', progress: 75, title: 'Storybook'},
     {iconId: 'git', progress: 85, title: 'GIT'},
@@ -36,7 +36,7 @@ export const Skills = () => {
     return(
         <StyledSkills id={'Skills'}>
             <Container>
-                <StyledTitle>My Skills With Progress</StyledTitle>
+                <StyledTitle>My Skills</StyledTitle>
                 <AllSkillsAtIcons skills={skills}/>
             </Container>
         </StyledSkills>
