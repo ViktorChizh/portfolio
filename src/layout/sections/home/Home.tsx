@@ -78,7 +78,6 @@ const StyledMain = styled.section`
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        align-items:  space-evenly;
         color: ${Theme.colors.textTitle};
         .foto {
             border-radius:5%;
@@ -121,5 +120,3 @@ const StyledMain = styled.section`
         }
     }
 `
-
-
