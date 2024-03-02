@@ -26,6 +26,7 @@ const skills: SkillsType[] = [
     {iconId: 'materialUI', progress: 85, title: 'MaterialUI'},
     {iconId: 'jest', progress: 75, title: 'Jest'},   
     {iconId: 'storybook', progress: 75, title: 'Storybook'},
+    {iconId: 'postman', progress: 75, title: 'Postman'},
     {iconId: 'git', progress: 85, title: 'GIT'},
     {iconId: 'sql', progress: 50, title: 'SQL'},
     {iconId: 'python', progress: 50, title: 'Python'},

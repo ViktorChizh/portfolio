@@ -1,4 +1,4 @@
-import * as React from 'react'
+import  React from 'react'
 import styled from 'styled-components'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 import bigFoto from '../../../assets/фотка2.jpg'
@@ -8,7 +8,6 @@ import { Container } from '../../../components/Container'
 import cv from "../../../assets/CV.png"
 import { Button } from '../../../components/Button'
 import Typewriter from 'typewriter-effect'
-
 
 export const Home = () => {
     const download = () => {
@@ -33,7 +32,12 @@ export const Home = () => {
                     <h2>I am Viktor Chizh</h2>
                     <h1>A Front-end Developer</h1>
                     <FlexWrapper align={'center'}>
-                        <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'}  border={`5px double ${Theme.colors.bgSecondary}`}  onClick={download}>Download CV</Button>
+                        <Button bgColor={Theme.colors.iconPrimary}
+                                color={Theme.colors.iconSecoddary}
+                                padding={"10px"}
+                                borderRadius={'10px'}
+                                border={`5px double ${Theme.colors.bgSecondary}`}
+                                onClick={download}>Download CV</Button>
                         <p className='pointer'>&nbsp;&#9754;</p>
                         <Typewriter options={{
                             strings: [' About me'],
