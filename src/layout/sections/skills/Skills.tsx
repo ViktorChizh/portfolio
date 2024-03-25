@@ -18,7 +18,7 @@ const skills: SkillsType[] = [
     {iconId: 'ts', progress: 80, title: 'TypeScript'},
     {iconId: 'react', progress: 75, title: 'React'},
     {iconId: 'next', progress: 65, title: 'NextJS'},
-    {iconId: 'redux', progress: 75, title: 'Redux'},
+    {iconId: 'redux', progress: 75, title: 'Redux-Toolkit Redux'},
     {iconId: 'mobx', progress: 65, title: 'MobX'},
     {iconId: 'sass', progress: 90, title: 'SASS'},
     {iconId: 'StyledComponents', progress: 90, title: 'Styled Com-ponents'},
