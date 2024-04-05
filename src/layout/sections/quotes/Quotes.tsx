@@ -1,10 +1,10 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { StyledTitle } from '../../../components/StyledTitle';
-import { FlexWrapper } from '../../../components/FlexWrapper';
-import { Icon } from '../../../components/icon/Icon';
-import { Theme } from '../../../stylesAndThemes/Theme';
-import { Container } from '../../../components/Container';
+import { StyledTitle } from 'components/StyledTitle';
+import { FlexWrapper } from 'components/FlexWrapper';
+import { Icon } from 'components/icon/Icon';
+import { Theme } from 'stylesAndThemes/Theme';
+import { Container } from 'components/Container';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import './Slider.css'

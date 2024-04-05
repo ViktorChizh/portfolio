@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
-import { Theme } from '../../stylesAndThemes/Theme';
+import { Theme } from 'stylesAndThemes/Theme';
 
 
 type SkillCirclePropsType = {

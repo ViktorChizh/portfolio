@@ -1,16 +1,16 @@
 import  React, { ReactNode, useState }  from 'react';
 import styled from 'styled-components';
-import { StyledTitle } from '../../../components/StyledTitle';
-import { FlexWrapper } from '../../../components/FlexWrapper';
-import work0 from '../../../assets/Work0.svg'
-import work1 from '../../../assets/Work1.svg'
-import work2 from '../../../assets/Work2.svg'
-import watch from '../../../assets/Watch.svg'
-import { Button } from '../../../components/Button';
-import { Theme } from '../../../stylesAndThemes/Theme';
-import { Container } from '../../../components/Container';
-import { Menu } from '../../../components/menu/Menu';
-import Achievements from '../../../assets/Achievements.jpg'
+import { StyledTitle } from 'components/StyledTitle';
+import { FlexWrapper } from 'components/FlexWrapper';
+import work0 from 'assets/Work0.svg'
+import work1 from 'assets/Work1.svg'
+import work2 from 'assets/Work2.svg'
+import watch from 'assets/Watch.svg'
+import { Button } from 'components/Button';
+import { Theme } from 'stylesAndThemes/Theme';
+import { Container } from 'components/Container';
+import { Menu } from 'components/menu/Menu';
+import Achievements from 'assets/Achievements.jpg'
 
 type WorksBaseType = {
     name: string
@@ -115,8 +115,8 @@ export const Works = () => {
                                 {w.pEng}
                                 {w.pRus}<p></p>
                                 <FlexWrapper width={'50%'} justify={'space-evenly'}>
-                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'}  border={`5px double ${Theme.colors.bgPrimary}`} ><a href={w.hrefDemo} onClick={w.onClickDemo} target={w.targetDemo}>Demo</a></Button>
-                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"10px"} borderRadius={'10px'}  border={`5px double ${Theme.colors.bgPrimary}`} ><a href={w.hrefCode} onClick={w.onClickCode} target={w.targetCode} >Code</a></Button>
+                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecondary} padding={"10px"} borderRadius={'10px'} border={`5px double ${Theme.colors.bgPrimary}`} ><a href={w.hrefDemo} onClick={w.onClickDemo} target={w.targetDemo}>Demo</a></Button>
+                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecondary} padding={"10px"} borderRadius={'10px'} border={`5px double ${Theme.colors.bgPrimary}`} ><a href={w.hrefCode} onClick={w.onClickCode} target={w.targetCode} >Code</a></Button>
                                 </FlexWrapper>
                             </Work>
                         )

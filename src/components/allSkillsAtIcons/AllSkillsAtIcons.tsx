@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Icon } from '../icon/Icon';
 import { SkillCircle } from '../skillCircle/SkillCircle';
 import styled from 'styled-components';
-import { Theme } from '../../stylesAndThemes/Theme';
+import { Theme } from 'stylesAndThemes/Theme';
 import { Roll } from "react-awesome-reveal";
 
 type AllSkillsAtIconsPropsType = {

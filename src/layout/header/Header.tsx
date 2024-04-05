@@ -1,10 +1,10 @@
 import React from 'react'
-import { Menu } from '../../components/menu/Menu'
+import { Menu } from 'components/menu/Menu'
 import styled from 'styled-components'
-import { Theme } from '../../stylesAndThemes/Theme'
-import { Container } from '../../components/Container'
-import { Icon } from '../../components/icon/Icon'
-import { Button } from '../../components/Button'
+import { Theme } from 'stylesAndThemes/Theme'
+import { Container } from 'components/Container'
+import { Icon } from 'components/icon/Icon'
+import { Button } from 'components/Button'
 import { animateScroll } from 'react-scroll'
 
 export const Header = () => {
@@ -31,7 +31,7 @@ const StyledHeader = styled.header`
     right: 0;
     width: 100%;
     z-index: 8;
-    background-color: ${Theme.colors.bgDarck};
+    background-color: ${Theme.colors.bgDark};
 
     
     ${Container} {

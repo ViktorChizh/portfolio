@@ -1,10 +1,10 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { Button } from '../../../components/Button';
-import { FlexWrapper } from '../../../components/FlexWrapper';
-import { StyledTitle } from '../../../components/StyledTitle';
-import { Theme } from '../../../stylesAndThemes/Theme';
-import { Container } from '../../../components/Container';
+import { Button } from 'components/Button';
+import { FlexWrapper } from 'components/FlexWrapper';
+import { StyledTitle } from 'components/StyledTitle';
+import { Theme } from 'stylesAndThemes/Theme';
+import { Container } from 'components/Container';
 import emailjs from '@emailjs/browser';
 import { ElementRef, useRef } from 'react';
 import imgMail from '../../../assets/Mail.svg'
@@ -38,7 +38,7 @@ export const Contact = () => {
                             <ContactField required placeholder='Name' name={'user_name'}></ContactField>
                             <ContactField required placeholder='Email' type='email' name={'subject'}></ContactField>
                             <ContactField required placeholder='Text message' as='textarea' name={'message'}></ContactField>
-                            <Button type='submit' bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecoddary} padding={"5px 8px"} borderRadius={'10px'}  border={`5px double ${Theme.colors.bgSecondary}`} >SEND MESSAGE to my email: victor.chizh@mail.ru</Button>
+                            <Button type='submit' bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecondary} padding={"5px 8px"} borderRadius={'10px'} border={`5px double ${Theme.colors.bgSecondary}`} >SEND MESSAGE to my email: victor.chizh@mail.ru</Button>
                         </FlexWrapper>
                     </ContactForm>
                     <img src={imgMail} alt='' />

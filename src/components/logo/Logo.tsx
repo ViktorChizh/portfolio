@@ -1,5 +1,5 @@
 import React from 'react'
-import foto from '../../assets/littleFoto.png'
+import photo from 'assets/littleFoto.png'
 import styled from 'styled-components'
 
 type logoPropsType = {
@@ -10,7 +10,7 @@ type logoPropsType = {
 export const Logo = (props: logoPropsType) => {
     return (
         <StyledLogo href='https://viktorchizh.github.io/portfolio/'>
-            <img src={foto} 
+            <img src={photo}
                 alt='logo' 
                 width={`${props.width}` || '75px'}
                 height={`${props.height}` || '75px'}

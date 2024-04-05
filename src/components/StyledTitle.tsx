@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Theme } from "../stylesAndThemes/Theme";
+import { Theme } from "stylesAndThemes/Theme";
 
 export const StyledTitle = styled.h2`
     padding-bottom: 25px;

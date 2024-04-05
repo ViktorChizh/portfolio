@@ -1,10 +1,10 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { StyledTitle } from '../../components/StyledTitle';
-import { FlexWrapper } from '../../components/FlexWrapper';
-import { Icon } from '../../components/icon/Icon';
-import { Theme } from '../../stylesAndThemes/Theme';
-import { Container } from '../../components/Container';
+import { StyledTitle } from 'components/StyledTitle';
+import { FlexWrapper } from 'components/FlexWrapper';
+import { Icon } from 'components/icon/Icon';
+import { Theme } from 'stylesAndThemes/Theme';
+import { Container } from 'components/Container';
 
 type FooterBaseType = {
     link: string
@@ -46,7 +46,7 @@ const StyledFooter = styled.footer`
 position: relative;
 z-index: 1;
 color: ${Theme.colors.textPrimary};
-background-color: ${Theme.colors.bgDarck};
+background-color: ${Theme.colors.bgDark};
     ${Container} {
         padding: 15px 0;
         display: flex;
