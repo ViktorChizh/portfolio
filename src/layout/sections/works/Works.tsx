@@ -5,7 +5,7 @@ import { FlexWrapper } from 'components/FlexWrapper';
 import work0 from 'assets/Work0.svg'
 import work1 from 'assets/Work1.svg'
 import work2 from 'assets/Work2.svg'
-import watch from 'assets/Watch.svg'
+import watch from 'assets/Achieve.svg'
 import { Button } from 'components/Button';
 import { Theme } from 'stylesAndThemes/Theme';
 import { Container } from 'components/Container';
@@ -32,20 +32,20 @@ const base: WorksBaseType[] = [
         name: 'StudiesProjects',
         imgInfo: 'In developing',
         imgSrc: work0,
-        title: 'ToDoList',
-        pEng:<p>This is the main cross-cutting project in the IT-INCUBATOR courses, where I consolidate my knowledge and fill existing gaps in it.<br />Links to the code and sample work correspond to the current state of the project.</p>,
-        pRus: <p>Это основной сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br /> Ссылки на код и на образец работы соответствуют текущему состоянию проекта.</p>,
-        hrefDemo:'https://viktorchizh.github.io/1-todolist/',
-        onClickDemo: ()=>{},
+        title: 'Flash Cards',
+        pEng: <p>This is command project on courses in the IT-INCUBATOR, where I consolidate my skill in command-work.<br/>  At this project our team using GitHub and learning new necessary knowledge for solving tasks.<br /> Links to the code and sample work correspond to the current state of the project.</p>,
+        pRus: <p>Это командный проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои навыки командной работы. <br/>  B этом проекте наша команда использует GitHub и изучает новые знания, необходимые для решения задач.<br />  Ссылки на код и на образец работы соответствуют текущему состоянию проекта.</p>,
+        hrefDemo:'https://github.com/Arenelin/-flash-cards-',
+        onClickDemo:  ()=>{},
         targetDemo: '_blank',
-        hrefCode: 'https://github.com/ViktorChizh/1-todolist',
-        onClickCode:  ()=>{},
+        hrefCode: 'https://github.com/Arenelin/-flash-cards-',
+        onClickCode: ()=>{},
         targetCode: "_blank"
     },
     {
         name: 'StudiesProjects',
-        imgInfo: 'I`m thinking about that',
-        imgSrc: work1,
+        imgInfo: 'In developing',
+        imgSrc: work0,
         title: 'Social Network',
         pEng:<p>This is an additional (for independent work on given materials) start-to-end project on courses in the IT-INCUBATOR, where I consolidate my knowledge and fill existing gaps in it.<br /> Links to the code and sample work correspond to the current state of the project.</p>,
         pRus: <p>Это дополнительный (для самостоятельной работы по выданным материалам) сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br />  Ссылки на код и на образец работы соответствуют текущему состоянию проекта.</p>,
@@ -57,8 +57,22 @@ const base: WorksBaseType[] = [
         targetCode: "_blank"
     },
     {
+        name: 'StudiesProjects',
+        imgInfo: 'I`m finished this project',
+        imgSrc: work1,
+        title: 'ToDoList',
+        pEng:<p>This is the main cross-cutting project in the IT-INCUBATOR courses, where I consolidate my knowledge and fill existing gaps in it.<br />Links to the code and sample work correspond to the current state of the project.</p>,
+        pRus: <p>Это основной сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br /> Ссылки на код и на образец работы соответствуют текущему состоянию проекта.</p>,
+        hrefDemo:'https://viktorchizh.github.io/1-todolist/',
+        onClickDemo: ()=>{},
+        targetDemo: '_blank',
+        hrefCode: 'https://github.com/ViktorChizh/1-todolist',
+        onClickCode:  ()=>{},
+        targetCode: "_blank"
+    },
+    {
         name: 'CommercialProjects',
-        imgInfo: 'I`m resting from that',
+        imgInfo: 'I`m finished working here',
         imgSrc: work2,
         title: 'First commercial project, where I`m been',
         pEng:<p>I interned for half a year on a real commercial project as a FRONT-END developer. In addition to the main functionality, I performed the duties of a Project Manager Assistant, where I supervised the front-end and back-end.<br /> During the internship, I completed assigned tasks, listened to mentors, and participated in discussing problems and searching for their solutions, communicated with designers and testers.<br /> At English courses at the company, I improved my language from A2 to B1.</p>,
