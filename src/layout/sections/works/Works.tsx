@@ -72,7 +72,7 @@ const base: WorksBaseType[] = [
     },
     {
         name: 'CommercialProjects',
-        imgInfo: 'I`m finished working here',
+        imgInfo: 'I`m finished traineeship here',
         imgSrc: work2,
         title: 'First commercial project, where I`m been',
         pEng:<p>I interned for half a year on a real commercial project as a FRONT-END developer. In addition to the main functionality, I performed the duties of a Project Manager Assistant, where I supervised the front-end and back-end.<br /> During the internship, I completed assigned tasks, listened to mentors, and participated in discussing problems and searching for their solutions, communicated with designers and testers.<br /> At English courses at the company, I improved my language from A2 to B1.</p>,
