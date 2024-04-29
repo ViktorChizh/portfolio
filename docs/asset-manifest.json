@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.28cf634c.css",
-    "main.js": "/portfolio/static/js/main.b466c5b6.js",
+    "main.js": "/portfolio/static/js/main.d3601869.js",
     "static/js/787.25eaef86.chunk.js": "/portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/Achievements.jpg": "/portfolio/static/media/Achievements.dd85923fbd844a4502a4.jpg",
     "static/media/CV.png": "/portfolio/static/media/CV.8ce831f306c59e16c3b6.png",
     "static/media/фотка2.jpg": "/portfolio/static/media/фотка2.b6baa054a3eca0c601ee.jpg",
-    "static/media/spriteSvgIcon.svg": "/portfolio/static/media/spriteSvgIcon.59ae8119a7c787f3e94c14fddd5a3028.svg",
+    "static/media/spriteSvgIcon.svg": "/portfolio/static/media/spriteSvgIcon.2dad17243ec3638f4361c666dda0b9ae.svg",
     "static/media/map-by.png": "/portfolio/static/media/map-by.2f0538b875a0b9aba0e6.png",
     "static/media/map-by-bg.png": "/portfolio/static/media/map-by-bg.4c4571be3c7c1a53be9e.png",
     "static/media/Work2.svg": "/portfolio/static/media/Work2.75aeb1e66c1aa14a6420e14c60b06647.svg",
@@ -16,11 +16,11 @@
     "static/media/Mail.svg": "/portfolio/static/media/Mail.bd5400f6828d6d4110f2d58f10944b62.svg",
     "index.html": "/portfolio/index.html",
     "main.28cf634c.css.map": "/portfolio/static/css/main.28cf634c.css.map",
-    "main.b466c5b6.js.map": "/portfolio/static/js/main.b466c5b6.js.map",
+    "main.d3601869.js.map": "/portfolio/static/js/main.d3601869.js.map",
     "787.25eaef86.chunk.js.map": "/portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.28cf634c.css",
-    "static/js/main.b466c5b6.js"
+    "static/js/main.d3601869.js"
   ]
 }
