@@ -35,7 +35,7 @@ const base: WorksBaseType[] = [
         title: 'Flash Cards',
         pEng: <p>This is command project on courses in the IT-INCUBATOR, where I consolidate my skill in command-work.<br/>  At this project our team using GitHub and learning new necessary knowledge for solving tasks.<br /> Links to the code and sample work correspond to the current state of the project.</p>,
         pRus: <p>Это командный проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои навыки командной работы. <br/>  B этом проекте наша команда использует GitHub и изучает новые знания, необходимые для решения задач.<br />  Ссылки на код и на образец работы соответствуют текущему состоянию проекта.</p>,
-        hrefDemo:'https://flash-cards-kappa-two.vercel.app/',
+        hrefDemo:'https://flash-cards-main.vercel.app/',
         onClickDemo:  ()=>{},
         targetDemo: '_blank',
         hrefCode: 'https://github.com/Arenelin/-flash-cards-',
