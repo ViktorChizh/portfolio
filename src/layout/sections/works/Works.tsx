@@ -23,18 +23,32 @@ type WorksBaseType = {
     onClickDemo: ()=>void
     targetDemo: string
     hrefCode: string
-    onClickCode:  ()=>void
+    onClickCode: ()=>void
     targetCode: string
 }
 
 const base: WorksBaseType[] = [
     {
         name: 'TeamProjects',
+        imgInfo: 'I`m finished traineeship here',
+        imgSrc: work2,
+        title: 'First commercial project, where I`m been',
+        pEng:<p>I interned for half a year on a real commercial project as a FRONT-END developer. In addition to the main functionality, I performed the duties of a Project Manager Assistant, where I supervised the front-end and back-end.<br /> During the internship, I completed assigned tasks, listened to mentors, and participated in discussing problems and searching for their solutions, communicated with designers and testers.<br /> At English courses at the company, I improved my language to A2 (in progress).</p>,
+        pRus: <p>Пол года стажировался на реальном коммерческом проекте в качестве FRONT-END разработчика. Помимо основного функционала, выполнял обязанности Project Manager Assistant, где курировал фронт-энд и бэк-энд.<br /> Во время стажировки выполнял поставленные задачи, слушал менторов, участвовал в обсуждениях проблем и поисках их решения, коммуницировал с дизайнерами и тестировщиками.<br /> На курсах английского в компании подтянул язык до А2 (продолжаю изучение).</p>,
+        hrefDemo:'https://www.youtube.com/watch?v=XlGi7xTGJ3I',
+        targetDemo: "_blank",
+        onClickDemo:  ()=>{},
+        hrefCode: '#',
+        onClickCode: () => alert("\nIt's owner's intellectual property \n\nЭто интеллектуальная собственность владельца"),
+        targetCode: ''
+    },
+    {
+        name: 'TeamProjects',
         imgInfo: 'We are finished this project',
         imgSrc: work1,
         title: 'Flash Cards',
-        pEng: <p>This is command project on courses in the IT-INCUBATOR, where I consolidate my skill in command-work.<br/>  At this project our team using GitHub and learning new necessary knowledge for solving tasks.<br /> Links to the code and sample work correspond to the current state of the project.</p>,
-        pRus: <p>Это командный проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои навыки командной работы. <br/>  B этом проекте наша команда использует GitHub и изучает новые знания, необходимые для решения задач.<br />  Ссылки на код и на образец работы соответствуют текущему состоянию проекта.</p>,
+        pEng: <p>This is command project on courses in the IT-INCUBATOR, where I consolidated my skill in command-work.<br/>  At this project our team using GitHub and learned new necessary knowledge when we solving tasks.</p>,
+        pRus: <p>Это командный проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепил свои навыки командной работы. <br/>  B этом проекте наша команда использовала GitHub и изучала новые знания, необходимые для решения задач.</p>,
         hrefDemo:'https://flash-cards-main.vercel.app/',
         onClickDemo:  ()=>{},
         targetDemo: '_blank',
@@ -69,20 +83,6 @@ const base: WorksBaseType[] = [
         hrefCode: 'https://github.com/ViktorChizh/1-todolist',
         onClickCode:  ()=>{},
         targetCode: "_blank"
-    },
-    {
-        name: 'TeamProjects',
-        imgInfo: 'I`m finished traineeship here',
-        imgSrc: work2,
-        title: 'First commercial project, where I`m been',
-        pEng:<p>I interned for half a year on a real commercial project as a FRONT-END developer. In addition to the main functionality, I performed the duties of a Project Manager Assistant, where I supervised the front-end and back-end.<br /> During the internship, I completed assigned tasks, listened to mentors, and participated in discussing problems and searching for their solutions, communicated with designers and testers.<br /> At English courses at the company, I improved my language from A2 to B1.</p>,
-        pRus: <p>Пол года стажировался на реальном коммерческом проекте в качестве FRONT-END разработчика. Помимо основного функционала, выполнял обязанности Project Manager Assistant, где курировал фронт-энд и бэк-энд.<br /> Во время стажировки выполнял поставленные задачи, слушал менторов, участвовал в обсуждениях проблем и поисках их решения, коммуницировал с дизайнерами и тестировщиками.<br /> На курсах английского в компании подтянул язык с А2 до В1.</p>,
-        hrefDemo:'https://www.youtube.com/watch?v=XlGi7xTGJ3I',
-        targetDemo: "_blank",
-        onClickDemo:  ()=>{},
-        hrefCode: '#',
-        onClickCode: () => alert("\nIt's owner's intellectual property \n\nЭто интеллектуальная собственность владельца"),
-        targetCode: ''
     },
     {
         name: 'Achievements',
