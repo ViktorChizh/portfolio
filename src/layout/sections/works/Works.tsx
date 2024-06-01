@@ -29,9 +29,9 @@ type WorksBaseType = {
 
 const base: WorksBaseType[] = [
     {
-        name: 'StudiesProjects',
-        imgInfo: 'In developing',
-        imgSrc: work0,
+        name: 'TeamProjects',
+        imgInfo: 'We are finished this project',
+        imgSrc: work1,
         title: 'Flash Cards',
         pEng: <p>This is command project on courses in the IT-INCUBATOR, where I consolidate my skill in command-work.<br/>  At this project our team using GitHub and learning new necessary knowledge for solving tasks.<br /> Links to the code and sample work correspond to the current state of the project.</p>,
         pRus: <p>Это командный проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои навыки командной работы. <br/>  B этом проекте наша команда использует GitHub и изучает новые знания, необходимые для решения задач.<br />  Ссылки на код и на образец работы соответствуют текущему состоянию проекта.</p>,
@@ -43,7 +43,7 @@ const base: WorksBaseType[] = [
         targetCode: "_blank"
     },
     {
-        name: 'StudiesProjects',
+        name: 'PersonalProjects',
         imgInfo: 'In developing',
         imgSrc: work0,
         title: 'Social Network',
@@ -57,9 +57,9 @@ const base: WorksBaseType[] = [
         targetCode: "_blank"
     },
     {
-        name: 'StudiesProjects',
-        imgInfo: 'I`m finished this project',
-        imgSrc: work1,
+        name: 'PersonalProjects',
+        imgInfo: 'In developing',
+        imgSrc: work0,
         title: 'ToDoList',
         pEng:<p>This is the main cross-cutting project in the IT-INCUBATOR courses, where I consolidate my knowledge and fill existing gaps in it.<br />Links to the code and sample work correspond to the current state of the project.</p>,
         pRus: <p>Это основной сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br /> Ссылки на код и на образец работы соответствуют текущему состоянию проекта.</p>,
@@ -71,7 +71,7 @@ const base: WorksBaseType[] = [
         targetCode: "_blank"
     },
     {
-        name: 'CommercialProjects',
+        name: 'TeamProjects',
         imgInfo: 'I`m finished traineeship here',
         imgSrc: work2,
         title: 'First commercial project, where I`m been',
