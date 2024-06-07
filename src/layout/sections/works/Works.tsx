@@ -2,7 +2,7 @@ import  React, { ReactNode, useState }  from 'react';
 import styled from 'styled-components';
 import { StyledTitle } from 'components/StyledTitle';
 import { FlexWrapper } from 'components/FlexWrapper';
-import work0 from 'assets/Work0.svg'
+// import work0 from 'assets/Work0.svg'
 import work1 from 'assets/Work1.svg'
 import work2 from 'assets/Work2.svg'
 import watch from 'assets/Achieve.svg'
