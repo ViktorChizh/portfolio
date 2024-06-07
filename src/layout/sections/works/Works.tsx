@@ -45,7 +45,7 @@ const base: WorksBaseType[] = [
     {
         name: 'TeamProjects',
         imgInfo: 'We are finished this project',
-        imgSrc: work1,
+        imgSrc: work2,
         title: 'Flash Cards',
         pEng: <p>This is command project on courses in the IT-INCUBATOR, where I consolidated my skill in command-work.<br/>  At this project our team using GitHub and learned new necessary knowledge when we solving tasks.</p>,
         pRus: <p>Это командный проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепил свои навыки командной работы. <br/>  B этом проекте наша команда использовала GitHub и изучала новые знания, необходимые для решения задач.</p>,
@@ -55,6 +55,20 @@ const base: WorksBaseType[] = [
         hrefCode: 'https://github.com/Arenelin/-flash-cards-',
         onClickCode: ()=>{},
         targetCode: "_blank"
+    },
+    {
+      name: 'PersonalProjects',
+      imgInfo: 'Project complete',
+      imgSrc: work1,
+      title: 'ToDoList',
+      pEng:<p>This is the main cross-cutting project in the IT-INCUBATOR courses, where I consolidate my knowledge and fill existing gaps in it.</p>,
+      pRus: <p>Это основной сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.</p>,
+      hrefDemo:'https://viktorchizh.github.io/todolist/',
+      onClickDemo: ()=>{},
+      targetDemo: '_blank',
+      hrefCode: 'https://github.com/ViktorChizh/todolist',
+      onClickCode:  ()=>{},
+      targetCode: "_blank"
     },
     {
         name: 'PersonalProjects',
@@ -68,20 +82,6 @@ const base: WorksBaseType[] = [
         targetDemo: '_blank',
         hrefCode: 'https://github.com/ViktorChizh/Social-network---educational-personal-project',
         onClickCode: ()=>{},
-        targetCode: "_blank"
-    },
-    {
-        name: 'PersonalProjects',
-        imgInfo: 'In developing',
-        imgSrc: work0,
-        title: 'ToDoList',
-        pEng:<p>This is the main cross-cutting project in the IT-INCUBATOR courses, where I consolidate my knowledge and fill existing gaps in it.<br />Links to the code and sample work correspond to the current state of the project.</p>,
-        pRus: <p>Это основной сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br /> Ссылки на код и на образец работы соответствуют текущему состоянию проекта.</p>,
-        hrefDemo:'https://viktorchizh.github.io/1-todolist/',
-        onClickDemo: ()=>{},
-        targetDemo: '_blank',
-        hrefCode: 'https://github.com/ViktorChizh/1-todolist',
-        onClickCode:  ()=>{},
         targetCode: "_blank"
     },
     {
