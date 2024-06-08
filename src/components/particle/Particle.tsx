@@ -7,12 +7,10 @@ export const Particle = () => {
         await loadSlim(engine);
     }, []);
 
-    // const particlesLoaded = useCallback( () => {}, []);
     return (
         <Particles
             id="tsparticles"
             init={particlesInit}
-            // loaded={particlesLoaded}
             options={{
                 background: {
                     color: {
