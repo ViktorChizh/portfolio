@@ -7,11 +7,27 @@ import mapBg from 'assets/map-by-bg.png'
 import { Theme } from 'stylesAndThemes/Theme'
 import { Container } from 'components/Container'
 import cv from "assets/CV.png"
+import resume from "assets/Resume.pdf"
 import { Button } from 'components/Button'
 import Typewriter from 'typewriter-effect'
 
 export const Home = () => {
-    const download = () => {
+    const downloadResume = () => {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // Открыть файл на мобильных устройствах
+            window.location.href = resume;
+        } else {
+            // Скачать файл на компьютерах
+            const link = document.createElement("a");
+            link.href = resume
+            link.setAttribute("download", "Resume.pdf")
+            document.body.appendChild(link)
+            link.click()
+            document.body.removeChild(link);
+        }
+    }
+
+    const downloadCV = () => {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             // Открыть файл на мобильных устройствах
             window.location.href = cv;
@@ -28,20 +44,28 @@ export const Home = () => {
     return (
         <StyledMain id={'Home'}>
             <Container>
-                <FlexWrapper direction={'column'} justify={'space-evenly'} align={'flex-start'}>
+                <FlexWrapper direction={'column'} justify={'space-evenly'} align={'flex-start'} gap='10px'>
                     <span>Hi There</span>
                     <h2>I am Viktor Chizh</h2>
                     <h1>A Front-end Developer</h1>
+                    <Button bgColor={Theme.colors.iconPrimary}
+                            color={Theme.colors.iconSecondary}
+                            padding={"10px"}
+                            borderRadius={'10px'}
+                            border={`5px double ${Theme.colors.bgSecondary}`}
+                            width='100%'
+                            onClick={downloadResume}>Download resume</Button>
                     <FlexWrapper align={'center'}>
                         <Button bgColor={Theme.colors.iconPrimary}
                                 color={Theme.colors.iconSecondary}
                                 padding={"10px"}
+                                style={{marginRight:'10px'}}
                                 borderRadius={'10px'}
                                 border={`5px double ${Theme.colors.bgSecondary}`}
-                                onClick={download}>Download CV</Button>
-                        <p className='pointer'>&nbsp;&#9754;</p>
+                                onClick={downloadCV}>Download CV</Button>
+                        {/*<p className='pointer'>&nbsp;&#9754;</p>*/}
                         <Typewriter options={{
-                            strings: [' About me'],
+                            strings: [' More about me'],
                             autoStart: true,
                             loop: true,
                         }}
@@ -106,13 +130,13 @@ const StyledMain = styled.section`
         }
 
         .Typewriter {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 900;
         }
 
         @media (width <= 992px) {
             .Typewriter {
-                font-size: 27.5px;
+                font-size: 16px;
             }
         }
     }
