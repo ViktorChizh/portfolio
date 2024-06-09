@@ -78,10 +78,10 @@ const base: WorksBaseType[] = [
         pEng: <p>This is an additional (for independent work on given materials) start-to-end project on courses in the
             IT-INCUBATOR.<br/> The project was interesting for me because it was necessary to independently overlay TypeScript on top of the legacy-code, which made it possible to completely rethink the content of the project.</p>,
         pRus: <p>Это дополнительный (для самостоятельной работы по выданным материалам) сквозной проект на курсах в ИТ-ИНКУБАТОРЕ.<br/> Проект для меня был интересен тем, что на legacy-код надо было самостоятельно наложить сверху TypeScript, что позволило полностью переосмыслить содержание проекта.</p>,
-        hrefDemo:'https://viktorchizh.github.io/Social-network---educational-personal-project/',
+        hrefDemo:'https://viktorchizh.github.io/Social-network/',
         onClickDemo:  ()=>{},
         targetDemo: '_blank',
-        hrefCode: 'https://github.com/ViktorChizh/Social-network---educational-personal-project',
+        hrefCode: 'https://github.com/ViktorChizh/Social-network',
         onClickCode: ()=>{},
         targetCode: "_blank"
     },
