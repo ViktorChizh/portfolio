@@ -50,7 +50,7 @@ export const Home = () => {
                     <h1>A Front-end Developer</h1>
                     <Button bgColor={Theme.colors.iconPrimary}
                             color={Theme.colors.iconSecondary}
-                            padding={"10px"}
+                            padding={"5px"}
                             borderRadius={'10px'}
                             border={`5px double ${Theme.colors.bgSecondary}`}
                             width='100%'
@@ -58,12 +58,12 @@ export const Home = () => {
                     <FlexWrapper align={'center'}>
                         <Button bgColor={Theme.colors.iconPrimary}
                                 color={Theme.colors.iconSecondary}
-                                padding={"10px"}
-                                style={{marginRight:'10px'}}
+                                padding={"5px"}
+                                style={{marginRight:'4px'}}
                                 borderRadius={'10px'}
                                 border={`5px double ${Theme.colors.bgSecondary}`}
                                 onClick={downloadCV}>Download CV</Button>
-                        {/*<p className='pointer'>&nbsp;&#9754;</p>*/}
+                        <p className='pointer'>&#9754;</p>
                         <Typewriter options={{
                             strings: [' More about me'],
                             autoStart: true,
@@ -125,19 +125,13 @@ const StyledMain = styled.section`
         }
 
         .pointer {
-            font-size: 40px;
+            font-size: 30px;
             font-weight: bolder;
         }
 
         .Typewriter {
             font-size: 16px;
             font-weight: 900;
-        }
-
-        @media (width <= 992px) {
-            .Typewriter {
-                font-size: 16px;
-            }
         }
     }
 
@@ -156,6 +150,15 @@ const StyledMain = styled.section`
             font-size: 1.5em;
             font-weight: 700;
             letter-spacing: 0.15em;
+        }
+        ${Container} {
+            .pointer {
+                font-size: 35px;
+            }
+            .Typewriter {
+                font-size: 20px;
+                font-weight: 900;
+            }
         }
     }
 `

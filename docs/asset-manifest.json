@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.eab77925.css",
-    "main.js": "/portfolio/static/js/main.246573bb.js",
+    "main.js": "/portfolio/static/js/main.6ae13b3d.js",
     "static/js/201.f57e8347.chunk.js": "/portfolio/static/js/201.f57e8347.chunk.js",
     "static/media/Achievements.jpg": "/portfolio/static/media/Achievements.dd85923fbd844a4502a4.jpg",
     "static/media/CV.png": "/portfolio/static/media/CV.8ce831f306c59e16c3b6.png",
     "static/media/фотка2.jpg": "/portfolio/static/media/фотка2.b6baa054a3eca0c601ee.jpg",
     "static/media/Resume.pdf": "/portfolio/static/media/Resume.956a69dbaf8c3e10f635.pdf",
-    "static/media/spriteSvgIcon.svg": "/portfolio/static/media/spriteSvgIcon.baf50bc2a73cf51250f0deb79bd30269.svg",
+    "static/media/spriteSvgIcon.svg": "/portfolio/static/media/spriteSvgIcon.66dfe1e21ec3144afa6ccc339be37028.svg",
     "static/media/map-by.png": "/portfolio/static/media/map-by.2f0538b875a0b9aba0e6.png",
     "static/media/map-by-bg.png": "/portfolio/static/media/map-by-bg.4c4571be3c7c1a53be9e.png",
     "static/media/Work2.svg": "/portfolio/static/media/Work2.75aeb1e66c1aa14a6420e14c60b06647.svg",
@@ -16,11 +16,11 @@
     "static/media/Mail.svg": "/portfolio/static/media/Mail.bd5400f6828d6d4110f2d58f10944b62.svg",
     "index.html": "/portfolio/index.html",
     "main.eab77925.css.map": "/portfolio/static/css/main.eab77925.css.map",
-    "main.246573bb.js.map": "/portfolio/static/js/main.246573bb.js.map",
+    "main.6ae13b3d.js.map": "/portfolio/static/js/main.6ae13b3d.js.map",
     "201.f57e8347.chunk.js.map": "/portfolio/static/js/201.f57e8347.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eab77925.css",
-    "static/js/main.246573bb.js"
+    "static/js/main.6ae13b3d.js"
   ]
 }
