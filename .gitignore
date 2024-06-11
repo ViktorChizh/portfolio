@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/unUsed files
 /.pnp
 .pnp.js
 /.idea

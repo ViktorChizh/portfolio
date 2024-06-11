@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from 'assets/littleFoto.png'
+import photo from 'src/assets/littleFoto.png'
 import styled from 'styled-components'
 
 type logoPropsType = {

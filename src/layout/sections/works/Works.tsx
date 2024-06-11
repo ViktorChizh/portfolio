@@ -119,7 +119,7 @@ export const Works = () => {
             <Container>
                 <StyledTitle>My Works</StyledTitle>
                 <Menu items={MenuItems} changeFilterValue={setFilterValue} color={`${Theme.colors.textTitle}`} selectedItem={filterValue} />
-                <FlexWrapper direction={'row'} justify={'space-between'} wrap={'wrap'} gap={'1%'} alighContent={'center'}>
+                <FlexWrapper direction={'row'} justify={'space-between'} wrap={'wrap'} gap={'1%'} alignContent={'center'}>
                     {filteredBase.map((w, index) => {
                         return (
                             <Work key={index}>

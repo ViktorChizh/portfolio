@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Icon } from '../icon/Icon';
+import { Icon } from 'src/components/icon/Icon';
 import styled from 'styled-components';
 
 type BurgerMenuPropsType = {
