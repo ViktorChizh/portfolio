@@ -7,7 +7,7 @@ import { Theme } from 'stylesAndThemes/Theme';
 import { Container } from 'components/Container';
 import emailjs from '@emailjs/browser';
 import { ElementRef, useRef } from 'react';
-import imgMail from '../../../assets/Mail.svg'
+import imgMail from 'assets/Mail.svg'
 
 
 export const Contact = () => {

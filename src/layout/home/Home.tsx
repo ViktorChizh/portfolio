@@ -6,7 +6,7 @@ import map from 'assets/map-by.png'
 import mapBg from 'assets/map-by-bg.png'
 import { Theme } from 'stylesAndThemes/Theme'
 import { Container } from 'components/Container'
-import cv from "assets/CV.png"
+import cv from "assets/CV.pdf"
 import resumeEng from "assets/resumeEng.pdf"
 import resumeRus from "assets/resumeRus.pdf"
 import { Button } from 'components/Button'
@@ -38,29 +38,28 @@ export const Home = () => {
                     <FlexWrapper width='100%' gap='1%'>
                         <Button bgColor={Theme.colors.iconPrimary}
                                 color={Theme.colors.iconSecondary}
-                                padding={'5px'}
-                                borderRadius={'10px'}
-                                border={`5px double ${Theme.colors.bgSecondary}`}
+                                padding={'3px'}
+                                borderRadius={'7px'}
+                                border={`3px double ${Theme.colors.bgSecondary}`}
                                 width="49.5%"
-                                onClick={() => downloadHandler(resumeRus, 'resumeRus.pdf')}>Скачать резюме</Button>
+                                onClick={() => downloadHandler(resumeRus, 'resumeRus.pdf')}>Download resume RU</Button>
                         <Button bgColor={Theme.colors.iconPrimary}
                                 color={Theme.colors.iconSecondary}
-                                padding={'5px'}
-                                borderRadius={'10px'}
-                                border={`5px double ${Theme.colors.bgSecondary}`}
+                                padding={'3px'}
+                                borderRadius={'7px'}
+                                border={`3px double ${Theme.colors.bgSecondary}`}
                                 width="49.5%"
-                                onClick={() => downloadHandler(resumeEng, 'resumeEng.pdf')}>Download resume</Button>
+                                onClick={() => downloadHandler(resumeEng, 'resumeEng.pdf')}>Download resume EN</Button>
                     </FlexWrapper>
-                    <FlexWrapper width='100%' align='center'>
+                    <FlexWrapper width='100%' align='center' gap="1%">
                         <Button bgColor={Theme.colors.iconPrimary}
                                 color={Theme.colors.iconSecondary}
-                                padding={'5px'}
-                                style={{marginRight: '4px'}}
-                                borderRadius={'10px'}
-                                border={`5px double ${Theme.colors.bgSecondary}`}
+                                padding={'3px'}
+                                borderRadius={'7px'}
+                                border={`3px double ${Theme.colors.bgSecondary}`}
                                 width="49.5%"
-                                onClick={() => downloadHandler(cv, 'CV.png')}>Download CV</Button>
-                        <FlexWrapper width='50.5%' alignContent='center'>
+                                onClick={() => downloadHandler(cv, 'CV.pdf')}>Download CV RU</Button>
+                        <FlexWrapper width='49.5%' alignContent='center'>
                             <Pointer>&#9754;</Pointer>
                             <Typewriter options={{
                                 strings: ['More about me'],
@@ -88,7 +87,7 @@ const Wrapper = styled.div`
             content: '';
             position: absolute;
             right: -15%;
-            bottom: -20%;
+            bottom: -18%;
             z-index: -1;
             background-image: url(${mapBg});
             background-size: contain;
@@ -101,14 +100,17 @@ const Wrapper = styled.div`
 `
 
 const Pointer = styled.p`
-    font-size: 26px;
+    font-size: 25px;
     line-height: 16px;
     font-weight: 900;
 `
 
 const StyledMain = styled.section`
     background-color: ${Theme.colors.bgPrimary};
-
+    ${Button} {
+        font-size: 12px;
+        cursor: pointer;
+    }
     ${Container} {
         display: flex;
         flex-wrap: wrap;

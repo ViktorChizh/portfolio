@@ -2,7 +2,7 @@ import  React, { ReactNode, useState }  from 'react';
 import styled from 'styled-components';
 import { StyledTitle } from 'components/StyledTitle';
 import { FlexWrapper } from 'components/FlexWrapper';
-// import work0 from 'assets/Work0.svg'
+import work0 from 'assets/Work0.svg'
 import work1 from 'assets/Work1.svg'
 import work2 from 'assets/Work2.svg'
 import watch from 'assets/Achieve.svg'
@@ -31,7 +31,7 @@ const base: WorksBaseType[] = [
     {
         name: 'TeamProjects',
         imgInfo: 'I`m finished traineeship here',
-        imgSrc: work2,
+        imgSrc: work0,
         title: 'First commercial project, where I`m been',
         pEng:<p>I interned for half a year on a real commercial project as a FRONT-END developer. In addition to the main functionality, I performed the duties of a Project Manager Assistant, where I supervised the front-end and back-end.<br /> During the internship, I completed assigned tasks, listened to mentors, and participated in discussing problems and searching for their solutions, communicated with designers and testers.<br /> At English courses at the company, I improved my language to A2 (in progress).</p>,
         pRus: <p>Пол года стажировался на реальном коммерческом проекте в качестве FRONT-END разработчика. Помимо основного функционала, выполнял обязанности Project Manager Assistant, где курировал фронт-энд и бэк-энд.<br /> Во время стажировки выполнял поставленные задачи, слушал менторов, участвовал в обсуждениях проблем и поисках их решения, коммуницировал с дизайнерами и тестировщиками.<br /> На курсах английского в компании подтянул язык до А2 (продолжаю изучение).</p>,

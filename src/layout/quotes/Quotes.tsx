@@ -7,7 +7,7 @@ import { Theme } from 'stylesAndThemes/Theme';
 import { Container } from 'components/Container';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import './Slider.css'
+import 'layout/quotes/Slider.css'
 
 export const Quotes = () => {
     return (
