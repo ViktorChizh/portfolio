@@ -1,7 +1,7 @@
 import  React from 'react'
 import styled from 'styled-components'
 import { FlexWrapper } from 'components/FlexWrapper'
-import bigPhoto from 'assets/фотка2.jpg'
+import bigPhoto from 'assets/Photo.jpg'
 import map from 'assets/map-by.png'
 import mapBg from 'assets/map-by-bg.png'
 import { Theme } from 'stylesAndThemes/Theme'
@@ -13,8 +13,9 @@ import { Button } from 'components/Button'
 import Typewriter from 'typewriter-effect'
 
 export const Home = () => {
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
     const downloadHandler = (failLink: string, failName: string) => {
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if (isMobile) {
             // Открыть файл на мобильных устройствах
             window.location.href = failLink;
         } else {
@@ -36,37 +37,20 @@ export const Home = () => {
                     <h2>I am Viktor Chizh</h2>
                     <h1>A Front-end Developer&nbsp;</h1>
                     <FlexWrapper width='100%' gap='1%'>
-                        <Button bgColor={Theme.colors.iconPrimary}
-                                color={Theme.colors.iconSecondary}
-                                padding={'3px'}
-                                borderRadius={'7px'}
-                                border={`3px double ${Theme.colors.bgSecondary}`}
-                                width="49.5%"
-                                onClick={() => downloadHandler(resumeRus, 'resumeRus.pdf')}>Download resume RU</Button>
-                        <Button bgColor={Theme.colors.iconPrimary}
-                                color={Theme.colors.iconSecondary}
-                                padding={'3px'}
-                                borderRadius={'7px'}
-                                border={`3px double ${Theme.colors.bgSecondary}`}
-                                width="49.5%"
-                                onClick={() => downloadHandler(resumeEng, 'resumeEng.pdf')}>Download resume EN</Button>
+                        <Button padding={'3px'} borderRadius={'7px'} width="49.5%" onClick={() => downloadHandler(resumeRus, 'resumeRus.pdf')}>
+                            {isMobile ? 'resume RU' : 'Download resume RU'}
+                        </Button>
+                        <Button padding={'3px'} borderRadius={'7px'} width="49.5%" onClick={() => downloadHandler(resumeEng, 'resumeEng.pdf')}>
+                            {isMobile ? 'resume En' : 'Download resume En'}
+                        </Button>
                     </FlexWrapper>
                     <FlexWrapper width='100%' align='center' gap="1%">
-                        <Button bgColor={Theme.colors.iconPrimary}
-                                color={Theme.colors.iconSecondary}
-                                padding={'3px'}
-                                borderRadius={'7px'}
-                                border={`3px double ${Theme.colors.bgSecondary}`}
-                                width="49.5%"
-                                onClick={() => downloadHandler(cv, 'CV.pdf')}>Download CV RU</Button>
+                        <Button  padding={'3px'} borderRadius={'7px'} width="49.5%" onClick={() => downloadHandler(cv, 'CV.pdf')}>
+                            {isMobile ? 'CV RU' : 'Download CV RU'}
+                        </Button>
                         <FlexWrapper width='49.5%' alignContent='center'>
                             <Pointer>&#9754;</Pointer>
-                            <Typewriter options={{
-                                strings: ['More about me'],
-                                autoStart: true,
-                                loop: true,
-                            }}
-                            />
+                            <Typewriter options={{ strings: ['More about me'], autoStart: true, loop: true, }}/>
                         </FlexWrapper>
                     </FlexWrapper >
                 </FlexWrapper>
