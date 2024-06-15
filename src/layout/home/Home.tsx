@@ -37,15 +37,15 @@ export const Home = () => {
                     <h2>I am Viktor Chizh</h2>
                     <h1>A Front-end Developer&nbsp;</h1>
                     <FlexWrapper width='100%' gap='1%'>
-                        <Button padding={'3px'} borderRadius={'7px'} width="49.5%" onClick={() => downloadHandler(resumeRus, 'resumeRus.pdf')}>
+                        <Button padding={'3px'} width="49.5%" onClick={() => downloadHandler(resumeRus, 'resumeRus.pdf')}>
                             {isMobile ? 'resume RU' : 'Download resume RU'}
                         </Button>
-                        <Button padding={'3px'} borderRadius={'7px'} width="49.5%" onClick={() => downloadHandler(resumeEng, 'resumeEng.pdf')}>
+                        <Button padding={'3px'} width="49.5%" onClick={() => downloadHandler(resumeEng, 'resumeEng.pdf')}>
                             {isMobile ? 'resume En' : 'Download resume En'}
                         </Button>
                     </FlexWrapper>
                     <FlexWrapper width='100%' align='center' gap="1%">
-                        <Button  padding={'3px'} borderRadius={'7px'} width="49.5%" onClick={() => downloadHandler(cv, 'CV.pdf')}>
+                        <Button  padding={'3px'} width="49.5%" onClick={() => downloadHandler(cv, 'CV.pdf')}>
                             {isMobile ? 'CV RU' : 'Download CV RU'}
                         </Button>
                         <FlexWrapper width='49.5%' alignContent='center'>

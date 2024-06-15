@@ -33,8 +33,8 @@ const base: WorksBaseType[] = [
         imgInfo: 'I`m finished traineeship here',
         imgSrc: work0,
         title: 'First commercial project, where I`m been',
-        pEng:<p>I interned for half a year on a real commercial project as a FRONT-END developer. In addition to the main functionality, I performed the duties of a Project Manager Assistant, where I supervised the front-end and back-end.<br /> During the internship, I completed assigned tasks, listened to mentors, and participated in discussing problems and searching for their solutions, communicated with designers and testers.<br /> At English courses at the company, I improved my language to A2 (in progress).</p>,
-        pRus: <p>Пол года стажировался на реальном коммерческом проекте в качестве FRONT-END разработчика. Помимо основного функционала, выполнял обязанности Project Manager Assistant, где курировал фронт-энд и бэк-энд.<br /> Во время стажировки выполнял поставленные задачи, слушал менторов, участвовал в обсуждениях проблем и поисках их решения, коммуницировал с дизайнерами и тестировщиками.<br /> На курсах английского в компании подтянул язык до А2 (продолжаю изучение).</p>,
+        pEng:<p><b>En </b>I interned for half a year on a real commercial project as a FRONT-END developer. In addition to the main functionality, I performed the duties of a Project Manager Assistant, where I supervised the front-end and back-end.<br /> During the internship, I completed assigned tasks, listened to mentors, and participated in discussing problems and searching for their solutions, communicated with designers and testers.<br /> At English courses at the company, I improved my language to A2 (in progress).</p>,
+        pRus: <p><b>Ru </b>Пол года стажировался на реальном коммерческом проекте в качестве FRONT-END разработчика. Помимо основного функционала, выполнял обязанности Project Manager Assistant, где курировал фронт-энд и бэк-энд.<br /> Во время стажировки выполнял поставленные задачи, слушал менторов, участвовал в обсуждениях проблем и поисках их решения, коммуницировал с дизайнерами и тестировщиками.<br /> На курсах английского в компании подтянул язык до А2 (продолжаю изучение).</p>,
         hrefDemo:'https://www.youtube.com/watch?v=XlGi7xTGJ3I',
         targetDemo: "_blank",
         onClickDemo:  ()=>{},
@@ -47,8 +47,8 @@ const base: WorksBaseType[] = [
         imgInfo: 'We are finished this project',
         imgSrc: work2,
         title: 'Flash Cards',
-        pEng: <p>This is command project on courses in the IT-INCUBATOR, where I consolidated my skill in command-work.<br/>  At this project our team using GitHub and learned new necessary knowledge when we solving tasks.<br/> The project used RTK-query, which was new to me, which made it even more interesting.</p>,
-        pRus: <p>Это командный проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепил свои навыки командной работы. <br/>  B этом проекте наша команда использовала GitHub и изучала новые знания, необходимые для решения задач.<br/> На проекте применялся новый для меня RTK-query, что сделало его еще более интересным.</p>,
+        pEng: <p><b>En </b>This is command project on courses in the IT-INCUBATOR, where I consolidated my skill in command-work.<br/>  At this project our team using GitHub and learned new necessary knowledge when we solving tasks.<br/> The project used RTK-query, which was new to me, which made it even more interesting.</p>,
+        pRus: <p><b>Ru </b>Это командный проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепил свои навыки командной работы. <br/>  B этом проекте наша команда использовала GitHub и изучала новые знания, необходимые для решения задач.<br/> На проекте применялся новый для меня RTK-query, что сделало его еще более интересным.</p>,
         hrefDemo:'https://flash-cards-main.vercel.app/',
         onClickDemo:  ()=>{},
         targetDemo: '_blank',
@@ -61,8 +61,8 @@ const base: WorksBaseType[] = [
       imgInfo: 'Project complete',
       imgSrc: work1,
       title: 'ToDoList',
-      pEng:<p>This is the main cross-cutting project in the IT-INCUBATOR courses, where I consolidate my knowledge and fill existing gaps in it.<br/> During the project, a transition was made from Redux to Redux-Toolkit, which helped to better understand both. Also, on a separate branch, the project was implemented on Redux-Saga and tests were written for it.</p>,
-      pRus: <p>Это основной сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br/>В ходе проекта был осуществлен переход с Redux на  Redux-Toolkit, что помогло лучше понять обоих. Так же, на отдельной ветке, была осуществлена реализация проекта на Redux-Saga и написание тестов и под нее.</p>,
+      pEng:<p><b>En </b>This is the main cross-cutting project in the IT-INCUBATOR courses, where I consolidate my knowledge and fill existing gaps in it.<br/> During the project, a transition was made from Redux to Redux-Toolkit, which helped to better understand both. Also, on a separate branch, the project was implemented on Redux-Saga and tests were written for it.</p>,
+      pRus: <p><b>Ru </b>Это основной сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br/>В ходе проекта был осуществлен переход с Redux на  Redux-Toolkit, что помогло лучше понять обоих. Так же, на отдельной ветке, была осуществлена реализация проекта на Redux-Saga и написание тестов и под нее.</p>,
       hrefDemo:'https://viktorchizh.github.io/todolist/',
       onClickDemo: ()=>{},
       targetDemo: '_blank',
@@ -75,9 +75,8 @@ const base: WorksBaseType[] = [
         imgInfo: 'Project complete',
         imgSrc: work1,
         title: 'Social Network',
-        pEng: <p>This is an additional (for independent work on given materials) start-to-end project on courses in the
-            IT-INCUBATOR.<br/> The project was interesting for me because it was necessary to independently overlay TypeScript on top of the legacy-code, which made it possible to completely rethink the content of the project.</p>,
-        pRus: <p>Это дополнительный (для самостоятельной работы по выданным материалам) сквозной проект на курсах в ИТ-ИНКУБАТОРЕ.<br/> Проект для меня был интересен тем, что на legacy-код надо было самостоятельно наложить сверху TypeScript, что позволило полностью переосмыслить содержание проекта.</p>,
+        pEng: <p><b>En </b>This is an additional (for independent work on given materials) start-to-end project on courses in the IT-INCUBATOR.<br/> The project was interesting for me because it was necessary to independently overlay TypeScript on top of the legacy-code, which made it possible to completely rethink the content of the project.</p>,
+        pRus: <p><b>Ru </b>Это дополнительный (для самостоятельной работы по выданным материалам) сквозной проект на курсах в ИТ-ИНКУБАТОРЕ.<br/> Проект для меня был интересен тем, что на legacy-код надо было самостоятельно наложить сверху TypeScript, что позволило полностью переосмыслить содержание проекта.</p>,
         hrefDemo:'https://viktorchizh.github.io/Social-network/',
         onClickDemo:  ()=>{},
         targetDemo: '_blank',
@@ -90,8 +89,8 @@ const base: WorksBaseType[] = [
         imgInfo: 'I`m achieve that',
         imgSrc: watch,
         title: 'My achievements',
-        pEng:<p>Certificates from completed courses or received on the Internet during self-study, characteristics, etc.</p>,
-        pRus: <p>Сертификаты с пройденных курсов или полученных в интернете при самообучении, характеристики и прочее.</p>,
+        pEng:<p><b>En </b>Certificates from completed courses or received on the Internet during self-study, characteristics, etc.</p>,
+        pRus: <p><b>Ru </b>Сертификаты с пройденных курсов или полученных в интернете при самообучении, характеристики и прочее.</p>,
         hrefDemo:'https://viktorchizh.github.io/portfolio/',
         onClickDemo: () => {window.location.href = Achievements},
         targetDemo: '_blank',
@@ -130,8 +129,8 @@ export const Works = () => {
                                 {w.pEng}
                                 {w.pRus}<p></p>
                                 <FlexWrapper width={'50%'} justify={'space-evenly'}>
-                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecondary} padding={"10px"} borderRadius={'10px'} border={`5px double ${Theme.colors.bgPrimary}`} ><a href={w.hrefDemo} onClick={w.onClickDemo} target={w.targetDemo}>Demo</a></Button>
-                                    <Button bgColor={Theme.colors.iconPrimary} color={Theme.colors.iconSecondary} padding={"10px"} borderRadius={'10px'} border={`5px double ${Theme.colors.bgPrimary}`} ><a href={w.hrefCode} onClick={w.onClickCode} target={w.targetCode} >Code</a></Button>
+                                    <Button padding={"7px"}><a href={w.hrefDemo} onClick={w.onClickDemo} target={w.targetDemo}>Demo</a></Button>
+                                    <Button padding={"7px"} ><a href={w.hrefCode} onClick={w.onClickCode} target={w.targetCode} >Code</a></Button>
                                 </FlexWrapper>
                             </Work>
                         )
