@@ -33,8 +33,8 @@ const base: WorksBaseType[] = [
         imgInfo: 'I`m finished traineeship here',
         imgSrc: work0,
         title: 'First commercial project, where I`m been',
-        pEng:<p><b>En </b>I interned for half a year on a real commercial project as a FRONT-END developer. In addition to the main functionality, I performed the duties of a Project Manager Assistant, where I supervised the front-end and back-end.<br /> During the internship, I completed assigned tasks, listened to mentors, and participated in discussing problems and searching for their solutions, communicated with designers and testers.<br /> At English courses at the company, I improved my language to A2 (in progress).</p>,
-        pRus: <p><b>Ru </b>Пол года стажировался на реальном коммерческом проекте в качестве FRONT-END разработчика. Помимо основного функционала, выполнял обязанности Project Manager Assistant, где курировал фронт-энд и бэк-энд.<br /> Во время стажировки выполнял поставленные задачи, слушал менторов, участвовал в обсуждениях проблем и поисках их решения, коммуницировал с дизайнерами и тестировщиками.<br /> На курсах английского в компании подтянул язык до А2 (продолжаю изучение).</p>,
+        pEng:<p><b>En </b>I interned for half a year on a real commercial project Relocate (aggregator of statistical data about countries of the world) as a FRONT-END developer. In addition to the main functionality, I performed the duties of a Project Manager Assistant, where I supervised the front-end and back-end.<br /> During the internship, I completed assigned tasks, listened to mentors, and participated in discussing problems and searching for their solutions, communicated with designers and testers.<br /> At English courses at the company, I improved my language to A2 (in progress).</p>,
+        pRus: <p><b>Ru </b>Пол года стажировался на реальном коммерческом проекте Relocate (агрегатор статистических данных о странах мира) в качестве FRONT-END разработчика. Помимо основного функционала, выполнял обязанности Project Manager Assistant, где курировал фронт-энд и бэк-энд.<br /> Во время стажировки выполнял поставленные задачи, слушал менторов, участвовал в обсуждениях проблем и поисках их решения, коммуницировал с дизайнерами и тестировщиками.<br /> На курсах английского в компании подтянул язык до А2 (продолжаю изучение).</p>,
         hrefDemo:'https://www.youtube.com/watch?v=XlGi7xTGJ3I',
         targetDemo: "_blank",
         onClickDemo:  ()=>{},
@@ -127,10 +127,10 @@ export const Works = () => {
                                 </ImgWrapper>
                                 <h2>{w.title}</h2>
                                 {w.pEng}
-                                {w.pRus}<p></p>
-                                <FlexWrapper width={'50%'} justify={'space-evenly'}>
-                                    <Button padding={"7px"}><a href={w.hrefDemo} onClick={w.onClickDemo} target={w.targetDemo}>Demo</a></Button>
-                                    <Button padding={"7px"} ><a href={w.hrefCode} onClick={w.onClickCode} target={w.targetCode} >Code</a></Button>
+                                {w.pRus}
+                                <FlexWrapper width={'100%'} justify={'space-between'} gap={'2%'}>
+                                    <Button><a href={w.hrefDemo} onClick={w.onClickDemo} target={w.targetDemo}>Demo</a></Button>
+                                    <Button><a href={w.hrefCode} onClick={w.onClickCode} target={w.targetCode} >Code</a></Button>
                                 </FlexWrapper>
                             </Work>
                         )
@@ -156,11 +156,11 @@ const StyledWorks = styled.section`
 `
 
 const Work = styled.div`
-    margin: 0 auto;
+    margin: 1% auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 2%;
+    gap: 10px;
     max-width: 45%;
     min-width: 320px;
     img{
@@ -169,15 +169,12 @@ const Work = styled.div`
         padding-top: 15px;
         border-radius: 25px;
     }
-    h2 {
-        margin: 1% 0;
-    }
-    p {
-        padding-bottom: 2%;
+    h2, p {
         text-align: justify;
     }
     button{
-        margin-left: 25%;
+        width: 100%;
+        padding: 7px;
         a {
             color: ${Theme.colors.textPrimary};
         }
@@ -185,11 +182,6 @@ const Work = styled.div`
     @media (width<=678px) {
             max-width: 96%;
             min-width: 340px;
-            margin: 0 auto;
-            p, h2, img, div {
-                width: 100%;
-                margin: 0 auto 3%;
-            }
         }
 `
 
