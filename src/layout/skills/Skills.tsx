@@ -13,7 +13,7 @@ type SkillsType = {
 
 const skills: SkillsType[] = [
     {iconId: 'html', progress: 90, title: 'HTML'},
-    {iconId: 'css', progress: 90, title: 'CSS'},
+    {iconId: 'css', progress: 90, title: ' CSS, SCSS'},
     {iconId: 'js', progress: 85, title: 'JavaScript'},
     {iconId: 'ts', progress: 80, title: 'TypeScript'},
     {iconId: 'react', progress: 75, title: 'React'},
@@ -30,7 +30,7 @@ const skills: SkillsType[] = [
     {iconId: 'storybook', progress: 75, title: 'Storybook'},
     {iconId: 'postman', progress: 75, title: 'Postman'},
     {iconId: 'git', progress: 85, title: 'GIT'},
-    {iconId: 'sql', progress: 50, title: 'SQL'},
+    // {iconId: 'sql', progress: 50, title: 'SQL'},
     {iconId: 'python', progress: 50, title: 'Python'},
     {iconId: 'django', progress: 50, title: 'Django'},
 ]

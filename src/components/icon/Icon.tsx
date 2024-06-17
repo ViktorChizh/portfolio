@@ -13,8 +13,8 @@ type iconPropsType = {
 
 export const Icon = (props: iconPropsType) => {
     return (
-        <svg width={props.width || "112"} 
-            height={props.height || "112"} 
+        <svg width={props.width || "50"}
+            height={props.height || "50"}
             viewBox={props.viewport || "0 0 112 112"} 
             fill={props.fill || 'none'}
             stroke={props.stroke}        

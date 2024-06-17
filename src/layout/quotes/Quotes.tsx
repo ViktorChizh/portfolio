@@ -15,7 +15,7 @@ export const Quotes = () => {
             <Container>
                 <FlexWrapper direction={'column'} align={'center'}>
                     <StyledTitle>My Life Principles In Quotes</StyledTitle>
-                    <Icon iconId='quotes' />
+                    <Icon iconId='quotes'  width='112' height='112'/>
                     <AliceCarousel
                         mouseTracking
                         items={items}
