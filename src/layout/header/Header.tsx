@@ -11,11 +11,11 @@ export const Header = () => {
     return (
         <StyledHeader>
             <Container>
-                <Button border='none' padding='0px' bgColor='transparent' height='50px' onClick={()=>{animateScroll.scrollToTop()}}>
+                <Button padding='0 0 0 5px' border='none' bgColor='transparent' height='50px' onClick={()=>{animateScroll.scrollToTop()}}>
                     <Icon iconId='react2' viewport='0 0 125 125'/>
                 </Button>
                 <Menu items={['Home', 'Skills', 'Quotes', 'Works', 'Contact']}  color={'rgb(200, 225, 250)'} changeFilterValue={()=>{}} />
-                <Button border='none' padding='0px' bgColor='transparent' height='50px' onClick={()=>{animateScroll.scrollToTop()}}>
+                <Button border='none' bgColor='transparent' height='50px' onClick={()=>{animateScroll.scrollToTop()}}>
                     <Icon iconId='redux2' viewport='0 0 125 125' fill={'rgb(200, 225, 250)'} />
                 </Button>
             </Container>
@@ -38,14 +38,11 @@ const StyledHeader = styled.header`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 3px 15px;
+        padding: 5px;
         ${Button} {
             :hover {
-            cursor: pointer;
+                cursor: pointer;
             }   
-        }
-        li {
-            margin-bottom: 1vh;
         }
     }
 `
