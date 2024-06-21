@@ -195,7 +195,7 @@ const ImgWrapper = styled.div<ImgWrapperProps>`
     &::before {
         content: '${props => props.info}';
         position: absolute;
-        bottom: 7%;
+        bottom: 8%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
@@ -207,10 +207,5 @@ const ImgWrapper = styled.div<ImgWrapperProps>`
         letter-spacing: 0.1em;
         font-weight: 600;
         text-align: center
-    }
-    @media screen and (width<=678px) {
-        &::before {
-            bottom: 12.5%;            
-        }
     }
 `
