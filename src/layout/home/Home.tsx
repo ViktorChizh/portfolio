@@ -32,11 +32,11 @@ export const Home = () => {
     return (
         <StyledMain id={'Home'}>
             <Container>
-                <FlexWrapper direction={'column'} justify={'space-evenly'} align={'flex-start'} gap="10px">
+                <FlexWrapper direction={'column'} justify={'space-evenly'} align={'flex-start'} gap="10px" width={'max-content'}>
                     <span>Hi there</span>
                     <h2>I am Viktor Chizh</h2>
                     <h1>A Front-end Developer&nbsp;</h1>
-                    <FlexWrapper width='100%' gap='1%'>
+                    <FlexWrapper gap='1%'>
                         <Button padding={'3px'} width="49.5%" onClick={() => downloadHandler(resumeRus, 'resumeRus.pdf')}>
                             {isMobile ? 'resume RU' : 'Download resume RU'}
                         </Button>
@@ -44,7 +44,7 @@ export const Home = () => {
                             {isMobile ? 'resume En' : 'Download resume En'}
                         </Button>
                     </FlexWrapper>
-                    <FlexWrapper width='100%' align='center' gap="1%">
+                    <FlexWrapper align='center' gap="1%">
                         <Button  padding={'3px'} width="49.5%" onClick={() => downloadHandler(cv, 'CV.pdf')}>
                             {isMobile ? 'CV RU' : 'Download CV RU'}
                         </Button>

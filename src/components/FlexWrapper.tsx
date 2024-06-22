@@ -19,6 +19,6 @@ export const FlexWrapper = styled.div<FlexWRapperPropsType>`
     align-content: ${props => props.alignContent};
     flex-wrap: ${props => props.wrap};
     gap: ${props => props.gap};
-    width: ${props => props.width};
+    width: ${props => props.width || '100%'};
     height: ${props => props.height};
 `

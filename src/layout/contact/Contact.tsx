@@ -51,10 +51,9 @@ export const Contact = () => {
 const StyledContact = styled.section`
     background-color: ${Theme.colors.bgPrimary};
     ${FlexWrapper} {
-        width: 100%;
         padding: 0 5%;
         & img {
-            width: 30%;
+            width: 25%;
             max-width: 380px;
         }
         @media screen and (width<=992px) {
@@ -67,19 +66,13 @@ const StyledContact = styled.section`
 `
 
 const ContactForm = styled.form`
-    width: 65%;
+    width: 100%;
+    margin: 0 auto;
     textarea {
         resize: none;
         height: 155px;
         font-family: -apple-, sans-serif;
     }
-    ${FlexWrapper} {
-        width: 100%;
-        margin: 0 auto;
-    }
-    @media screen and (width<=992px) {
-        width: 100%;
-        }
 `
 
 const ContactField = styled.input`
