@@ -19,11 +19,6 @@ export const Contact = () => {
         if (!form.current) return
 
         emailjs.sendForm('service_27684p9', 'template_kqvtytz', form.current, 'eA-6YF_G8xqeGBSE4')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
 
         e.target.reset()
     };
