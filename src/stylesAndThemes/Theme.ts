@@ -8,7 +8,5 @@ export const Theme = {
         textTitle: "#7f0923",
         textPrimary: "rgb(200, 225, 250)",
         textSecondary: "#7572D5",
-        textSkill: "#ff5500",
-        circleSkill: "#42e863f5",
     },
 }
