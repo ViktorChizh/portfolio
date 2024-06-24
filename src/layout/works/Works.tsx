@@ -43,32 +43,18 @@ const base: WorksBaseType[] = [
         targetCode: ''
     },
     {
-        name: 'TeamProjects',
-        imgInfo: 'We are finished this project',
-        imgSrc: work2,
-        title: 'Flash Cards',
-        pEng: <p><b>En </b>This is command project on courses in the IT-INCUBATOR, where I consolidated my skill in command-work.<br/>  At this project our team using GitHub and learned new necessary knowledge when we solving tasks.<br/> The project used RTK-query, which was new to me, which made it even more interesting.</p>,
-        pRus: <p><b>Ru </b>Это командный проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепил свои навыки командной работы. <br/>  B этом проекте наша команда использовала GitHub и изучала новые знания, необходимые для решения задач.<br/> На проекте применялся новый для меня RTK-query, что сделало его еще более интересным.</p>,
-        hrefDemo:'https://flash-cards-main.vercel.app/',
-        onClickDemo:  ()=>{},
+        name: 'Achievements',
+        imgInfo: 'I`m achieve that',
+        imgSrc: watch,
+        title: 'My achievements',
+        pEng: <p><b>En </b>I have been mastering the Frontend direction for more than two years. <br/>During this time, I received certificates from courses taken or received on the Internet during self-study, characteristics from completed internships on commercial projects, etc.<br/>  Registered on the <a style={{color: "#7572D5", textDecoration:'underline', padding:'0'}} href='https://offerheap.com/specialist/ViktorChizh' target='_blank' rel="noreferrer">Offerheap</a> platform with verified skills and work experience.</p>,
+        pRus: <p><b>Ru </b>Более двух лет осваиваю направление Frontend. <br/>За это время получил сертификаты с курсов или в интернете при самообучении, характеристики  с пройденных стажировок на коммерческих проектах и прочее. <br/>Зарегистрирован на платформе <a style={{color: "#7572D5", textDecoration:'underline', padding:'0'}} href='https://offerheap.com/specialist/ViktorChizh' target='_blank' rel="noreferrer">Offerheap</a> с подтвержденными навыками и рабочим опытом.</p>,
+        hrefDemo: 'https://viktorchizh.github.io/portfolio/',
+        onClickDemo: () => {window.location.href = Achievements},
         targetDemo: '_blank',
-        hrefCode: 'https://github.com/Arenelin/-flash-cards-',
-        onClickCode: ()=>{},
-        targetCode: "_blank"
-    },
-    {
-      name: 'PersonalProjects',
-      imgInfo: 'Project complete',
-      imgSrc: work1,
-      title: 'ToDoList',
-      pEng:<p><b>En </b>This is the main cross-cutting project in the IT-INCUBATOR courses, where I consolidate my knowledge and fill existing gaps in it.<br/> During the project, a transition was made from Redux to Redux-Toolkit, which helped to better understand both. Also, on a separate branch, the project was implemented on Redux-Saga and tests were written for it.</p>,
-      pRus: <p><b>Ru </b>Это основной сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br/>В ходе проекта был осуществлен переход с Redux на  Redux-Toolkit, что помогло лучше понять обоих. Так же, на отдельной ветке, была осуществлена реализация проекта на Redux-Saga и написание тестов и под нее.</p>,
-      hrefDemo:'https://viktorchizh.github.io/todolist/',
-      onClickDemo: ()=>{},
-      targetDemo: '_blank',
-      hrefCode: 'https://github.com/ViktorChizh/todolist',
-      onClickCode:  ()=>{},
-      targetCode: "_blank"
+        hrefCode: 'https://github.com/ViktorChizh',
+        onClickCode:  ()=>{},
+        targetCode: '_blank'
     },
     {
         name: 'PersonalProjects',
@@ -85,22 +71,36 @@ const base: WorksBaseType[] = [
         targetCode: "_blank"
     },
     {
-        name: 'Achievements',
-        imgInfo: 'I`m achieve that',
-        imgSrc: watch,
-        title: 'My achievements',
-        pEng:<p><b>En </b>Certificates from completed courses or received on the Internet during self-study, characteristics, etc.</p>,
-        pRus: <p><b>Ru </b>Сертификаты с пройденных курсов или полученных в интернете при самообучении, характеристики и прочее.</p>,
-        hrefDemo:'https://viktorchizh.github.io/portfolio/',
-        onClickDemo: () => {window.location.href = Achievements},
+        name: 'TeamProjects',
+        imgInfo: 'We are finished this project',
+        imgSrc: work2,
+        title: 'Flash Cards',
+        pEng: <p><b>En </b>This is command project on courses in the IT-INCUBATOR, where I consolidated my skill in command-work.<br/>  At this project our team using GitHub and learned new necessary knowledge when we solving tasks.<br/> The project used RTK-query, which was new to me, which made it even more interesting.</p>,
+        pRus: <p><b>Ru </b>Это командный проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепил свои навыки командной работы. <br/>  B этом проекте наша команда использовала GitHub и изучала новые знания, необходимые для решения задач.<br/> На проекте применялся новый для меня RTK-query, что сделало его еще более интересным.</p>,
+        hrefDemo:'https://flash-cards-main.vercel.app/',
+        onClickDemo:  ()=>{},
         targetDemo: '_blank',
-        hrefCode: 'https://github.com/ViktorChizh',
-        onClickCode:  ()=>{},
-        targetCode: '_blank'
+        hrefCode: 'https://github.com/Arenelin/-flash-cards-',
+        onClickCode: ()=>{},
+        targetCode: "_blank"
+    },
+    {
+      name: 'PersonalProjects',
+      imgInfo: 'Project complete',
+      imgSrc: work2,
+      title: 'ToDoList',
+      pEng:<p><b>En </b>This is the main cross-cutting project in the IT-INCUBATOR courses, where I consolidate my knowledge and fill existing gaps in it.<br/> During the project, a transition was made from Redux to Redux-Toolkit, which helped to better understand both. Also, on a separate branch, the project was implemented on Redux-Saga and tests were written for it.</p>,
+      pRus: <p><b>Ru </b>Это основной сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю свои знания и заполняю существующие пробелы в них.<br/>В ходе проекта был осуществлен переход с Redux на  Redux-Toolkit, что помогло лучше понять обоих. Так же, на отдельной ветке, была осуществлена реализация проекта на Redux-Saga и написание тестов и под нее.</p>,
+      hrefDemo:'https://viktorchizh.github.io/todolist/',
+      onClickDemo: ()=>{},
+      targetDemo: '_blank',
+      hrefCode: 'https://github.com/ViktorChizh/todolist',
+      onClickCode:  ()=>{},
+      targetCode: "_blank"
     }
 ]
 
-const MenuItems = ['All'].concat(base.map(item => item.name).filter((a, i) => a !== base.map(item => item.name)[i - 1]))
+const MenuItems = ['All'].concat(Array.from(new Set(base.map(w=>w.name))))
 
 export const Works = () => {
     const [filterValue, setFilterValue] = useState('All')
@@ -108,29 +108,27 @@ export const Works = () => {
     let filteredBase = base
 
     for (let i=1; i<=MenuItems.length; i++) {
-        if (filterValue === MenuItems[i]) {
-            filteredBase = base.filter(work => work.name === MenuItems[i])
-        }
+        if (filterValue === MenuItems[i]) filteredBase = base.filter(work => work.name === MenuItems[i])
     }
 
     return (
-        <StyledWorks id={'Works'}>
+        <StyledWorks id='Works'>
             <Container>
                 <StyledTitle>My Works</StyledTitle>
-                <Menu items={MenuItems} changeFilterValue={setFilterValue} color={`${Theme.colors.textTitle}`} selectedItem={filterValue} />
-                <FlexWrapper direction={'row'} justify={'space-between'} wrap={'wrap'} gap={'1%'} alignContent={'center'}>
-                    {filteredBase.map((w, index) => {
+                <Menu items={MenuItems} changeFilterValue={setFilterValue} color={`${Theme.colors.textTitle}`} selectedItem={filterValue}/>
+                <FlexWrapper justify='space-between' wrap='wrap' gap='1%' alignContent='center'>
+                    {filteredBase.map(w => {
                         return (
-                            <Work key={index}>
+                            <Work key={`${w.name}${w.title}`}>
                                 <ImgWrapper info={w.imgInfo}>
-                                    <img src={w.imgSrc} alt='' />
+                                    <img src={w.imgSrc} alt=''/>
                                 </ImgWrapper>
                                 <h2>{w.title}</h2>
                                 {w.pEng}
                                 {w.pRus}
-                                <FlexWrapper width={'100%'} justify={'space-between'} gap={'2%'}>
-                                    <Button><a href={w.hrefDemo} onClick={w.onClickDemo} target={w.targetDemo}>Demo</a></Button>
-                                    <Button><a href={w.hrefCode} onClick={w.onClickCode} target={w.targetCode} >Code</a></Button>
+                                <FlexWrapper justify='space-between' gap='2%'>
+                                    <Button as='a' href={w.hrefDemo} onClick={w.onClickDemo} target={w.targetDemo} rel="noreferrer">Demo</Button>
+                                    <Button as='a' href={w.hrefCode} onClick={w.onClickCode} target={w.targetCode} rel="noreferrer">Code</Button>
                                 </FlexWrapper>
                             </Work>
                         )
@@ -154,7 +152,6 @@ const StyledWorks = styled.section`
         }
     }
 `
-
 const Work = styled.div`
     margin: 1% auto;
     display: flex;
@@ -172,23 +169,20 @@ const Work = styled.div`
     h2, p {
         text-align: justify;
     }
-    button{
+    a {
         width: 100%;
         padding: 7px;
-        a {
-            color: ${Theme.colors.textPrimary};
-        }
+        color: ${Theme.colors.textPrimary};
+        text-align: center;
     }
     @media (width<=678px) {
             max-width: 96%;
             min-width: 340px;
         }
 `
-
 type ImgWrapperProps = {
     info?: string
 }
-
 const ImgWrapper = styled.div<ImgWrapperProps>`
     position: relative;
     z-index: 0;
