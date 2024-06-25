@@ -9,32 +9,27 @@ import emailjs from '@emailjs/browser';
 import { ElementRef, useRef } from 'react';
 import imgMail from 'assets/Mail.svg'
 
-
 export const Contact = () => {
     const form = useRef<ElementRef<'form'>>(null);
 
     const sendEmail = (e: any) => {
         e.preventDefault();
-
         if (!form.current) return
-
         emailjs.sendForm('service_27684p9', 'template_kqvtytz', form.current, 'eA-6YF_G8xqeGBSE4')
-
         e.target.reset()
     };
+
     return (
         <StyledContact id={'Contact'}>
             <Container>
                 <StyledTitle>Contact</StyledTitle>
-                <FlexWrapper direction={'row'} align={'center'} gap={'16px'}>
+                <FlexWrapper align={'center'} gap={'16px'}>
                     <img src={imgMail} alt='' />
                     <ContactForm ref={form} onSubmit={sendEmail}>
-                        <FlexWrapper direction={'column'} wrap={'wrap'} align={'center'} gap={'16px'}>
-                            <ContactField required placeholder='Name' name={'user_name'}></ContactField>
-                            <ContactField required placeholder='Email' type='email' name={'subject'}></ContactField>
-                            <ContactField required placeholder='Text message' as='textarea' name={'message'}></ContactField>
-                            <Button type='submit' padding={"5px 8px"}>SEND MESSAGE to my email: victor.chizh@mail.ru</Button>
-                        </FlexWrapper>
+                        <ContactField required placeholder='Name' name={'user_name'}></ContactField>
+                        <ContactField required placeholder='Email' type='email' name={'subject'}></ContactField>
+                        <ContactField required placeholder='Text message' as='textarea' name={'message'}></ContactField>
+                        <Button type='submit' padding={"5px 8px"}>SEND MESSAGE to my email: victor.chizh@mail.ru</Button>
                     </ContactForm>
                     <img src={imgMail} alt='' />
                 </FlexWrapper>
@@ -45,22 +40,18 @@ export const Contact = () => {
 
 const StyledContact = styled.section`
     background-color: ${Theme.colors.bgPrimary};
-    ${FlexWrapper} {
-        padding: 0 5%;
-        & img {
-            width: 25%;
-            max-width: 380px;
-        }
-        @media screen and (width<=992px) {
-            padding: 0;
-            img {
-                display: none;
-            }
+    @media screen and (width<=992px) {
+        img {
+            display: none;
         }
     }
 `
-
 const ContactForm = styled.form`
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
     width: 100%;
     margin: 0 auto;
     textarea {
@@ -69,18 +60,12 @@ const ContactForm = styled.form`
         font-family: -apple-, sans-serif;
     }
 `
-
 const ContactField = styled.input`
     width: 80%;
     border: none;
     border-radius: 5px;
-    margin-top: 16px;
     padding: 5px;
     font-family: -apple-, sans-serif;
-    &:focus-visible {
-        outline: 2px solid ${Theme.colors.iconPrimary};
-    }
-    &::placeholder{
-        color: ${Theme.colors.iconPrimary};
-    }
+    &:focus-visible { outline: 2px solid ${Theme.colors.iconPrimary}; }
+    &::placeholder{ color: ${Theme.colors.iconPrimary}; }
 `
