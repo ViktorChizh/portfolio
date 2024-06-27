@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.eab77925.css",
-    "main.js": "/portfolio/static/js/main.99600a1c.js",
+    "main.js": "/portfolio/static/js/main.e40ef0d8.js",
     "static/media/Achievements.jpg": "/portfolio/static/media/Achievements.dd85923fbd844a4502a4.jpg",
-    "static/media/CV.pdf": "/portfolio/static/media/CV.41ee91c0d0c07d13c577.pdf",
+    "static/media/CV.pdf": "/portfolio/static/media/CV.2ffa310f1cd69089047f.pdf",
     "static/media/Photo.jpg": "/portfolio/static/media/Photo.b6baa054a3eca0c601ee.jpg",
-    "static/media/resumeRus.pdf": "/portfolio/static/media/resumeRus.58853cd562e73d35c4c1.pdf",
-    "static/media/resumeEng.pdf": "/portfolio/static/media/resumeEng.e57354a02a5f378ff92f.pdf",
+    "static/media/resumeRus.pdf": "/portfolio/static/media/resumeRus.59f3ff444aeef282dcbf.pdf",
+    "static/media/resumeEng.pdf": "/portfolio/static/media/resumeEng.ab1855a3b076c1a8cd0f.pdf",
     "static/media/spriteSvgIcon.svg": "/portfolio/static/media/spriteSvgIcon.4326c2c633e1e22902eef9b088a71bec.svg",
     "static/media/map-by.png": "/portfolio/static/media/map-by.2f0538b875a0b9aba0e6.png",
     "static/media/map-by-bg.png": "/portfolio/static/media/map-by-bg.4c4571be3c7c1a53be9e.png",
@@ -17,10 +17,10 @@
     "static/media/Mail.svg": "/portfolio/static/media/Mail.bd5400f6828d6d4110f2d58f10944b62.svg",
     "index.html": "/portfolio/index.html",
     "main.eab77925.css.map": "/portfolio/static/css/main.eab77925.css.map",
-    "main.99600a1c.js.map": "/portfolio/static/js/main.99600a1c.js.map"
+    "main.e40ef0d8.js.map": "/portfolio/static/js/main.e40ef0d8.js.map"
   },
   "entrypoints": [
     "static/css/main.eab77925.css",
-    "static/js/main.99600a1c.js"
+    "static/js/main.e40ef0d8.js"
   ]
 }

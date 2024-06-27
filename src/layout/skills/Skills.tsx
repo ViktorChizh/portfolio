@@ -31,8 +31,8 @@ const skills: SkillsType[] = [
     {iconId: 'postman', progress: 75, title: 'Postman'},
     {iconId: 'git', progress: 85, title: 'GIT'},
     // {iconId: 'sql', progress: 50, title: 'SQL'},
-    {iconId: 'python', progress: 50, title: 'Python'},
-    {iconId: 'django', progress: 50, title: 'Django'},
+    // {iconId: 'python', progress: 50, title: 'Python'},
+    // {iconId: 'django', progress: 50, title: 'Django'},
 ]
 
 export const Skills = () => {

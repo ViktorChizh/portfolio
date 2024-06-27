@@ -26,10 +26,10 @@ export const Footer = () => {
             <Container>
                 <StyledTitle>Viktor Chizh</StyledTitle>
                 <FlexWrapper as='ul' justify='space-around' align='center' width='90%'>
-                    {footerBase.map((icon: FooterBaseType, index: number) => {
+                    {footerBase.map((icon: FooterBaseType) => {
                         return (
-                            <li key={index}>
-                                <a href={icon.link} target='_blanck'>
+                            <li key={`${icon.iconId}${icon.link}`}>
+                                <a href={icon.link} target='_blanck' rel="noreferrer">
                                     <Icon iconId={icon.iconId} width={icon.width || '336'} height={icon.height || '336'} viewport={icon.viewport || '0 0 40 40'} />
                                 </a>
                             </li>
