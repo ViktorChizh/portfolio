@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StyledTitle } from 'components/StyledTitle';
-import { AllSkillsAtIcons } from 'components/allSkillsAtIcons/AllSkillsAtIcons';
+import { AllSkillsAtIcons } from 'components/AllSkillsAtIcons';
 import { Theme } from 'stylesAndThemes/Theme';
 import { Container } from 'components/Container';
 

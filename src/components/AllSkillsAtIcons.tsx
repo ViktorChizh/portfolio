@@ -1,7 +1,7 @@
 import {FlexWrapper} from 'components/FlexWrapper';
 import * as React from 'react';
-import { Icon } from '../icon/Icon';
-import { SkillCircle } from '../skillCircle/SkillCircle';
+import { Icon } from 'components/Icon';
+import { SkillCircle } from 'components/SkillCircle';
 import styled from 'styled-components';
 import { Theme } from 'stylesAndThemes/Theme';
 import { Roll } from "react-awesome-reveal";

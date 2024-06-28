@@ -1,9 +1,9 @@
 import React from 'react'
-import { Menu } from 'components/menu/Menu'
+import { Menu } from 'components/Menu'
 import styled from 'styled-components'
 import { Theme } from 'stylesAndThemes/Theme'
 import { Container } from 'components/Container'
-import { Icon } from 'components/icon/Icon'
+import { Icon } from 'components/Icon'
 import { Button } from 'components/Button'
 import { animateScroll } from 'react-scroll'
 

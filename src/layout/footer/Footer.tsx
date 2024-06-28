@@ -1,8 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { StyledTitle } from 'components/StyledTitle';
 import { FlexWrapper } from 'components/FlexWrapper';
-import { Icon } from 'components/icon/Icon';
+import { Icon } from 'components/Icon';
 import { Theme } from 'stylesAndThemes/Theme';
 import { Container } from 'components/Container';
 
@@ -43,8 +43,6 @@ export const Footer = () => {
 }
 
 const StyledFooter = styled.footer`
-position: relative;
-z-index: 1;
 color: ${Theme.colors.textPrimary};
 background-color: ${Theme.colors.bgDark};
     ${Container} {
@@ -52,9 +50,6 @@ background-color: ${Theme.colors.bgDark};
         display: flex;
         flex-direction: column;
         align-items: center;
-        ${FlexWrapper} {
-            padding-bottom: 15px;
-        }
         svg {
             width: 50px;
             height: 50px;
@@ -65,5 +60,6 @@ background-color: ${Theme.colors.bgDark};
     }
     ul li {
         list-style: none;
+        margin-bottom: 15px;
     }
 `

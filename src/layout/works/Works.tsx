@@ -9,7 +9,7 @@ import watch from 'assets/Work3.svg'
 import { Button } from 'components/Button';
 import { Theme } from 'stylesAndThemes/Theme';
 import { Container } from 'components/Container';
-import { Menu } from 'components/menu/Menu';
+import { Menu } from 'components/Menu';
 import Achievements from 'assets/Achievements.jpg'
 
 type WorksBaseType = {

@@ -8,7 +8,7 @@ import { Footer } from 'layout/footer/Footer'
 import { Quotes } from 'layout/quotes/Quotes'
 import { Theme } from 'stylesAndThemes/Theme'
 import { GlobalStyles } from 'stylesAndThemes/Globalstyles'
-import { Particle } from 'components/particle/Particle'
+import { Particle } from 'components/Particle'
 
 function App() {
     return (
