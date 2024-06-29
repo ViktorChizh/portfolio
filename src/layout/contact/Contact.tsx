@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {FormEvent} from 'react';
 import styled from 'styled-components';
 import { Button } from 'components/Button';
 import { FlexWrapper } from 'components/FlexWrapper';
@@ -12,18 +12,18 @@ import imgMail from 'assets/Mail.svg'
 export const Contact = () => {
     const form = useRef<ElementRef<'form'>>(null);
 
-    const sendEmail = (e: any) => {
+    const sendEmail = (e: FormEvent<HTMLFormElement> ) => {
         e.preventDefault();
         if (!form.current) return
         emailjs.sendForm('service_27684p9', 'template_kqvtytz', form.current, 'eA-6YF_G8xqeGBSE4')
-        e.target.reset()
+        e.currentTarget.reset()
     };
 
     return (
         <StyledContact id={'Contact'}>
             <Container>
                 <StyledTitle>Contact</StyledTitle>
-                <FlexWrapper align={'center'} gap={'16px'}>
+                <FlexWrapper align={'center'} gap={'15px'}>
                     <img src={imgMail} alt='' />
                     <ContactForm ref={form} onSubmit={sendEmail}>
                         <ContactField required placeholder='Name' name={'user_name'}></ContactField>
@@ -56,7 +56,7 @@ const ContactForm = styled.form`
     margin: 0 auto;
     textarea {
         resize: none;
-        height: 155px;
+        height: calc(3rem + 10px);
         font-family: -apple-, sans-serif;
     }
 `
