@@ -6,18 +6,15 @@ import { Icon } from 'components/Icon';
 import { Theme } from 'stylesAndThemes/Theme';
 import { Container } from 'components/Container';
 
-type FooterBaseType = {
+type FooterBase = {
     link: string
     iconId: string
-    width?: string
-    height?: string
-    viewport?: string
 }
 
-const footerBase: Array<FooterBaseType> = [
+const footerBase: FooterBase[] = [
     {link: 'https://github.com/ViktorChizh', iconId: 'githubSocial'},
     {link: 'https://t.me/ViktorChizh', iconId: 'telegram'},
-    {link: 'https://www.linkedin.com/in/ViktorChizh/', iconId: 'linkedIn'}
+    {link: 'https://linkedin.com/in/ViktorChizh/', iconId: 'linkedIn'}
 ]
 
 export const Footer = () => {
@@ -26,11 +23,11 @@ export const Footer = () => {
             <Container>
                 <StyledTitle>Viktor Chizh</StyledTitle>
                 <FlexWrapper as='ul' justify='space-around' align='center' width='90%'>
-                    {footerBase.map((icon: FooterBaseType) => {
+                    {footerBase.map((icon: FooterBase) => {
                         return (
                             <li key={`${icon.iconId}${icon.link}`}>
                                 <a href={icon.link} target='_blanck' rel="noreferrer">
-                                    <Icon iconId={icon.iconId} width={icon.width || '336'} height={icon.height || '336'} viewport={icon.viewport || '0 0 40 40'} />
+                                    <Icon iconId={icon.iconId} viewport='0 0 50 50'/>
                                 </a>
                             </li>
                         )                
@@ -50,16 +47,7 @@ background-color: ${Theme.colors.bgDark};
         display: flex;
         flex-direction: column;
         align-items: center;
-        svg {
-            width: 50px;
-            height: 50px;
-        }
-        ${StyledTitle} {
-            color: ${Theme.colors.textPrimary};
-        }
-    }
-    ul li {
-        list-style: none;
-        margin-bottom: 15px;
+        ${StyledTitle} {color: ${Theme.colors.textPrimary};}
+        small {margin-top: 15px;}
     }
 `
