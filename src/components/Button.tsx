@@ -20,5 +20,11 @@ export const Button = styled.button<ButtonPropsType>`
     color: ${props => props.color || Theme.colors.iconSecondary};
     font-size: ${props => props.fontSize};
     border: ${props => props.border || `3px double ${Theme.colors.bgSecondary}`};
-    border-radius: ${props => props.borderRadius || '7px'} 
+    border-radius: ${props => props.borderRadius || '7px'};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    :hover {
+        cursor: pointer;
+    }
 `

@@ -5,16 +5,17 @@ import styled from 'styled-components'
 type MenuPropsType = {
     items: string[]
     color?: string
-    changeFilterValue: (value: string) => void
+    changeFilterValue?: (value: string) => void
     selectedItem?:string
 }
 
 export const Menu: React.FC<MenuPropsType> = ({items, color, changeFilterValue, selectedItem}) => {
     return (
         <StyledMenu>
-                {items.map((item: string, index: number) =>
+                {items.map((item: string) =>
                   <NavLink key={item}  to={item}  smooth={true} spy={true}  color={color}  delay={0.5}
-                           onClick={() => {changeFilterValue(item)}} className={ selectedItem===item ? 'active' : '' }>
+                           onClick={() => changeFilterValue ? changeFilterValue(item) : ()=>{}}
+                           className={ selectedItem===item ? 'active' : '' }>
                     {item}
                             </NavLink>
                 )}
