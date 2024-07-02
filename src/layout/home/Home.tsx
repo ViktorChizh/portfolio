@@ -38,15 +38,15 @@ export const Home = () => {
                     <h1>A Front-end Developer&nbsp;</h1>
                     <FlexWrapper gap='1%'>
                         <Button padding={'3px'} width="49.5%" onClick={() => downloadHandler(resumeRus, 'resumeRus.pdf')}>
-                            {isMobile ? 'resume RU' : 'Download resume RU'}
+                            <b>{isMobile ? 'resume RU' : 'Download resume RU'}</b>
                         </Button>
                         <Button padding={'3px'} width="49.5%" onClick={() => downloadHandler(resumeEng, 'resumeEng.pdf')}>
-                            {isMobile ? 'resume En' : 'Download resume En'}
+                            <b>{isMobile ? 'resume En' : 'Download resume En'}</b>
                         </Button>
                     </FlexWrapper>
                     <FlexWrapper align='center' gap="1%">
                         <Button  padding={'3px'} width="49.5%" onClick={() => downloadHandler(cv, 'CV.pdf')}>
-                            {isMobile ? 'CV RU' : 'Download CV RU'}
+                            <b>{isMobile ? 'CV RU' : 'Download CV RU'}</b>
                         </Button>
                         <FlexWrapper width='49.5%' alignContent='center'>
                             <Pointer>&#9754;</Pointer>
@@ -54,15 +54,15 @@ export const Home = () => {
                         </FlexWrapper>
                     </FlexWrapper >
                 </FlexWrapper>
-                <Wrapper>
+                <PhotoWrapper>
                     <img className="photo" src={bigPhoto} alt="my-foto" width={255} height={255}/>
-                </Wrapper>
+                </PhotoWrapper>
                 <img className="map" src={map} alt="" width={290} height={255}/>
             </Container>
         </StyledMain >
     )
 }
-const Wrapper = styled.div`
+const PhotoWrapper = styled.div`
     position: relative;
     z-index: 0;
     @media (width<=992px) {
@@ -84,7 +84,7 @@ const Wrapper = styled.div`
 `
 
 const Pointer = styled.p`
-    font-size: 25px;
+    font-size: 1.5em;
     line-height: 16px;
     font-weight: 900;
 `
@@ -92,7 +92,7 @@ const Pointer = styled.p`
 const StyledMain = styled.section`
     background-color: ${Theme.colors.bgPrimary};
     ${Button} {
-        font-size: 12px;
+        font-size: 1em;
         cursor: pointer;
     }
     ${Container} {
@@ -116,7 +116,7 @@ const StyledMain = styled.section`
         }
 
         .Typewriter {
-            font-size: 14px;
+            font-size: 0.85em;
             font-weight: 900;
         }
     }
@@ -125,7 +125,11 @@ const StyledMain = styled.section`
         .map {
             display: none;
         }
-
+        ${Container} {
+            span {
+                font-size: 1.15em;
+            }
+        }
         h1, h2, span {
             font-size: 1.5em;
             font-weight: 900;
