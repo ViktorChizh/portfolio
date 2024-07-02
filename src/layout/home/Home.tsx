@@ -32,21 +32,21 @@ export const Home = () => {
     return (
         <StyledMain id={'Home'}>
             <Container>
-                <FlexWrapper direction={'column'} justify={'space-evenly'} align={'flex-start'} gap="10px" width={'max-content'}>
+                <FlexWrapper direction='column' justify='space-evenly' align='flex-start' gap="10px" width='max-content'>
                     <span>Hi there</span>
                     <h2>I am Viktor Chizh</h2>
                     <h1>A Front-end Developer&nbsp;</h1>
                     <FlexWrapper gap='1%'>
-                        <Button padding={'3px'} width="49.5%" onClick={() => downloadHandler(resumeRus, 'resumeRus.pdf')}>
-                            <b>{isMobile ? 'resume RU' : 'Download resume RU'}</b>
+                        <Button padding='3px' width='49.5%' onClick={() => downloadHandler(resumeRus, 'resumeRus.pdf')}>
+                         {isMobile ? 'resume RU' : 'Download resume Ru'}
                         </Button>
-                        <Button padding={'3px'} width="49.5%" onClick={() => downloadHandler(resumeEng, 'resumeEng.pdf')}>
-                            <b>{isMobile ? 'resume En' : 'Download resume En'}</b>
+                        <Button padding='3px' width='49.5%' onClick={() => downloadHandler(resumeEng, 'resumeEng.pdf')}>
+                          {isMobile ? 'resume En' : 'Download resume En'}
                         </Button>
                     </FlexWrapper>
                     <FlexWrapper align='center' gap="1%">
-                        <Button  padding={'3px'} width="49.5%" onClick={() => downloadHandler(cv, 'CV.pdf')}>
-                            <b>{isMobile ? 'CV RU' : 'Download CV RU'}</b>
+                        <Button  padding='3px' width='49.5%' onClick={() => downloadHandler(cv, 'CV.pdf')}>
+                           {isMobile ? 'CV RU' : `Download CV Ru`}
                         </Button>
                         <FlexWrapper width='49.5%' alignContent='center'>
                             <Pointer>&#9754;</Pointer>
@@ -84,15 +84,20 @@ const PhotoWrapper = styled.div`
 `
 
 const Pointer = styled.p`
-    font-size: 1.5em;
-    line-height: 16px;
+    font-size: 2em;
+    line-height: 18px;
     font-weight: 900;
 `
 
 const StyledMain = styled.section`
     background-color: ${Theme.colors.bgPrimary};
+    h1, h2, span {
+        font-size: 1.25em;
+        font-weight: 900;
+        letter-spacing: 0.25em;
+    }
     ${Button} {
-        font-size: 1em;
+        font-size: 0.85em;
         cursor: pointer;
     }
     ${Container} {
@@ -110,30 +115,22 @@ const StyledMain = styled.section`
             object-fit: cover;
         }
 
-        span {
-            font-size: 1em;
+         span {
+            font-size: 1.15em;
             font-weight: 700;
+            letter-spacing: 0.05em;
         }
 
         .Typewriter {
             font-size: 0.85em;
             font-weight: 900;
+  
         }
     }
 
     @media (width <= 992px) {
         .map {
             display: none;
-        }
-        ${Container} {
-            span {
-                font-size: 1.15em;
-            }
-        }
-        h1, h2, span {
-            font-size: 1.5em;
-            font-weight: 900;
-            letter-spacing: 0.15em;
         }
     }
 `
