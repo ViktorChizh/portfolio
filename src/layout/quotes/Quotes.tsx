@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { StyledTitle } from 'components/StyledTitle';
 import { FlexWrapper } from 'components/FlexWrapper';
@@ -13,14 +13,13 @@ export const Quotes = () => {
     return (
         <StyledQuotes id={'Quotes'}>
             <Container>
-                <FlexWrapper direction={'column'} align={'center'}>
-                    <StyledTitle>My Life Principles In Quotes</StyledTitle>
-                    <Icon iconId='quotes'  width='112' height='112'/>
-                    <AliceCarousel
-                        mouseTracking
-                        items={items}
-                        controlsStrategy="alternate"
-                    />
+                <StyledTitle>My Life Principles In Quotes</StyledTitle>
+                <FlexWrapper direction='column' align='center'>
+                    <Icon iconId='quotes' width='50' height='50' viewport="0 0 50 50"
+                          style={{position:'absolute', left:'2%', top:'0%'}}/>
+                    <AliceCarousel mouseTracking items={items} controlsStrategy='alternate'/>
+                    <Icon iconId='quotes' width='50' height='50' viewport="0 0 50 50"
+                          style={{transform:'rotate(180deg)', position:'absolute', right:'2%', bottom:'25%'}}/>
                 </FlexWrapper>
             </Container>
         </StyledQuotes>
@@ -29,12 +28,9 @@ export const Quotes = () => {
 
 const StyledQuotes = styled.section`
     background-color: ${Theme.colors.bgPrimary};
-    ${Container} {
-    svg {
-        margin-left: 50px;
-        margin-bottom: -70px;
+    ${FlexWrapper} {
+        position: relative;
     }
-}
 `
 const Slider = styled.div`
     display: flex;
