@@ -9,13 +9,13 @@ export const GlobalStyles = createGlobalStyle`
       box-sizing: border-box;
   }
 
-  * {
-    scrollbar-width: 3%;
+  @-moz-document url-prefix() {
+    scrollbar-width: thin;
     scrollbar-color: rgb(200, 225, 250) rgb(150, 200, 250);
   }
 
   *::-webkit-scrollbar {
-    width: 3%;
+    width: 10px;
   }
 
   *::-webkit-scrollbar-track{
@@ -23,9 +23,9 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   *::-webkit-scrollbar-thumb{
-    background-color: rgb(200, 225, 250);
-    border: 2px solid rgb(150, 200, 250);
-    border-radius: 5%;
+    background-color: #7572D5;
+    border: 3px solid rgb(150, 200, 250);
+    border-radius: 10px;
   }
   
   body {
