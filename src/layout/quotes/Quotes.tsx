@@ -57,6 +57,7 @@ const Slider = styled.div`
 
     strong {
         margin-top: 10px;
+        align-self: flex-end;
         color: ${Theme.colors.iconPrimary};
     }
 
