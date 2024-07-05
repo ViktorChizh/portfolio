@@ -44,7 +44,7 @@ const SkillContainer = styled.div`
                 margin-top: -36px;
             }
             p {
-                margin-top: 36px;
+                margin-top: 42px;
                 text-align: center;
                 color: ${Theme.colors.textTitle};
                 font-weight: 700;

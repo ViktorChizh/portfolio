@@ -44,7 +44,7 @@ const Slider = styled.div`
             transform: rotate(180deg);
             position: absolute;
             right: -2%;
-            bottom: 0;
+            bottom: 1.5rem;
         }
 
         ::before {
