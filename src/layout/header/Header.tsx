@@ -16,7 +16,7 @@ export const Header = () => {
                 </Button>
                 <Menu items={['Home', 'Skills', 'Quotes', 'Works', 'Contact']}  color={'rgb(200, 225, 250)'}/>
                 <Button border='none' bgColor='transparent' height='50px' onClick={()=>{animateScroll.scrollToTop()}}>
-                    <Icon iconId='redux2' viewport='0 0 125 125' fill={'rgb(200, 225, 250)'} />
+                    <Icon iconId='redux2' viewport='0 0 125 125'/>
                 </Button>
             </Container>
         </StyledHeader>
@@ -29,7 +29,7 @@ const StyledHeader = styled.header`
     left: 0;
     right: 0;
     width: 100%;
-    z-index: 8;
+    z-index: 99;
     background-color: ${Theme.colors.bgDark};
     ${Container} {
         display: flex;
