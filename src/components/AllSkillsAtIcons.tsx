@@ -1,5 +1,5 @@
 import {FlexWrapper} from 'components/FlexWrapper';
-import * as React from 'react';
+import React from 'react';
 import { Icon } from 'components/Icon';
 import { SkillCircle } from 'components/SkillCircle';
 import styled from 'styled-components';
