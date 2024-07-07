@@ -21,7 +21,7 @@ export const AllSkillsAtIcons = (props: AllSkillsAtIconsProps) => {
                 return (
                     <Roll key={skill.iconId} cascade={true} delay={250} duration={2000}>
                         <SkillCircle percent={skill.progress}>
-                            <FlexWrapper justify='center' align='center' width='100%' height='110px'>
+                            <FlexWrapper justify='center' align='center' height='110px'>
                                 <Icon iconId={skill.iconId}/>
                                 <p>{skill.title}</p>
                             </FlexWrapper>

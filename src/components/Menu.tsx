@@ -17,7 +17,7 @@ export const Menu: React.FC<MenuPropsType> = ({items, color, changeFilterValue, 
                            onClick={() => changeFilterValue ? changeFilterValue(item) : ()=>{}}
                            className={ selectedItem===item ? 'active' : '' }>
                     {item}
-                            </NavLink>
+                  </NavLink>
                 )}
         </StyledMenu>
     )
