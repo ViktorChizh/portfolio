@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {Theme} from 'stylesAndThemes/Theme';
 
-type ButtonPropsType = {
+type ButtonProps = {
     width?: string
     height?: string
     padding?: string
@@ -12,7 +12,7 @@ type ButtonPropsType = {
     fontSize?: string
 }
 
-export const Button = styled.button<ButtonPropsType>`
+export const Button = styled.button<ButtonProps>`
     padding: ${props => props.padding};
     width: ${props => props.width};
     height:  ${props => props.height};
