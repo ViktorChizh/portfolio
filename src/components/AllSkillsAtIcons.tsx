@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { Theme } from 'stylesAndThemes/Theme';
 import { Roll } from "react-awesome-reveal";
 
-type AllSkillsAtIconsPropsType = {
+type AllSkillsAtIconsProps = {
     skills: {
         iconId: string
         progress: number
@@ -14,7 +14,7 @@ type AllSkillsAtIconsPropsType = {
     }[]
 }
 
-export const AllSkillsAtIcons = (props: AllSkillsAtIconsPropsType) => {
+export const AllSkillsAtIcons = (props: AllSkillsAtIconsProps) => {
     return(
         <SkillContainer>
             {props.skills.map((skill) => {
