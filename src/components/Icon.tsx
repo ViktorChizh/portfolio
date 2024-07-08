@@ -1,7 +1,7 @@
 import React from "react"
 import spriteSvgIcon from "assets/spriteSvgIcon.svg"
 
-type iconPropsType = {
+type IconProps = {
     iconId: string
     width?: string
     height?: string
@@ -12,7 +12,7 @@ type iconPropsType = {
     style?: {}
 }
 
-export const Icon = (props: iconPropsType) => {
+export const Icon = (props: IconProps) => {
     return (
         <svg width={props.width || "50"}
             height={props.height || "50"}
