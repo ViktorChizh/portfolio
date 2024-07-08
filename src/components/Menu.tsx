@@ -1,15 +1,15 @@
-import * as React from 'react';
+import React from 'react';
 import { Link } from 'react-scroll';
 import styled from 'styled-components'
 
-type MenuPropsType = {
+type MenuProps = {
     items: string[]
     color?: string
     changeFilterValue?: (value: string) => void
     selectedItem?:string
 }
 
-export const Menu: React.FC<MenuPropsType> = ({items, color, changeFilterValue, selectedItem}) => {
+export const Menu = ({items, color, changeFilterValue, selectedItem}: MenuProps) => {
     return (
         <StyledMenu>
                 {items.map((item: string) =>
@@ -23,7 +23,7 @@ export const Menu: React.FC<MenuPropsType> = ({items, color, changeFilterValue, 
     )
 }
 
-type StyledMenuPropsType = {
+type StyledMenuProps = {
     color?: string
 }
 
@@ -36,7 +36,7 @@ const StyledMenu = styled.nav`
     gap: 2%;
     padding: 0 5px;
 `
-const NavLink = styled(Link)<StyledMenuPropsType>`
+const NavLink = styled(Link)<StyledMenuProps>`
     color: ${props => props.color};
     &:hover {
         cursor: pointer;
