@@ -10,22 +10,29 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   @-moz-document url-prefix() {
-    scrollbar-width: thin;
-    scrollbar-color: rgb(200, 225, 250) rgb(150, 200, 250);
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: rgb(200, 225, 250) rgb(150, 200, 250);
+    }
   }
-
+  *::-webkit-scrollbar-track{
+      background-color: rgb(150, 200, 250);
+  }  
   *::-webkit-scrollbar {
     width: 10px;
   }
-
-  *::-webkit-scrollbar-track{
-    background-color: rgb(150, 200, 250);
+  *::-webkit-scrollbar:horizontal {
+      height: 10px;
   }
-
   *::-webkit-scrollbar-thumb{
     background-color: #7572D5;
     border: 3px solid rgb(150, 200, 250);
     border-radius: 10px;
+  }
+  *::-webkit-scrollbar-thumb:horizontal{
+      background-color: #7572D5;
+      border: 3px solid rgb(150, 200, 250);
+      border-radius: 10px;
   }
   
   body {
