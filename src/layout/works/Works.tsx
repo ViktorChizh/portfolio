@@ -80,44 +80,20 @@ const base: WorksBaseType[] = [
   },
   {
     name: 'TeamProjects',
-    imgInfo: 'I`m finished traineeship here',
+    imgInfo: 'We are finished this project',
     imgSrc: work2,
-    title: 'First commercial project, where I`m been',
-    pEng: <p><b>En </b>I interned for half a year on a real commercial project Relocate (aggregator of statistical data
-      about countries of the world) as a FRONT-END developer. In addition to the main functionality, I performed the
-      duties of a Project Manager Assistant, where I supervised the front-end and back-end.<br/> During the internship,
-      I completed assigned tasks, listened to mentors, and participated in discussing problems and searching for their
-      solutions, communicated with designers and testers.</p>,
-    pRus: <p><b>Ru </b>Пол года стажировался на реальном коммерческом проекте Relocate (агрегатор статистических данных
-      о странах мира) в качестве FRONT-END разработчика. Помимо основного функционала, выполнял обязанности Project
-      Manager Assistant, где курировал фронт-энд и бэк-энд.<br/> Во время стажировки выполнял поставленные задачи,
-      слушал менторов, участвовал в обсуждениях проблем и поисках их решения, коммуницировал с дизайнерами и
-      тестировщиками.</p>,
-    hrefDemo: 'https://www.youtube.com/watch?v=XlGi7xTGJ3I',
-    targetDemo: '_blank',
-    onClickDemo: () => {
-    },
-    hrefCode: '#',
-    onClickCode: () => alert('\nIt\'s owner\'s intellectual property \n\nЭто интеллектуальная собственность владельца'),
-    targetCode: ''
-  },
-  {
-    name: 'PersonalProjects',
-    imgInfo: 'Project complete',
-    imgSrc: work1,
-    title: 'Social Network',
-    pEng: <p><b>En </b>This is an additional (for independent work on given materials) start-to-end project on courses
-      in the IT-INCUBATOR.<br/> The project was interesting for me because it was necessary to independently overlay
-      TypeScript on top of the legacy-code, which made it possible to completely rethink the content of the project.
-    </p>,
-    pRus: <p><b>Ru </b>Это дополнительный (для самостоятельной работы по выданным материалам) сквозной проект на курсах
-      в ИТ-ИНКУБАТОРЕ.<br/> Проект для меня был интересен тем, что на legacy-код надо было самостоятельно наложить
-      сверху TypeScript, что позволило полностью переосмыслить содержание проекта.</p>,
-    hrefDemo: 'https://viktorchizh.github.io/Social-network/',
+    title: 'Flash Cards',
+    pEng: <p><b>En </b>This is command project on courses in the IT-INCUBATOR, where I consolidated my skill in
+      command-work.<br/> At this project our team using GitHub and learned new necessary knowledge when we solving
+      tasks.<br/> The project used RTK-query, which was new to me, which made it even more interesting.</p>,
+    pRus: <p><b>Ru </b>Это командный проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепил свои навыки командной
+      работы. <br/> B этом проекте наша команда использовала GitHub и изучала новые знания, необходимые для решения
+      задач.<br/> На проекте применялся новый для меня RTK-query, что сделало его еще более интересным.</p>,
+    hrefDemo: 'https://flash-cards-main.vercel.app/',
     onClickDemo: () => {
     },
     targetDemo: '_blank',
-    hrefCode: 'https://github.com/ViktorChizh/Social-network',
+    hrefCode: 'https://github.com/Arenelin/-flash-cards-',
     onClickCode: () => {
     },
     targetCode: '_blank'
@@ -145,24 +121,48 @@ const base: WorksBaseType[] = [
     targetCode: '_blank'
   },
   {
-    name: 'TeamProjects',
-    imgInfo: 'We are finished this project',
-    imgSrc: work2,
-    title: 'Flash Cards',
-    pEng: <p><b>En </b>This is command project on courses in the IT-INCUBATOR, where I consolidated my skill in
-      command-work.<br/> At this project our team using GitHub and learned new necessary knowledge when we solving
-      tasks.<br/> The project used RTK-query, which was new to me, which made it even more interesting.</p>,
-    pRus: <p><b>Ru </b>Это командный проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепил свои навыки командной
-      работы. <br/> B этом проекте наша команда использовала GitHub и изучала новые знания, необходимые для решения
-      задач.<br/> На проекте применялся новый для меня RTK-query, что сделало его еще более интересным.</p>,
-    hrefDemo: 'https://flash-cards-main.vercel.app/',
+    name: 'PersonalProjects',
+    imgInfo: 'Project complete',
+    imgSrc: work1,
+    title: 'Social Network',
+    pEng: <p><b>En </b>This is an additional (for independent work on given materials) start-to-end project on courses
+      in the IT-INCUBATOR.<br/> The project was interesting for me because it was necessary to independently overlay
+      TypeScript on top of the legacy-code, which made it possible to completely rethink the content of the project.
+    </p>,
+    pRus: <p><b>Ru </b>Это дополнительный (для самостоятельной работы по выданным материалам) сквозной проект на курсах
+      в ИТ-ИНКУБАТОРЕ.<br/> Проект для меня был интересен тем, что на legacy-код надо было самостоятельно наложить
+      сверху TypeScript, что позволило полностью переосмыслить содержание проекта.</p>,
+    hrefDemo: 'https://viktorchizh.github.io/Social-network/',
     onClickDemo: () => {
     },
     targetDemo: '_blank',
-    hrefCode: 'https://github.com/Arenelin/-flash-cards-',
+    hrefCode: 'https://github.com/ViktorChizh/Social-network',
     onClickCode: () => {
     },
     targetCode: '_blank'
+  },
+  {
+    name: 'TeamProjects',
+    imgInfo: 'I`m finished traineeship here',
+    imgSrc: work2,
+    title: 'First commercial project, where I`m been',
+    pEng: <p><b>En </b>I interned for half a year on a real commercial project Relocate (aggregator of statistical data
+      about countries of the world) as a FRONT-END developer. In addition to the main functionality, I performed the
+      duties of a Project Manager Assistant, where I supervised the front-end and back-end.<br/> During the internship,
+      I completed assigned tasks, listened to mentors, and participated in discussing problems and searching for their
+      solutions, communicated with designers and testers.</p>,
+    pRus: <p><b>Ru </b>Пол года стажировался на реальном коммерческом проекте Relocate (агрегатор статистических данных
+      о странах мира) в качестве FRONT-END разработчика. Помимо основного функционала, выполнял обязанности Project
+      Manager Assistant, где курировал фронт-энд и бэк-энд.<br/> Во время стажировки выполнял поставленные задачи,
+      слушал менторов, участвовал в обсуждениях проблем и поисках их решения, коммуницировал с дизайнерами и
+      тестировщиками.</p>,
+    hrefDemo: 'https://www.youtube.com/watch?v=XlGi7xTGJ3I',
+    targetDemo: '_blank',
+    onClickDemo: () => {
+    },
+    hrefCode: '#',
+    onClickCode: () => alert('\nIt\'s owner\'s intellectual property \n\nЭто интеллектуальная собственность владельца'),
+    targetCode: ''
   }
 ]
 
@@ -229,9 +229,12 @@ const Work = styled.div`
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
-    max-width: 45%;
+    max-width: 49%;
     min-width: 320px;
-
+    border: 1px dashed ${Theme.colors.bgPrimary};
+    border-radius: 25px;
+    padding: 15px;
+    
     img {
         width: 100%;
         background-color: ${Theme.colors.bgPrimary};
