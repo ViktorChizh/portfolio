@@ -12,7 +12,7 @@ import React, {ReactNode, useState} from 'react';
 import styled from 'styled-components';
 import {Theme} from 'stylesAndThemes/Theme';
 
-type WorksBaseType = {
+type WorksBase = {
   name: string
   imgInfo: string
   imgSrc: string
@@ -27,7 +27,7 @@ type WorksBaseType = {
   targetCode: string
 }
 
-const base: WorksBaseType[] = [
+const worksBase: WorksBase[] = [
   {
     name: 'TeamProjects',
     imgInfo: 'Project inctagram. Part 1.',
@@ -166,15 +166,15 @@ const base: WorksBaseType[] = [
   }
 ]
 
-const MenuItems = ['All'].concat(Array.from(new Set(base.map(w => w.name))))
+const MenuItems = ['All'].concat(Array.from(new Set(worksBase.map(w => w.name))))
 
 export const Works = () => {
   const [filterValue, setFilterValue] = useState('All')
 
-  let filteredBase = base
+  let filteredBase = worksBase
 
   for (let i = 1; i <= MenuItems.length; i++) {
-    if (filterValue === MenuItems[i]) filteredBase = base.filter(work => work.name === MenuItems[i])
+    if (filterValue === MenuItems[i]) filteredBase = worksBase.filter(work => work.name === MenuItems[i])
   }
 
   return (
