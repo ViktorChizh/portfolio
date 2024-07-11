@@ -1,7 +1,7 @@
 import Achievements from 'assets/Achievements.jpg'
 import coding from 'assets/Coding.svg'
 import rest from 'assets/Rest.svg'
-import work2 from 'assets/Work2.svg'
+import calm from 'assets/Calm.svg'
 import watch from 'assets/Work3.svg'
 import {Button} from 'components/Button';
 import {Container} from 'components/Container';
@@ -81,7 +81,7 @@ const worksBase: WorksBase[] = [
   {
     name: 'TeamProjects',
     imgInfo: 'We are finished this project',
-    imgSrc: work2,
+    imgSrc: calm,
     title: 'Flash Cards',
     pEng: <p><b>En </b>This is command project on courses in the IT-INCUBATOR, where I consolidated my skill in
       command-work.<br/> At this project our team using GitHub and learned new necessary knowledge when we solving
@@ -144,7 +144,7 @@ const worksBase: WorksBase[] = [
   {
     name: 'TeamProjects',
     imgInfo: 'I`m finished traineeship here',
-    imgSrc: work2,
+    imgSrc: calm,
     title: 'First commercial project, where I`m been',
     pEng: <p><b>En </b>I interned for half a year on a real commercial project Relocate (aggregator of statistical data
       about countries of the world) as a FRONT-END developer. In addition to the main functionality, I performed the
