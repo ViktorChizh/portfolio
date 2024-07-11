@@ -2,7 +2,7 @@ import Achievements from 'assets/Achievements.jpg'
 import coding from 'assets/Coding.svg'
 import rest from 'assets/Rest.svg'
 import calm from 'assets/Calm.svg'
-import watch from 'assets/Work3.svg'
+import achievement from 'assets/Achievement.svg'
 import {Button} from 'components/Button';
 import {Container} from 'components/Container';
 import {FlexWrapper} from 'components/FlexWrapper';
@@ -55,7 +55,7 @@ const worksBase: WorksBase[] = [
   {
     name: 'Achievements',
     imgInfo: 'I`m achieve that',
-    imgSrc: watch,
+    imgSrc: achievement,
     title: 'My achievements',
     pEng: <p><b>En </b>I have been mastering the Frontend direction for more than two years. <br/>During this time, I
       received certificates from courses taken or received on the Internet during self-study, characteristics from
