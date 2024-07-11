@@ -1,5 +1,5 @@
 import Achievements from 'assets/Achievements.jpg'
-import work0 from 'assets/Work0.svg'
+import coding from 'assets/Coding.svg'
 import work1 from 'assets/Work1.svg'
 import work2 from 'assets/Work2.svg'
 import watch from 'assets/Work3.svg'
@@ -31,7 +31,7 @@ const worksBase: WorksBase[] = [
   {
     name: 'TeamProjects',
     imgInfo: 'Project inctagram. Part 1.',
-    imgSrc: work0,
+    imgSrc: coding,
     title: 'Own library of components at NPM',
     pEng: <p><b>En </b>Traineeship on the inctagram project in a team consisting of: PM + 2 QA + 5 Front-end + 2
       back-end. Divided into two parts. In the first part, we create our own library of necessary components,
