@@ -1,6 +1,6 @@
 import Achievements from 'assets/Achievements.jpg'
 import coding from 'assets/Coding.svg'
-import work1 from 'assets/Work1.svg'
+import rest from 'assets/Rest.svg'
 import work2 from 'assets/Work2.svg'
 import watch from 'assets/Work3.svg'
 import {Button} from 'components/Button';
@@ -101,7 +101,7 @@ const worksBase: WorksBase[] = [
   {
     name: 'PersonalProjects',
     imgInfo: 'Project complete',
-    imgSrc: work1,
+    imgSrc: rest,
     title: 'ToDoList',
     pEng: <p><b>En </b>This is the main cross-cutting project in the IT-INCUBATOR courses, where I consolidate my
       knowledge and fill existing gaps in it.<br/> During the project, a transition was made from Redux to
@@ -123,7 +123,7 @@ const worksBase: WorksBase[] = [
   {
     name: 'PersonalProjects',
     imgInfo: 'Project complete',
-    imgSrc: work1,
+    imgSrc: rest,
     title: 'Social Network',
     pEng: <p><b>En </b>This is an additional (for independent work on given materials) start-to-end project on courses
       in the IT-INCUBATOR.<br/> The project was interesting for me because it was necessary to independently overlay
