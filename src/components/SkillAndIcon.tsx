@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { Theme } from 'stylesAndThemes/Theme';
 import { Roll } from "react-awesome-reveal";
 
-type AllSkillsAtIconsProps = {
+type SkillAndIconProps = {
     skills: {
         iconId: string
         progress: number
@@ -14,9 +14,9 @@ type AllSkillsAtIconsProps = {
     }[]
 }
 
-export const SkillAndIcon = (props: AllSkillsAtIconsProps) => {
+export const SkillAndIcon = (props: SkillAndIconProps) => {
     return(
-        <SkillContainer>
+        <SkillAndIconContainer>
             {props.skills.map((skill) => {
                 return (
                     <Roll key={skill.iconId} cascade={true} delay={250} duration={2000}>
@@ -29,11 +29,11 @@ export const SkillAndIcon = (props: AllSkillsAtIconsProps) => {
                     </Roll>
                 )
             })}
-        </SkillContainer>
+        </SkillAndIconContainer>
     )
 }
 
-const SkillContainer = styled.div`
+const SkillAndIconContainer = styled.div`
         display: flex;
         justify-content: space-evenly;
         align-items: center;
