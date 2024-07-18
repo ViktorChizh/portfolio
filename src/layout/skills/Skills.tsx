@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StyledTitle } from 'components/StyledTitle';
-import { AllSkillsAtIcons } from 'components/AllSkillsAtIcons';
+import { SkillAndIcon } from 'components/SkillAndIcon';
 import { Theme } from 'stylesAndThemes/Theme';
 import { Container } from 'components/Container';
 
@@ -34,7 +34,7 @@ export const Skills = () => {
         <StyledSkills id={'Skills'}>
             <Container>
                 <StyledTitle>My Skills</StyledTitle>
-                <AllSkillsAtIcons skills={skills}/>
+                <SkillAndIcon skills={skills}/>
             </Container>
         </StyledSkills>
     )

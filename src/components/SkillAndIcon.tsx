@@ -14,7 +14,7 @@ type AllSkillsAtIconsProps = {
     }[]
 }
 
-export const AllSkillsAtIcons = (props: AllSkillsAtIconsProps) => {
+export const SkillAndIcon = (props: AllSkillsAtIconsProps) => {
     return(
         <SkillContainer>
             {props.skills.map((skill) => {
