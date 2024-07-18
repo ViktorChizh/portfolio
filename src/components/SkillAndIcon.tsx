@@ -1,7 +1,7 @@
 import {FlexWrapper} from 'components/FlexWrapper';
 import React from 'react';
 import { Icon } from 'components/Icon';
-import { SkillCircle } from 'components/SkillCircle';
+import { SkillProgress } from 'components/SkillProgress';
 import styled from 'styled-components';
 import { Theme } from 'stylesAndThemes/Theme';
 import { Roll } from "react-awesome-reveal";
@@ -20,12 +20,12 @@ export const SkillAndIcon = (props: SkillAndIconProps) => {
             {props.skills.map((skill) => {
                 return (
                     <Roll key={skill.iconId} cascade={true} delay={250} duration={2000}>
-                        <SkillCircle percent={skill.progress}>
+                        <SkillProgress percent={skill.progress}>
                             <FlexWrapper justify='center' align='center' height='110px'>
                                 <Icon iconId={skill.iconId}/>
                                 <p>{skill.title}</p>
                             </FlexWrapper>
-                        </SkillCircle>
+                        </SkillProgress>
                     </Roll>
                 )
             })}

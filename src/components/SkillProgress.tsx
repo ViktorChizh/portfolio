@@ -3,18 +3,18 @@ import styled from 'styled-components';
 import { Theme } from 'stylesAndThemes/Theme';
 
 
-type SkillCirclePropsType = {
+type SkillProgressProps = {
   percent: number
   children: ReactNode
 }
 
-export const SkillCircle = (props: SkillCirclePropsType) => {
+export const SkillProgress = (props: SkillProgressProps) => {
   const radius = 50; // Радиус окружности
   const circumference = 2 * Math.PI * radius; // Длина окружности
   const strokeDashoffset = circumference - ((props.percent / 100) * circumference); // Смещение пунктирной линии, чтобы отрисовать заданный процент
 
   return (
-    <ProgressContainer>
+    <SkillProgressContainer>
       <svg width={ radius * 2.2 } height={ radius * 2.2 } >
         <circle
           r={ radius }
@@ -29,11 +29,11 @@ export const SkillCircle = (props: SkillCirclePropsType) => {
         />
       </svg>
         {props.children}
-    </ProgressContainer>
+    </SkillProgressContainer>
   )
 }
 
-const ProgressContainer = styled.div`
+const SkillProgressContainer = styled.div`
   display: flex;
   position: relative;
   width: 110px;
