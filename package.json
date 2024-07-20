@@ -3,6 +3,7 @@
   "homepage": "https://ViktorChizh.github.io/portfolio",
   "version": "0.1.0",
   "private": false,
+  "license": "MIT",
   "dependencies": {
     "@babel/core": "7.16.0",
     "@emailjs/browser": "^3.11.0",
