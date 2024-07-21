@@ -61,12 +61,14 @@ const worksBase: WorksBase[] = [
       received certificates from courses taken or received on the Internet during self-study, characteristics from
       completed internships on commercial projects, etc.<br/> Registered on the <a
         style={{color: '#7572D5', textDecoration: 'underline', padding: '0'}}
-        href="https://offerheap.com/specialists?tab=common-filters&speciality=FRONTEND" target="_blank"
+        // href="https://offerheap.com/specialists?tab=common-filters&speciality=FRONTEND" target="_blank"
+        href="https://offerheap.com/specialist/1143" target="_blank"
         rel="noreferrer">Offerheap</a> platform with verified skills and work experience.</p>,
     pRus: <p><b>Ru </b>Более двух лет осваиваю направление Frontend. <br/>За это время получил сертификаты с курсов или
       в интернете при самообучении, характеристики с пройденных стажировок на коммерческих проектах и прочее. <br/>Зарегистрирован
       на платформе <a style={{color: '#7572D5', textDecoration: 'underline', padding: '0'}}
-                      href="https://offerheap.com/specialists?tab=common-filters&speciality=FRONTEND" target="_blank"
+                      // href="https://offerheap.com/specialists?tab=common-filters&speciality=FRONTEND" target="_blank"
+                      href="https://offerheap.com/specialist/1143" target="_blank"
                       rel="noreferrer">Offerheap</a> с подтвержденными навыками и рабочим опытом.</p>,
     hrefDemo: 'https://viktorchizh.github.io/portfolio/',
     onClickDemo: () => {
