@@ -33,12 +33,12 @@ const worksBase: WorksBase[] = [
     imgInfo: 'Project inctagram. Part 1.',
     imgSrc: coding,
     title: 'Own library of components at NPM',
-    pEng: <p><b>En </b>Traineeship on the inctagram project in a team consisting of: PM + 2 QA + 5 Front-end + 2
+    pEng: <p><b>En </b>Traineeship on the inctagram project in a team consisting of: PM + 2 QA + 6 Front-end + 2
       back-end. Divided into two parts. In the first part, we create our own library of necessary components,
       upload it to NPM, so that we can then import and use it in the second part of the project.<br/> Technologies:
       NextJS и RTK query, Storybook, Radix UI, OAuth2, SSR, SSG, Stripe, Apollo GraphQL, Socket.IO, IndexedDB, GitHub,
       Vercel и GitHub Actions, Docker, Kubernetes, Jenkins ...</p>,
-    pRus: <p><b>Ru </b>Стажировка на проекте inctagram в команде в составе: PM + 2 QA + 5 Front-end + 2
+    pRus: <p><b>Ru </b>Стажировка на проекте inctagram в команде в составе: PM + 2 QA + 6 Front-end + 2
       back-end. Разделена на две части. В первой части мы создаем собственную библиотеку необходимых компонент,
       загружаем ее в NPM, чтобы потом импортировать и использовать во второй части проекта.<br/>
       Стек технологий: NextJS и RTK query, Storybook, Radix UI, OAuth2, SSR, SSG, Stripe, Apollo GraphQL, Socket.IO,
