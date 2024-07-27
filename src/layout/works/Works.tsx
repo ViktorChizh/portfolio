@@ -47,7 +47,7 @@ const worksBase: WorksBase[] = [
     targetDemo: '_blank',
     onClickDemo: () => {
     },
-    hrefCode: 'https://github.com/somegram-frontend/inctagram-ui-kit',
+    hrefCode: 'https://github.com/somegram-frontend',
     onClickCode: () => {
     },
     targetCode: '_blank'
