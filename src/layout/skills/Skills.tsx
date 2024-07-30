@@ -21,6 +21,7 @@ const skills: SkillsType[] = [
     {iconId: 'redux', progress: 75, title: 'Redux Toolkit, RTK-query, Redux'},
     {iconId: 'saga', progress: 70, title: 'Redux-Saga'},
     {iconId: 'mobx', progress: 65, title: 'MobX'},
+    {iconId: 'tailwind', progress: 65, title: 'TailWind'},
     {iconId: 'StyledComponents', progress: 90, title: 'Styled Com-ponents'},
     {iconId: 'bootstrap', progress: 75, title: 'Bootstrap'},
     {iconId: 'materialUI', progress: 85, title: 'MaterialUI'},

@@ -28,7 +28,7 @@ export const SkillProgress = (props: SkillProgressProps) => {
           transform='translate(5,5)'
         />
       </svg>
-        {props.children}
+      {props.children}
     </SkillProgressContainer>
   )
 }
