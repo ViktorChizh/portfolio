@@ -9,10 +9,9 @@ type SkillProgressProps = {
 }
 
 export const SkillProgress = (props: SkillProgressProps) => {
-  const radius = 50; // Радиус окружности
-  const circumference = 2 * Math.PI * radius; // Длина окружности
-  const strokeDashoffset = circumference - ((props.percent / 100) * circumference); // Смещение пунктирной линии, чтобы отрисовать заданный процент
-
+  const radius = 50;
+  const circumference = 2 * Math.PI * radius;
+  const strokeDashoffset = circumference - ((props.percent / 100) * circumference);
   return (
     <SkillProgressContainer>
       <svg width={ radius * 2.2 } height={ radius * 2.2 } >
