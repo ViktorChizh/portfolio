@@ -5,13 +5,13 @@ import { SkillAndIcon } from 'components/SkillAndIcon';
 import { Theme } from 'stylesAndThemes/Theme';
 import { Container } from 'components/Container';
 
-type SkillsType = {
+type Skill = {
     iconId: string
     progress: number
     title: string
 }
 
-const skills: SkillsType[] = [
+const skills: Skill[] = [
     {iconId: 'html', progress: 90, title: 'HTML'},
     {iconId: 'css', progress: 90, title: 'C S S, SCSS, SASS '},
     {iconId: 'js', progress: 85, title: 'JavaScript'},
