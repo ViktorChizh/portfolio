@@ -6,9 +6,9 @@ import map from "assets/map-by.png";
 import mapBg from "assets/map-by-bg.png";
 import { Theme } from "stylesAndThemes/Theme";
 import { Container } from "components/Container";
-import cv from "assets/CV_ViktorChizh.pdf";
-import resumeEng from "assets/resumeViktorChizhEn.pdf";
-import resumeRus from "assets/resumeViktorChizhRu.pdf";
+import CV_ViktorChizh from "assets/CV_ViktorChizh.pdf";
+import resumeViktorChizhEn from "assets/resumeViktorChizhEn.pdf";
+import resumeViktorChizhRu from "assets/resumeViktorChizhRu.pdf";
 import { Button } from "components/Button";
 import Typewriter from "typewriter-effect";
 
@@ -49,14 +49,18 @@ export const Home = () => {
             <Button
               padding="3px"
               width="49.5%"
-              onClick={() => downloadHandler(resumeRus, "resumeRus.pdf")}
+              onClick={() =>
+                downloadHandler(resumeViktorChizhRu, "resumeViktorChizhRu.pdf")
+              }
             >
               {isMobile ? "resume RU" : "Download resume Ru"}
             </Button>
             <Button
               padding="3px"
               width="49.5%"
-              onClick={() => downloadHandler(resumeEng, "resumeEng.pdf")}
+              onClick={() =>
+                downloadHandler(resumeViktorChizhEn, "resumeViktorChizhEn.pdf")
+              }
             >
               {isMobile ? "resume En" : "Download resume En"}
             </Button>
@@ -65,7 +69,7 @@ export const Home = () => {
             <Button
               padding="3px"
               width="49.5%"
-              onClick={() => downloadHandler(cv, "CV.pdf")}
+              onClick={() => downloadHandler(CV_ViktorChizh, "CV_ViktorChizh")}
             >
               {isMobile ? "CV RU" : `Download CV Ru`}
             </Button>
