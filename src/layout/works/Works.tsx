@@ -350,7 +350,7 @@ const Info = styled.div`
     16px
   );
   b {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
   }
 `;
