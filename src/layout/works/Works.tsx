@@ -290,14 +290,6 @@ export const Works = () => {
           gap="1%"
           alignContent="center"
         >
-          <p>
-            <b>En </b> I cannot provide the works in WebDad LLC and Rogue Arts
-            LLC due to the signed NDA, but they are magnificent!
-          </p>
-          <p>
-            <b>Ru </b> Работы в ООО "ВебДэд" и в ООО "Роуг Артс" не могу
-            предоставить по причине подписанного НДА, но они великолепты!
-          </p>
           {filteredBase.map((w) => {
             return (
               <Work key={`${w.name}${w.title}`}>
@@ -331,6 +323,14 @@ export const Works = () => {
             );
           })}
         </FlexWrapper>
+        <p>
+          <b>En </b> I cannot provide the works in WebDad LLC and Rogue Arts LLC
+          due to the signed NDA, but they are magnificent!
+        </p>
+        <p>
+          <b>Ru </b> Работы в ООО "ВебДэд" и в ООО "Роуг Артс" не могу
+          предоставить по причине подписанного НДА, но они великолепты!
+        </p>
       </Container>
     </StyledWorks>
   );
