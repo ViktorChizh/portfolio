@@ -323,18 +323,33 @@ export const Works = () => {
             );
           })}
         </FlexWrapper>
+      </Container>
+      <Info>
         <p>
-          <b>En </b> I cannot provide the works in WebDad LLC and Rogue Arts LLC
-          due to the signed NDA, but they are magnificent!
+          <b>En </b> I cannot provide the works in OOO "WebDad" and OOO "Rogue
+          Arts" due to the signed confidentiality agreement, but they are
+          magnificent!
         </p>
         <p>
           <b>Ru </b> Работы в ООО "ВебДэд" и в ООО "Роуг Артс" не могу
-          предоставить по причине подписанного НДА, но они великолепты!
+          предоставить по причине подписанного соглашения о конфиденциальности,
+          но они великолепты!
         </p>
-      </Container>
+      </Info>
     </StyledWorks>
   );
 };
+
+const Info = styled.div`
+  padding-bottom: 2%;
+  margin: -2% 2% 0;
+  color: ${Theme.colors.textSecondary};
+  font-size: 16px;
+  b {
+    font-size: 20px;
+    font-weight: 700;
+  }
+`;
 
 const StyledWorks = styled.section`
   color: ${Theme.colors.iconPrimary};
