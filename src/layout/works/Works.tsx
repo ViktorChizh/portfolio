@@ -344,7 +344,11 @@ const Info = styled.div`
   padding-bottom: 2%;
   margin: -2% 2% 0;
   color: ${Theme.colors.textSecondary};
-  font-size: 16px;
+  font-size: clamp(
+    12px,
+    calc((100vw - 430px) / (1200 - 430) * (16 - 12) + 12px),
+    16px
+  );
   b {
     font-size: 20px;
     font-weight: 700;
