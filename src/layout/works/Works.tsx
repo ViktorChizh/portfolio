@@ -326,7 +326,7 @@ export const Works = () => {
       </Container>
       <Info>
         <p>
-          <b>En </b> I cannot provide the works in OOO "WebDad" and OOO "Rogue
+          <b>En </b> I cannot provide the works in LLC "WebDad" and LLC "Rogue
           Arts" due to the signed confidentiality agreement, but they are
           magnificent!
         </p>
