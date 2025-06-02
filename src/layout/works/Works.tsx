@@ -29,50 +29,20 @@ type WorksBase = {
 
 const worksBase: WorksBase[] = [
   {
-    name: "TeamProjects",
-    imgInfo: "Project inctagram.",
-    imgSrc: coding,
-    title: "Own library of components at NPM",
-    pEng: (
-      <p>
-        <b>En </b>Traineeship on the inctagram project in a team consisting of:
-        PM + 2 QA + 5 Front-end + 2 back-end. Divided into two parts. In the
-        first part, we create our own library of necessary components, upload it
-        to NPM, so that we can then import and use it in the second part of the
-        project.
-        <br /> Technologies: NextJS и RTK query, Storybook, Radix UI, OAuth2,
-        SSR, SSG, Stripe, Apollo GraphQL, Socket.IO, IndexedDB, GitHub, Vercel и
-        GitHub Actions, Docker, Kubernetes, Jenkins ...
-      </p>
-    ),
-    pRus: (
-      <p>
-        <b>Ru </b>Стажировка на проекте inctagram в команде в составе: PM + 2 QA
-        + 5 Front-end + 2 back-end. Разделена на две части. В первой части мы
-        создаем собственную библиотеку необходимых компонент, загружаем ее в
-        NPM, чтобы потом импортировать и использовать во второй части проекта.
-        <br />
-        Стек технологий: NextJS и RTK query, Storybook, Radix UI, OAuth2, SSR,
-        SSG, Stripe, Apollo GraphQL, Socket.IO, IndexedDB, GitHub, Vercel и
-        GitHub Actions, Docker, Kubernetes, Jenkins ...
-      </p>
-    ),
-    hrefDemo: "https://storybook-components-flash-cards.vercel.app",
-    targetDemo: "_blank",
-    onClickDemo: () => {},
-    hrefCode: "https://github.com/somegram-frontend",
-    onClickCode: () => {},
-    targetCode: "_blank",
-  },
-  {
     name: "Achievements",
     imgInfo: "I`m achieve that",
     imgSrc: achievement,
     title: "My achievements",
     pEng: (
       <p>
-        <b>En </b>I have been mastering the Frontend direction for more than two
-        years. <br />
+        <b>En </b>Front-end Developer with 2+ years of commercial experience in
+        building high-load Single Page Applications (SPA),optimizing UI
+        performance, and integrating with backend systems. Deep knowledge of
+        JavaScript, TypeScript, React, Next.js,Vue.js, Redux Toolkit, Zustand,
+        HTML5, and CSS3. Experienced in performance optimization, SEO
+        improvement, RESTful APIintegration, CI/CD pipelines, unit testing, and
+        cross-functional collaboration. Results-oriented, able to work
+        effectively within Agile/Scrum teams. <br />
         During this time, I received certificates from courses taken or received
         on the Internet during self-study, characteristics from completed
         internships on commercial projects, etc.
@@ -95,8 +65,15 @@ const worksBase: WorksBase[] = [
     ),
     pRus: (
       <p>
-        <b>Ru </b>Более двух лет осваиваю направление Frontend. <br />
-        За это время получил сертификаты с курсов или в интернете при
+        <b>Ru </b>Front-end разработчик с более чем 2 годами коммерческого опыта
+        в создании высоконагруженных одностраничных приложений (SPA),
+        оптимизации интерфейсов и интеграции с backend. Глубокое понимание
+        JavaScript, TypeScript, React, Next.js, Vue.js, Redux Toolkit, Zustand,
+        HTML5, CSS3. Имею опыт оптимизации производительности, улучшения SEO,
+        работы с RESTful API, CI/CD, Unit-тестирования и кросс-функционального
+        взаимодействия. Ориентирован на результат, умею работать в
+        Agile/Scrum-командах.
+        <br /> За это время получил сертификаты с курсов или в интернете при
         самообучении, характеристики с пройденных стажировок на коммерческих
         проектах и прочее. <br />
         Зарегистрирован на платформе{" "}
@@ -122,6 +99,53 @@ const worksBase: WorksBase[] = [
     },
     targetDemo: "_blank",
     hrefCode: "https://github.com/ViktorChizh",
+    onClickCode: () => {},
+    targetCode: "_blank",
+  },
+  {
+    name: "TeamProjects",
+    imgInfo: "Project inctagram.",
+    imgSrc: coding,
+    title: "INCTAGRAM",
+    pEng: (
+      <p>
+        <b>En </b>Traineeship on the inctagram project in a team consisting of:
+        <br /> &nbsp;&nbsp;&nbsp;PM + 2 QA + 5 Front-end + 2 back-end. <br />
+        The platform being developed in the project allows users to:
+        <br /> &nbsp;&nbsp;&nbsp;- post photos in their feed
+        <br /> &nbsp;&nbsp;&nbsp;- subscribe to other users' pages
+        <br /> &nbsp;&nbsp;&nbsp;- buy a paid account
+        <br /> &nbsp;&nbsp;&nbsp;- leave comments
+        <br /> &nbsp;&nbsp;&nbsp;- like
+        <br /> &nbsp;&nbsp;&nbsp;- exchange personal messages
+        <br /> Technologies: NextJS и RTK query, Storybook, Radix UI, OAuth2,
+        SSR, SSG, Stripe, Apollo GraphQL, Socket.IO, IndexedDB, GitHub, Vercel и
+        GitHub Actions, Docker, Kubernetes, Jenkins ...
+      </p>
+    ),
+    pRus: (
+      <p>
+        <b>Ru </b>Стажировка на проекте inctagram в команде в составе:
+        <br /> &nbsp;&nbsp;&nbsp;PM + 2 QA + 5 Front-end + 2 back-end.
+        <br />
+        Разрабатываемая в проекте платформа позволяет пользователям:
+        <br /> &nbsp;&nbsp;&nbsp;- размещать фотографии в своей ленте
+        <br /> &nbsp;&nbsp;&nbsp;- подписываться на страницы других
+        пользователей
+        <br /> &nbsp;&nbsp;&nbsp;- покупать платный аккаунт
+        <br /> &nbsp;&nbsp;&nbsp;- оставлять комментарии
+        <br /> &nbsp;&nbsp;&nbsp;- ставить лайки
+        <br /> &nbsp;&nbsp;&nbsp;- обмениваться личными сообщениями
+        <br />
+        Стек технологий: NextJS и RTK query, Storybook, Radix UI, OAuth2, SSR,
+        SSG, Stripe, Apollo GraphQL, Socket.IO, IndexedDB, GitHub, Vercel и
+        GitHub Actions, Docker, Kubernetes, Jenkins ...
+      </p>
+    ),
+    hrefDemo: "https://storybook-components-flash-cards.vercel.app",
+    targetDemo: "_blank",
+    onClickDemo: () => {},
+    hrefCode: "https://github.com/somegram-frontend",
     onClickCode: () => {},
     targetCode: "_blank",
   },
