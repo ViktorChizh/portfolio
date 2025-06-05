@@ -50,7 +50,10 @@ export const Home = () => {
               padding="3px"
               width="49.5%"
               onClick={() =>
-                downloadHandler(resumeViktorChizhRu, "resumeViktorChizhRu.pdf")
+                downloadHandler(
+                  resumeViktorChizhRu,
+                  "resume_ViktorChizh_Frontend_Ru.pdf"
+                )
               }
             >
               {isMobile ? "resume RU" : "Download resume Ru"}
@@ -59,7 +62,10 @@ export const Home = () => {
               padding="3px"
               width="49.5%"
               onClick={() =>
-                downloadHandler(resumeViktorChizhEn, "resumeViktorChizhEn.pdf")
+                downloadHandler(
+                  resumeViktorChizhEn,
+                  "resume_ViktorChizh_Frontend_En.pdf"
+                )
               }
             >
               {isMobile ? "resume En" : "Download resume En"}

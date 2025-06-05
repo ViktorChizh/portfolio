@@ -350,14 +350,12 @@ export const Works = () => {
       </Container>
       <Info>
         <p>
-          <b>En </b> I cannot provide the works in LLC "WebDad" and LLC "Rogue
-          Arts" due to the signed confidentiality agreement, but they are
-          magnificent!
+          <b>En </b> I cannot provide the works in LLC "WebDad" due to the
+          signed confidentiality agreement, but they are magnificent!
         </p>
         <p>
-          <b>Ru </b> Работы в ООО "ВебДэд" и в ООО "Роуг Артс" не могу
-          предоставить по причине подписанного соглашения о конфиденциальности,
-          но они великолепты!
+          <b>Ru </b> Работы в ООО "ВебДэд" не могу предоставить по причине
+          подписанного соглашения о конфиденциальности, но они великолепны!
         </p>
       </Info>
     </StyledWorks>
