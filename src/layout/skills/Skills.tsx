@@ -30,6 +30,9 @@ const skills: Skill[] = [
   { iconId: "jest", progress: 75, title: "Jest" },
   { iconId: "storybook", progress: 75, title: "Storybook" },
   { iconId: "git", progress: 85, title: "GIT" },
+  { iconId: "sql", progress: 85, title: "SQL" },
+  { iconId: "PostgreSQL", progress: 85, title: "PostgreSQL" },
+  { iconId: "go", progress: 85, title: "Go" },
 ];
 
 export const Skills = () => {
