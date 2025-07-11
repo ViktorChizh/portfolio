@@ -94,9 +94,9 @@ export const Home = () => {
           <img
             className="photo"
             src={bigPhoto}
-            alt="my-foto"
-            width={255}
-            height={255}
+            alt="my-photo"
+            width={265}
+            height={280}
           />
         </PhotoWrapper>
         <img className="map" src={map} alt="" width={290} height={255} />
