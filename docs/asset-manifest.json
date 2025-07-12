@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.eab77925.css",
-    "main.js": "/portfolio/static/js/main.4eb66c24.js",
+    "main.js": "/portfolio/static/js/main.31392d09.js",
     "static/media/Achievements.jpg": "/portfolio/static/media/Achievements.dd85923fbd844a4502a4.jpg",
-    "static/media/CV_ViktorChizh.pdf": "/portfolio/static/media/CV_ViktorChizh.9b7fd6d33b918279a275.pdf",
+    "static/media/CV_ViktorChizh.pdf": "/portfolio/static/media/CV_ViktorChizh.83abc2c87bef979d2f28.pdf",
     "static/media/spriteSvgIcon.svg": "/portfolio/static/media/spriteSvgIcon.af8cc2f50669b56bcada4dcd8f532661.svg",
     "static/media/Photo.jpg": "/portfolio/static/media/Photo.59cdd7046c082e462d27.jpg",
-    "static/media/resumeViktorChizhRu.pdf": "/portfolio/static/media/resumeViktorChizhRu.230174361aba41e15bb8.pdf",
+    "static/media/resumeViktorChizhRu.pdf": "/portfolio/static/media/resumeViktorChizhRu.7d8f673eb4bac7d2b99f.pdf",
+    "static/media/resumeViktorChizhEn.pdf": "/portfolio/static/media/resumeViktorChizhEn.bca96f88b5d88c6142f9.pdf",
     "static/media/map-by.png": "/portfolio/static/media/map-by.2f0538b875a0b9aba0e6.png",
-    "static/media/resumeViktorChizhEn.pdf": "/portfolio/static/media/resumeViktorChizhEn.95616d3f8cd569c74a8e.pdf",
     "static/media/map-by-bg.png": "/portfolio/static/media/map-by-bg.4c4571be3c7c1a53be9e.png",
     "static/media/Calm.svg": "/portfolio/static/media/Calm.75aeb1e66c1aa14a6420e14c60b06647.svg",
     "static/media/Coding.svg": "/portfolio/static/media/Coding.2dc52825bd1ea7468b1e23b21ac758ae.svg",
@@ -18,10 +18,10 @@
     "static/media/quotes.svg": "/portfolio/static/media/quotes.c449b3f5ddafb81a3bdce9864860567f.svg",
     "index.html": "/portfolio/index.html",
     "main.eab77925.css.map": "/portfolio/static/css/main.eab77925.css.map",
-    "main.4eb66c24.js.map": "/portfolio/static/js/main.4eb66c24.js.map"
+    "main.31392d09.js.map": "/portfolio/static/js/main.31392d09.js.map"
   },
   "entrypoints": [
     "static/css/main.eab77925.css",
-    "static/js/main.4eb66c24.js"
+    "static/js/main.31392d09.js"
   ]
 }
