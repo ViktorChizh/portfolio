@@ -5,7 +5,6 @@ import map from "assets/map-by.png";
 import mapBg from "assets/map-by-bg.png";
 import { Theme } from "stylesAndThemes/Theme";
 import { Container } from "components/Container";
-import CV_ViktorChizh from "assets/CV_ViktorChizh.pdf";
 import resumeViktorChizhEn from "assets/resumeViktorChizhEn.pdf";
 import resumeViktorChizhRu from "assets/resumeViktorChizhRu.pdf";
 import { Button } from "components/Button";
@@ -43,7 +42,17 @@ export const Home = () => {
         >
           <span>Hi there</span>
           <h2>I am Viktor Chizh</h2>
-          <h1>A Front-end Developer&nbsp;</h1>
+          <h1>A Front-end Developer</h1>
+          <FlexWrapper width="100%" alignContent="center">
+            <Pointer>&#9754;</Pointer>
+            <Typewriter
+              options={{
+                strings: ["Know more about me:"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </FlexWrapper>
           <FlexWrapper gap="1%">
             <Button
               padding="3px"
@@ -69,25 +78,6 @@ export const Home = () => {
             >
               {isMobile ? "resume En" : "Download resume En"}
             </Button>
-          </FlexWrapper>
-          <FlexWrapper align="center" gap="1%">
-            <Button
-              padding="3px"
-              width="49.5%"
-              onClick={() => downloadHandler(CV_ViktorChizh, "CV_ViktorChizh")}
-            >
-              {isMobile ? "CV RU" : `Download CV Ru`}
-            </Button>
-            <FlexWrapper width="49.5%" alignContent="center">
-              <Pointer>&#9754;</Pointer>
-              <Typewriter
-                options={{
-                  strings: ["More about me"],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </FlexWrapper>
           </FlexWrapper>
         </FlexWrapper>
         <PhotoWrapper>
@@ -126,7 +116,8 @@ const PhotoWrapper = styled.div`
 `;
 
 const Pointer = styled.p`
-  font-size: 2em;
+  transform: rotate(-90deg);
+  font-size: 3rem;
   line-height: 18px;
   font-weight: 900;
 `;
@@ -145,6 +136,7 @@ const StyledMain = styled.section`
     cursor: pointer;
   }
   ${Container} {
+    padding-top: 6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -166,7 +158,7 @@ const StyledMain = styled.section`
     }
 
     .Typewriter {
-      font-size: 0.85em;
+      font-size: 1.25rem;
       font-weight: 900;
     }
   }
