@@ -1,6 +1,5 @@
 import { Container } from "components/Container";
 import { StyledTitle } from "components/StyledTitle";
-import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "layout/quotes/Slider.css";
@@ -82,6 +81,31 @@ const items = [
     <strong>Теодор Рузвельт</strong>
   </Slider>,
   <Slider>
+    <cite>Дисциплина — мост между целями и достижениями.</cite>
+    <strong>Джим Рон</strong>
+  </Slider>,
+  <Slider>
+    <cite>
+      Оптимист видит возможность в каждой трудности, пессимист — трудность в
+      каждой возможности.
+    </cite>
+    <strong>Уинстон Черчилль</strong>
+  </Slider>,
+  <Slider>
+    <cite>Выживает не самый сильный, а самый восприимчивый к переменам.</cite>
+    <strong>Чарльз Дарвин</strong>
+  </Slider>,
+  <Slider>
+    <cite>Креативность — это интеллект, который развлекается.</cite>
+    <strong>Альберт Эйнштейн</strong>
+  </Slider>,
+  <Slider>
+    <cite>
+      Мы видим вещи не такими, какие они есть, а такими, какие мы есть.
+    </cite>
+    <strong>Анаис Нин</strong>
+  </Slider>,
+  <Slider>
     <cite>
       Единственный способ сделать что-то очень хорошо – любить то, что ты
       делаешь.
@@ -89,25 +113,20 @@ const items = [
     <strong>Стив Джобс</strong>
   </Slider>,
   <Slider>
-    <cite>Выживает не самый сильный, а самый восприимчивый к переменам.</cite>
-    <strong>Чарльз Дарвин</strong>
+    <cite>
+      Если ты хочешь чего-то, чего никогда не имел, тебе придется делать то,
+      чего никогда не делал.
+    </cite>
+    <strong>Томас Джефферсон</strong>
+  </Slider>,
+  <Slider>
+    <cite>Будущее принадлежит тем, кто готов к нему сегодня.</cite>
+    <strong>Малкольм Икс</strong>
   </Slider>,
   <Slider>
     <cite>
       Вопрос не в том, кто мне разрешит, а в том, кто сможет мне запретить.
     </cite>
     <strong>Айн Рэнд</strong>
-  </Slider>,
-  <Slider>
-    <cite>
-      Неудача – это просто возможность начать снова, но уже более мудро.
-    </cite>
-    <strong>Генри Форд</strong>
-  </Slider>,
-  <Slider>
-    <cite>
-      Всегда выбирайте самый трудный путь - на нем вы не встретите конкурентов.
-    </cite>
-    <strong>Шарль де Голль</strong>
   </Slider>,
 ];
