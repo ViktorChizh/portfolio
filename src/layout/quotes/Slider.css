@@ -32,7 +32,7 @@
     align-items: center;
 }
 
-.alice-carousel__prev-btn-item, 
+.alice-carousel__prev-btn-item,
 .alice-carousel__prev-btn-item:hover {
     padding: 0 1px 5px 0;
     font-weight: 900;

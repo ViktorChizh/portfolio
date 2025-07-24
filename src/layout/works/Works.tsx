@@ -8,7 +8,7 @@ import { Container } from "components/Container";
 import { FlexWrapper } from "components/FlexWrapper";
 import { Menu } from "components/Menu";
 import { StyledTitle } from "components/StyledTitle";
-import React, { ReactNode, useState } from "react";
+import { ReactNode, useState } from "react";
 import styled from "styled-components";
 import { Theme } from "stylesAndThemes/Theme";
 

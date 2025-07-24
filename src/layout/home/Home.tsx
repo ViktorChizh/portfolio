@@ -17,10 +17,8 @@ export const Home = () => {
     );
   const downloadHandler = (failLink: string, failName: string) => {
     if (isMobile) {
-      // Открыть файл на мобильных устройствах
       window.location.href = failLink;
     } else {
-      // Скачать файл на компьютерах
       const link = document.createElement("a");
       link.href = failLink;
       link.setAttribute("download", failName);
