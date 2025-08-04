@@ -67,7 +67,7 @@ const worksBase: WorksBase[] = [
       <p>
         <b>Ru </b>Front-end разработчик с более чем 2 годами коммерческого опыта
         в создании высоконагруженных одностраничных приложений (SPA),
-        оптимизации интерфейсов и интеграции с backend. Глубокое понимание
+        оптимизации интерфейсов и интеграции с backend. Глубоко пониманию
         JavaScript, TypeScript, React, Next.js, Vue.js, Redux Toolkit, Zustand,
         HTML5, CSS3. Имею опыт оптимизации производительности, улучшения SEO,
         работы с RESTful API, CI/CD, Unit-тестирования и кросс-функционального
@@ -83,7 +83,6 @@ const worksBase: WorksBase[] = [
             textDecoration: "underline",
             padding: "0",
           }}
-          // href="https://offerheap.com/specialists?tab=common-filters&speciality=FRONTEND" target="_blank"
           href="https://offerheap.com/specialist/1143"
           target="_blank"
           rel="noreferrer"
@@ -252,9 +251,7 @@ const worksBase: WorksBase[] = [
       <p>
         <b>En </b>I interned for half a year on a real commercial project
         Relocate (aggregator of statistical data about countries of the world)
-        as a FRONT-END developer. In addition to the main functionality, I
-        performed the duties of a Project Manager Assistant, where I supervised
-        the front-end and back-end.
+        as a FRONT-END developer.
         <br /> During the internship, I completed assigned tasks, listened to
         mentors, and participated in discussing problems and searching for their
         solutions, communicated with designers and testers.
@@ -264,9 +261,7 @@ const worksBase: WorksBase[] = [
       <p>
         <b>Ru </b>Пол года стажировался на реальном коммерческом проекте
         Relocate (агрегатор статистических данных о странах мира) в качестве
-        FRONT-END разработчика. Помимо основного функционала, выполнял
-        обязанности Project Manager Assistant, где курировал фронт-энд и
-        бэк-энд.
+        FRONT-END разработчика.
         <br /> Во время стажировки выполнял поставленные задачи, слушал
         менторов, участвовал в обсуждениях проблем и поисках их решения,
         коммуницировал с дизайнерами и тестировщиками.
