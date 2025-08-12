@@ -5,7 +5,7 @@ import map from "assets/map-by.png";
 import mapBg from "assets/map-by-bg.png";
 import { Theme } from "stylesAndThemes/Theme";
 import { Container } from "components/Container";
-import resumeViktorChizhEn from "assets/resumeViktorChizhEn.pdf";
+// import resumeViktorChizhEn from "assets/resumeViktorChizhEn.pdf";
 import resumeViktorChizhRu from "assets/resumeViktorChizhRu.pdf";
 import { Button } from "components/Button";
 import Typewriter from "typewriter-effect";
@@ -58,13 +58,13 @@ export const Home = () => {
               onClick={() =>
                 downloadHandler(
                   resumeViktorChizhRu,
-                  "resume_ViktorChizh_Frontend_Ru.pdf"
+                  "resume_ViktorChizh_Frontend.pdf"
                 )
               }
             >
-              {isMobile ? "resume RU" : "Download resume Ru"}
+              {isMobile ? "resume" : "Download resume"}
             </Button>
-            <Button
+            {/* <Button
               padding="3px"
               width="49.5%"
               onClick={() =>
@@ -75,7 +75,7 @@ export const Home = () => {
               }
             >
               {isMobile ? "resume En" : "Download resume En"}
-            </Button>
+            </Button> */}
           </FlexWrapper>
         </FlexWrapper>
         <PhotoWrapper>
