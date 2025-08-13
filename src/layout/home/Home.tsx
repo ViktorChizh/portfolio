@@ -5,7 +5,6 @@ import map from "assets/map-by.png";
 import mapBg from "assets/map-by-bg.png";
 import { Theme } from "stylesAndThemes/Theme";
 import { Container } from "components/Container";
-// import resumeViktorChizhEn from "assets/resumeViktorChizhEn.pdf";
 import resumeViktorChizhRu from "assets/resumeViktorChizhRu.pdf";
 import { Button } from "components/Button";
 import Typewriter from "typewriter-effect";
@@ -51,7 +50,6 @@ export const Home = () => {
               }}
             />
           </FlexWrapper>
-          <FlexWrapper gap="1%">
             <Button
               padding="3px"
               width="49.5%"
@@ -64,19 +62,6 @@ export const Home = () => {
             >
               {isMobile ? "resume" : "Download resume"}
             </Button>
-            {/* <Button
-              padding="3px"
-              width="49.5%"
-              onClick={() =>
-                downloadHandler(
-                  resumeViktorChizhEn,
-                  "resume_ViktorChizh_Frontend_En.pdf"
-                )
-              }
-            >
-              {isMobile ? "resume En" : "Download resume En"}
-            </Button> */}
-          </FlexWrapper>
         </FlexWrapper>
         <PhotoWrapper>
           <img
