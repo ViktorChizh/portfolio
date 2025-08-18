@@ -37,31 +37,31 @@ export const Home = () => {
           gap="10px"
           width="max-content"
         >
-          <span>Hi there</span>
-          <h2>I am Viktor Chizh</h2>
-          <h1>A Front-end Developer</h1>
+          <span>Привет</span>
+          <h2>Я Виктор Чиж</h2>
+          <h1>Front-end разработчик</h1>
           <FlexWrapper width="100%" alignContent="center">
             <Pointer>&#9754;</Pointer>
             <Typewriter
               options={{
-                strings: ["Know more about me:"],
+                strings: ["Больше обо мне:"],
                 autoStart: true,
                 loop: true,
               }}
             />
           </FlexWrapper>
-            <Button
-              padding="3px"
-              width="49.5%"
-              onClick={() =>
-                downloadHandler(
-                  resumeViktorChizhRu,
-                  "resume_ViktorChizh_Frontend.pdf"
-                )
-              }
-            >
-              {isMobile ? "resume" : "Download resume"}
-            </Button>
+          <Button
+            padding="3px"
+            width="49.5%"
+            onClick={() =>
+              downloadHandler(
+                resumeViktorChizhRu,
+                "resume_ViktorChizh_Frontend.pdf"
+              )
+            }
+          >
+            {isMobile ? "резюме" : "скачайте резюме"}
+          </Button>
         </FlexWrapper>
         <PhotoWrapper>
           <img
