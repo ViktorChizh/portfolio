@@ -296,7 +296,7 @@ export const Works = () => {
   return (
     <StyledWorks id="Works">
       <Container>
-        <StyledTitle>My Works</StyledTitle>
+        <StyledTitle>Опыт работы</StyledTitle>
         <Menu
           items={MenuItems}
           changeFilterValue={setFilterValue}

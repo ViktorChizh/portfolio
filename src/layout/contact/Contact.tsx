@@ -27,7 +27,7 @@ export const Contact = () => {
   return (
     <StyledContact id={"Contact"}>
       <Container>
-        <StyledTitle>Contact</StyledTitle>
+        <StyledTitle>Контакты</StyledTitle>
         <FlexWrapper align={"center"} gap={"15px"}>
           <img src={imgMail} alt="" />
           <ContactForm ref={form} onSubmit={sendEmail}>

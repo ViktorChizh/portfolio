@@ -40,7 +40,7 @@ export const Skills = () => {
   return (
     <StyledSkills id={"Skills"}>
       <Container>
-        <StyledTitle>My Skills</StyledTitle>
+        <StyledTitle>Навыки</StyledTitle>
         <SkillAndIcon skills={skills} />
       </Container>
     </StyledSkills>
