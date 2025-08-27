@@ -38,7 +38,7 @@ const skills: Skill[] = [
 
 export const Skills = () => {
   return (
-    <StyledSkills id={"Skills"}>
+    <StyledSkills id={"Навыки"}>
       <Container>
         <StyledTitle>Навыки</StyledTitle>
         <SkillAndIcon skills={skills} />

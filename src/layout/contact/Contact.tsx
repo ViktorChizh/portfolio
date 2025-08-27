@@ -25,7 +25,7 @@ export const Contact = () => {
   };
 
   return (
-    <StyledContact id={"Contact"}>
+    <StyledContact id={"Контакты"}>
       <Container>
         <StyledTitle>Контакты</StyledTitle>
         <FlexWrapper align={"center"} gap={"15px"}>
@@ -33,7 +33,7 @@ export const Contact = () => {
           <ContactForm ref={form} onSubmit={sendEmail}>
             <ContactField
               required
-              placeholder="Name"
+              placeholder="Имя"
               name={"user_name"}
             ></ContactField>
             <ContactField
@@ -44,12 +44,12 @@ export const Contact = () => {
             ></ContactField>
             <ContactField
               required
-              placeholder="Text message"
+              placeholder="Текст сообщения"
               as="textarea"
               name={"message"}
             ></ContactField>
             <Button type="submit" padding={"5px 8px"}>
-              SEND MESSAGE to my email: victor.chizh@mail.ru
+              Отправить сообщение на мой email: victor.chizh@mail.ru
             </Button>
           </ContactForm>
           <img src={imgMail} alt="" />

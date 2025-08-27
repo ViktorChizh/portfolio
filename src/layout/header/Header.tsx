@@ -21,7 +21,7 @@ export const Header = () => {
           <Icon iconId="react2" viewport="0 0 125 125" />
         </Button>
         <Menu
-          items={["Главная", "Навыки", "Цитаты", "Опыт", "Контакты"]}
+          items={["Главная", "Навыки", "Цитаты", "Опыт работы", "Контакты"]}
           color={"rgb(200, 225, 250)"}
         />
         <Button

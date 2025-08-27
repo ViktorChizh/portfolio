@@ -17,7 +17,6 @@ type WorksBase = {
   imgInfo: string;
   imgSrc: string;
   title: string;
-  pEng: ReactNode;
   pRus: ReactNode;
   hrefDemo: string;
   onClickDemo: () => void;
@@ -29,48 +28,18 @@ type WorksBase = {
 
 const worksBase: WorksBase[] = [
   {
-    name: "Achievements",
-    imgInfo: "I`m achieve that",
+    name: "Достижения",
+    imgInfo: "Рекомендации, сертификаты и т.д.",
     imgSrc: achievement,
-    title: "My achievements",
-    pEng: (
-      <p>
-        <b>En </b>Front-end Developer with 2+ years of commercial experience in
-        building high-load Single Page Applications (SPA),optimizing UI
-        performance, and integrating with backend systems. Deep knowledge of
-        JavaScript, TypeScript, React, Next.js,Vue.js, Redux Toolkit, Zustand,
-        HTML5, and CSS3. Experienced in performance optimization, SEO
-        improvement, RESTful APIintegration, CI/CD pipelines, unit testing, and
-        cross-functional collaboration. Results-oriented, able to work
-        effectively within Agile/Scrum teams. <br />
-        During this time, I received certificates from courses taken or received
-        on the Internet during self-study, characteristics from completed
-        internships on commercial projects, etc.
-        <br /> Registered on the{" "}
-        <a
-          style={{
-            color: "#7572D5",
-            textDecoration: "underline",
-            padding: "0",
-          }}
-          // href="https://offerheap.com/specialists?tab=common-filters&speciality=FRONTEND" target="_blank"
-          href="https://offerheap.com/specialist/1143"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Offerheap
-        </a>{" "}
-        platform with verified skills and work experience.
-      </p>
-    ),
+    title: "Мои достижения",
     pRus: (
       <p>
-        <b>Ru </b>Front-end разработчик с более чем 2 годами коммерческого опыта
-        в создании высоконагруженных одностраничных приложений (SPA),
-        оптимизации интерфейсов и интеграции с backend. Глубоко пониманию
-        JavaScript, TypeScript, React, Next.js, Vue.js, Redux Toolkit, Zustand,
-        HTML5, CSS3. Имею опыт оптимизации производительности, улучшения SEO,
-        работы с RESTful API, CI/CD, Unit-тестирования и кросс-функционального
+        Front-end разработчик с более чем 2 годами коммерческого опыта в
+        создании высоконагруженных одностраничных приложений (SPA), оптимизации
+        интерфейсов и интеграции с backend. Глубоко пониманию JavaScript,
+        TypeScript, React, Next.js, Vue.js, Redux Toolkit, Zustand, HTML5, CSS3.
+        Имею опыт оптимизации производительности, улучшения SEO, работы с
+        RESTful API, CI/CD, Unit-тестирования и кросс-функционального
         взаимодействия. Ориентирован на результат, умею работать в
         Agile/Scrum-командах.
         <br /> За это время получил сертификаты с курсов или в интернете при
@@ -102,29 +71,13 @@ const worksBase: WorksBase[] = [
     targetCode: "_blank",
   },
   {
-    name: "TeamProjects",
-    imgInfo: "Project inctagram.",
+    name: "Командные проекты",
+    imgInfo: "Проект inctagram.",
     imgSrc: coding,
     title: "INCTAGRAM",
-    pEng: (
-      <p>
-        <b>En </b>Traineeship on the inctagram project in a team consisting of:
-        <br /> &nbsp;&nbsp;&nbsp;PM + 2 QA + 5 Front-end + 2 back-end. <br />
-        The platform being developed in the project allows users to:
-        <br /> &nbsp;&nbsp;&nbsp;- post photos in their feed
-        <br /> &nbsp;&nbsp;&nbsp;- subscribe to other users' pages
-        <br /> &nbsp;&nbsp;&nbsp;- buy a paid account
-        <br /> &nbsp;&nbsp;&nbsp;- leave comments
-        <br /> &nbsp;&nbsp;&nbsp;- like
-        <br /> &nbsp;&nbsp;&nbsp;- exchange personal messages
-        <br /> Technologies: NextJS и RTK query, Storybook, Radix UI, OAuth2,
-        SSR, SSG, Stripe, Apollo GraphQL, Socket.IO, IndexedDB, GitHub, Vercel и
-        GitHub Actions, Docker, Kubernetes, Jenkins ...
-      </p>
-    ),
     pRus: (
       <p>
-        <b>Ru </b>Стажировка на проекте inctagram в команде в составе:
+        Стажировка на проекте inctagram в команде в составе:
         <br /> &nbsp;&nbsp;&nbsp;PM + 2 QA + 5 Front-end + 2 back-end.
         <br />
         Разрабатываемая в проекте платформа позволяет пользователям:
@@ -149,26 +102,15 @@ const worksBase: WorksBase[] = [
     targetCode: "_blank",
   },
   {
-    name: "TeamProjects",
-    imgInfo: "We are finished this project",
+    name: "Командные проекты",
+    imgInfo: "Мы закончили этот проект",
     imgSrc: calm,
-    title: "Flash Cards",
-    pEng: (
-      <p>
-        <b>En </b>This is command project on courses in the IT-INCUBATOR, where
-        I consolidated my skill in command-work.
-        <br /> At this project our team using GitHub and learned new necessary
-        knowledge when we solving tasks.
-        <br /> The project used RTK-query, which was new to me, which made it
-        even more interesting.
-      </p>
-    ),
+    title: "Quiz",
     pRus: (
       <p>
-        <b>Ru </b>Это командный проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепил
-        свои навыки командной работы. <br /> B этом проекте наша команда
-        использовала GitHub и изучала новые знания, необходимые для решения
-        задач.
+        Это командный проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепил свои
+        навыки командной работы. <br /> B этом проекте наша команда использовала
+        GitHub и изучала новые знания, необходимые для решения задач.
         <br /> На проекте применялся новый для меня RTK-query, что сделало его
         еще более интересным.
       </p>
@@ -181,24 +123,14 @@ const worksBase: WorksBase[] = [
     targetCode: "_blank",
   },
   {
-    name: "PersonalProjects",
-    imgInfo: "Project complete",
+    name: "Персональные проекты",
+    imgInfo: "Проект завершен",
     imgSrc: rest,
     title: "ToDoList",
-    pEng: (
-      <p>
-        <b>En </b>This is the main cross-cutting project in the IT-INCUBATOR
-        courses, where I consolidate my knowledge and fill existing gaps in it.
-        <br /> During the project, a transition was made from Redux to
-        Redux-Toolkit, which helped to better understand both. Also, on a
-        separate branch, the project was implemented on Redux-Saga and tests
-        were written for it.
-      </p>
-    ),
     pRus: (
       <p>
-        <b>Ru </b>Это основной сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я
-        закрепляю свои знания и заполняю существующие пробелы в них.
+        Это основной сквозной проект на курсах в ИТ-ИНКУБАТОРЕ, где я закрепляю
+        свои знания и заполняю существующие пробелы в них.
         <br />В ходе проекта был осуществлен переход с Redux на Redux-Toolkit,
         что помогло лучше понять обоих. Так же, на отдельной ветке, была
         осуществлена реализация проекта на Redux-Saga и написание тестов и под
@@ -213,23 +145,14 @@ const worksBase: WorksBase[] = [
     targetCode: "_blank",
   },
   {
-    name: "PersonalProjects",
-    imgInfo: "Project complete",
+    name: "Персональные проекты",
+    imgInfo: "Проект завершен",
     imgSrc: rest,
     title: "Social Network",
-    pEng: (
-      <p>
-        <b>En </b>This is an additional (for independent work on given
-        materials) start-to-end project on courses in the IT-INCUBATOR.
-        <br /> The project was interesting for me because it was necessary to
-        independently overlay TypeScript on top of the legacy-code, which made
-        it possible to completely rethink the content of the project.
-      </p>
-    ),
     pRus: (
       <p>
-        <b>Ru </b>Это дополнительный (для самостоятельной работы по выданным
-        материалам) сквозной проект на курсах в ИТ-ИНКУБАТОРЕ.
+        Это дополнительный (для самостоятельной работы по выданным материалам)
+        сквозной проект на курсах в ИТ-ИНКУБАТОРЕ.
         <br /> Проект для меня был интересен тем, что на legacy-код надо было
         самостоятельно наложить сверху TypeScript, что позволило полностью
         переосмыслить содержание проекта.
@@ -243,25 +166,15 @@ const worksBase: WorksBase[] = [
     targetCode: "_blank",
   },
   {
-    name: "TeamProjects",
-    imgInfo: "I`m finished traineeship here",
+    name: "Командные проекты",
+    imgInfo: "Я завершил стажировку здесь",
     imgSrc: calm,
-    title: "First commercial project, where I`m been",
-    pEng: (
-      <p>
-        <b>En </b>I interned for half a year on a real commercial project
-        Relocate (aggregator of statistical data about countries of the world)
-        as a FRONT-END developer.
-        <br /> During the internship, I completed assigned tasks, listened to
-        mentors, and participated in discussing problems and searching for their
-        solutions, communicated with designers and testers.
-      </p>
-    ),
+    title: "Мой первый коммерческий проект",
     pRus: (
       <p>
-        <b>Ru </b>Пол года стажировался на реальном коммерческом проекте
-        Relocate (агрегатор статистических данных о странах мира) в качестве
-        FRONT-END разработчика.
+        Пол года стажировался на реальном коммерческом проекте Relocate
+        (агрегатор статистических данных о странах мира) в качестве FRONT-END
+        разработчика.
         <br /> Во время стажировки выполнял поставленные задачи, слушал
         менторов, участвовал в обсуждениях проблем и поисках их решения,
         коммуницировал с дизайнерами и тестировщиками.
@@ -279,12 +192,12 @@ const worksBase: WorksBase[] = [
   },
 ];
 
-const MenuItems = ["All"].concat(
+const MenuItems = ["Все"].concat(
   Array.from(new Set(worksBase.map((w) => w.name)))
 );
 
 export const Works = () => {
-  const [filterValue, setFilterValue] = useState("All");
+  const [filterValue, setFilterValue] = useState("Все");
 
   let filteredBase = worksBase;
 
@@ -294,7 +207,7 @@ export const Works = () => {
   }
 
   return (
-    <StyledWorks id="Works">
+    <StyledWorks id="Опыт работы">
       <Container>
         <StyledTitle>Опыт работы</StyledTitle>
         <Menu
@@ -316,7 +229,6 @@ export const Works = () => {
                   <img src={w.imgSrc} alt="" />
                 </ImgWrapper>
                 <h2>{w.title}</h2>
-                {w.pEng}
                 {w.pRus}
                 <FlexWrapper justify="space-between" gap="2%">
                   <Button
@@ -345,12 +257,8 @@ export const Works = () => {
       </Container>
       <Info>
         <p>
-          <b>En </b> I cannot provide the works in LLC "WebDad" due to the
-          signed confidentiality agreement, but they are magnificent!
-        </p>
-        <p>
-          <b>Ru </b> Работы в ООО "ВебДэд" не могу предоставить по причине
-          подписанного соглашения о конфиденциальности, но они великолепны!
+          Работы в ООО "ВебДэд" не могу предоставить по причине подписанного
+          соглашения о конфиденциальности, но они великолепны!
         </p>
       </Info>
     </StyledWorks>
