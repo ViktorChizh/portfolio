@@ -28,7 +28,7 @@ export const Home = () => {
   };
 
   return (
-    <StyledMain id={"Главная"}>
+    <StyledMain id="Главная">
       <Container>
         <FlexWrapper
           direction="column"

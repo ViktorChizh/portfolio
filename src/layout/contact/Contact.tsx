@@ -25,7 +25,7 @@ export const Contact = () => {
   };
 
   return (
-    <StyledContact id={"Контакты"}>
+    <StyledContact id="Контакты">
       <Container>
         <StyledTitle>Контакты</StyledTitle>
         <FlexWrapper align={"center"} gap={"15px"}>

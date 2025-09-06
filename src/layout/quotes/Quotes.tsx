@@ -9,7 +9,7 @@ import quotes from "../../assets/quotes.svg";
 
 export const Quotes = () => {
   return (
-    <StyledQuotes id={"Цитаты"}>
+    <StyledQuotes id="Цитаты">
       <Container>
         <StyledTitle>Мои принципы в цитатах </StyledTitle>
         <AliceCarousel
