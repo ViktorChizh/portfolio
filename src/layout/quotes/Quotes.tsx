@@ -11,7 +11,7 @@ export const Quotes = () => {
   return (
     <StyledQuotes id="Цитаты">
       <Container>
-        <StyledTitle>Мои принципы в цитатах </StyledTitle>
+        <StyledTitle>Мои принципы в цитатах</StyledTitle>
         <AliceCarousel
           mouseTracking
           items={items}
