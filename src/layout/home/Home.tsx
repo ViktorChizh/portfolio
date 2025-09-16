@@ -60,7 +60,7 @@ export const Home = () => {
               )
             }
           >
-            {isMobile ? "резюме" : "скачайте резюме"}
+            {isMobile ? "смотреть резюме" : "скачать резюме"}
           </Button>
         </FlexWrapper>
         <PhotoWrapper>
