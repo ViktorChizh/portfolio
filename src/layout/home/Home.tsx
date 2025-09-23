@@ -127,7 +127,7 @@ const StyledMain = styled.section`
 
     .photo {
       border-radius: 5%;
-      filter: grayscale(65%) hue-rotate(200deg) contrast(85%);
+      filter: grayscale(65%) hue-rotate(200deg);
     }
 
     img {
