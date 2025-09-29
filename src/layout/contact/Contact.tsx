@@ -86,7 +86,6 @@ const ContactField = styled.input`
   border: none;
   border-radius: 5px;
   padding: 5px;
-  font-family: -apple-, sans-serif;
   &:focus-visible {
     outline: 2px solid ${Theme.colors.iconPrimary};
   }
