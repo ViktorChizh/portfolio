@@ -78,7 +78,6 @@ const ContactForm = styled.form`
   textarea {
     resize: none;
     height: calc(3rem + 10px);
-    font-family: -apple-, sans-serif;
   }
 `;
 const ContactField = styled.input`
