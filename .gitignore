@@ -26,3 +26,5 @@ yarn-debug.log*
 yarn-error.log*
 
 link-to-test.txt
+
+pnpm-lock.yaml
