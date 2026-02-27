@@ -27,4 +27,4 @@ yarn-error.log*
 
 link-to-test.txt
 
-pnpm-lock.yaml
+package-lock.json
