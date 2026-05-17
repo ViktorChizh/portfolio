@@ -5,7 +5,7 @@ import map from "assets/map-by.png";
 import mapBg from "assets/map-by-bg.png";
 import { Theme } from "stylesAndThemes/Theme";
 import { Container } from "components/Container";
-import resumeViktorChizhRu from "assets/resumeViktorChizhRu.pdf";
+import resumeViktorChizhRu1C from "assets/resumeViktorChizhRu1C.pdf";
 import { Button } from "components/Button";
 import Typewriter from "typewriter-effect";
 
@@ -39,7 +39,7 @@ export const Home = () => {
         >
           <span>Привет</span>
           <h2>Я Виктор Чиж</h2>
-          <h1>Front-end разработчик</h1>
+          <h1>Программист 1С</h1>
           <FlexWrapper width="100%" alignContent="center">
             <Pointer>&#9754;</Pointer>
             <Typewriter
@@ -55,8 +55,8 @@ export const Home = () => {
             width="49.5%"
             onClick={() =>
               downloadHandler(
-                resumeViktorChizhRu,
-                "resume_ViktorChizh_Frontend.pdf"
+                resumeViktorChizhRu1C,
+                "resume_ViktorChizh_1C.pdf"
               )
             }
           >
@@ -141,7 +141,7 @@ const StyledMain = styled.section`
     }
 
     .Typewriter {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       font-weight: 900;
     }
   }

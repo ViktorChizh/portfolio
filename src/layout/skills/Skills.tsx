@@ -11,6 +11,7 @@ type Skill = {
 };
 
 const skills: Skill[] = [
+  { iconId: "1C", progress: 85, title: "1C:Enterprise8" },
   { iconId: "html", progress: 80, title: "HTML" },
   { iconId: "css", progress: 80, title: "C S S, SCSS, SASS " },
   { iconId: "js", progress: 80, title: "JavaScript" },
